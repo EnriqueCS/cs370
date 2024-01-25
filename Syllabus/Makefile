@@ -1,4 +1,4 @@
-FILE ?= default
+FILE = CS_370
 
 all: compile move
 
