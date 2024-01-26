@@ -1,3 +1,9 @@
+
+# Monolith Project Directory Structure
+
+This document describes the directory structure of the Monolith project.
+
+```
 Monolith/
 │
 ├── data/                     # Directory for datasets and data processing scripts
@@ -38,3 +44,4 @@ Monolith/
 ├── logs/                     # Log files
 │
 └── README.md                 # Overview and instructions for the project
+```
