@@ -2,7 +2,7 @@ from hashing_algorithm import HashingAlgorithm
 
 class CuckooHashing(HashingAlgorithm):
     def __init__(self, table_size=10):
-        self.table_size = table_size  # Example size
+        self.table_size = table_size
         self.hash_table1 = [None] * self.table_size
         self.hash_table2 = [None] * self.table_size
     

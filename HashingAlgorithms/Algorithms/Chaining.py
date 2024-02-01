@@ -2,7 +2,7 @@ from hashing_algorithm import HashingAlgorithm
 
 class Chaining(HashingAlgorithm):
     def __init__(self, table_size=10):
-        self.table_size = table_size  # Example size
+        self.table_size = table_size
         self.hash_table = [[] for _ in range(self.table_size)]
     
     def insert(self, key, value):
