@@ -1,9 +1,9 @@
 import unittest
-from chaining import Chaining
+from chaining import CuckooHashing
 
 class TestCuckooHashing(unittest.TestCase):
     def setUp(self):
-        self.hash_table = Chaining()
+        self.hash_table = CuckooHashing()
 
     def test_insert_search(self):
         self.hash_table.insert("key1", "value1")
