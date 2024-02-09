@@ -1,71 +1,66 @@
-#include <vector>
-#include <utility> // For std::pair
-#include <string>
+#include "HashingAlgorithm.h"
+#include <stdexcept> // For std::logic_error
 #include <optional>
 
-class CuckooHashing : public HashingAlgorithm {
-private:
-    std::vector<std::optional<std::pair<std::string, std::string>>> hash_table1, hash_table2;
-    size_t table_size;
+// Constructor
+CuckooHashing::CuckooHashing(size_t table_size) 
+    : table_size(table_size), hash_table1(table_size), hash_table2(table_size) {}
 
-    size_t _hash_function1(const std::string& key) const {
-        std::hash<std::string> hash_fn;
-        return hash_fn(key) % table_size;
+// Hash function 1
+size_t CuckooHashing::_hash_function1(const std::string& key) const {
+    std::hash<std::string> hash_fn;
+    return hash_fn(key) % table_size;
+}
+
+// Hash function 2
+size_t CuckooHashing::_hash_function2(const std::string& key) const {
+    std::hash<std::string> hash_fn;
+    return (hash_fn(key) / table_size) % table_size; // Modified for a different dispersion
+}
+
+// Insert method
+void CuckooHashing::insert(const std::string& key, const std::string& value) {
+    size_t pos1 = _hash_function1(key);
+    if (!hash_table1[pos1] || hash_table1[pos1]->first == key) {
+        hash_table1[pos1] = std::make_pair(key, value);
+        return;
     }
 
-    size_t _hash_function2(const std::string& key) const {
-        std::hash<std::string> hash_fn;
-        return (hash_fn(key) + 1) % table_size;
+    size_t pos2 = _hash_function2(key);
+    if (!hash_table2[pos2] || hash_table2[pos2]->first == key) {
+        hash_table2[pos2] = std::make_pair(key, value);
+        return;
     }
 
-public:
-    CuckooHashing(size_t table_size = 10) 
-        : table_size(table_size), 
-          hash_table1(table_size), 
-          hash_table2(table_size) {}
+    // Handle collision or rehash as needed
+    // This might involve moving the existing item to its alternate location,
+    // and possibly a chain of moves or rehashing.
+}
 
-    void insert(const std::string& key, const std::string& value) override {
-        size_t pos1 = _hash_function1(key);
-        if (!hash_table1[pos1]) {
-            hash_table1[pos1] = std::make_pair(key, value);
-            return;
-        } else {
-            size_t pos2 = _hash_function2(key);
-            if (!hash_table2[pos2]) {
-                hash_table2[pos2] = std::make_pair(key, value);
-                return;
-            } else {
-                // Handle the case where both positions are occupied,
-                // which may involve rehashing or moving existing keys.
-                // This is a simplified placeholder and does not implement
-                // the full cuckoo hashing algorithm's displacement logic.
-            }
-        }
+// Remove method
+void CuckooHashing::remove(const std::string& key) {
+    size_t pos1 = _hash_function1(key);
+    if (hash_table1[pos1] && hash_table1[pos1]->first == key) {
+        hash_table1[pos1].reset();
+        return;
     }
+    size_t pos2 = _hash_function2(key);
+    if (hash_table2[pos2] && hash_table2[pos2]->first == key) {
+        hash_table2[pos2].reset();
+        return;
+    }
+    // Key not found, no action is performed.
+}
 
-    void remove(const std::string& key) override {
-        size_t pos1 = _hash_function1(key);
-        if (hash_table1[pos1] && hash_table1[pos1]->first == key) {
-            hash_table1[pos1].reset();
-            return;
-        }
-        size_t pos2 = _hash_function2(key);
-        if (hash_table2[pos2] && hash_table2[pos2]->first == key) {
-            hash_table2[pos2].reset();
-            return;
-        }
-        // If key not found, no action is performed.
+// Search method
+std::string CuckooHashing::search(const std::string& key) {
+    size_t pos1 = _hash_function1(key);
+    if (hash_table1[pos1] && hash_table1[pos1]->first == key) {
+        return hash_table1[pos1]->second;
     }
-
-    std::string search(const std::string& key) override {
-        size_t pos1 = _hash_function1(key);
-        if (hash_table1[pos1] && hash_table1[pos1]->first == key) {
-            return hash_table1[pos1]->second;
-        }
-        size_t pos2 = _hash_function2(key);
-        if (hash_table2[pos2] && hash_table2[pos2]->first == key) {
-            return hash_table2[pos2]->second;
-        }
-        throw std::logic_error("Key not found");
+    size_t pos2 = _hash_function2(key);
+    if (hash_table2[pos2] && hash_table2[pos2]->first == key) {
+        return hash_table2[pos2]->second;
     }
-};
+    throw std::logic_error("Key not found");
+}
