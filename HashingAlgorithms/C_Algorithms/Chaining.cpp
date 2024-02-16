@@ -43,6 +43,7 @@ std::string Chaining::search(const std::string& key) {
 // Hash function
 size_t Chaining::_hash_function(const std::string& key) const {
     std::hash<std::string> hash_fn;
+    // std::cout << "Print Hashing" << "key: " << key << "Hash: " << hash_fn(key) << std::endl;
     return hash_fn(key) % table_size;
 }
 

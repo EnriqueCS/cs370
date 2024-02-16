@@ -43,15 +43,15 @@ void TestEnglishDictionary(HashingAlgorithm* hashTable, const std::string& out) 
 }
 void TestRandomEnglish1Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
     // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "mixed_words1.txt", "Results/Rand1_EnglishDict_" + out, 20); // 20 Seconds limit
+    InsertFromFileAndPrintInfo(hashTable, "mixed_words1.txt", "Results/EnglishDict_R1" + out, 20); // 20 Seconds limit
 }
 void TestRandomEnglish2Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
     // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "mixed_words2.txt", "Results/Rand2_EnglishDict_" + out, 20); // 20 Seconds limit
+    InsertFromFileAndPrintInfo(hashTable, "mixed_words2.txt", "Results/EnglishDict_R2" + out, 20); // 20 Seconds limit
 }
 void TestRandomEnglish3Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
     // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "mixed_words3.txt", "Results/Rand3_EnglishDict_" + out, 20); // 20 Seconds limit
+    InsertFromFileAndPrintInfo(hashTable, "mixed_words3.txt", "Results/EnglishDict_R3" + out, 20); // 20 Seconds limit
 }
 
 // Test cases
