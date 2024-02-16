@@ -18,6 +18,43 @@ size_t CuckooHashing::_hash_function2(const std::string& key) const {
     return (hash_fn(key) / table_size) % table_size; // Modified for a different dispersion
 }
 
+bool CuckooHashing::isTableFull() const {
+    size_t occupied_slots = 0;
+    for (const auto& slot : hash_table1) {
+        if (slot) ++occupied_slots;
+    }
+    for (const auto& slot : hash_table2) {
+        if (slot) ++occupied_slots;
+    }
+    // Consider rehashing if 70% of the table is filled
+    return (static_cast<double>(occupied_slots) / (2 * table_size)) > 0.7;
+}
+
+void CuckooHashing::rehash() {
+    table_size *= 2; // Double the table size
+    std::vector<std::optional<std::pair<std::string, std::string>>> new_hash_table1(table_size);
+    std::vector<std::optional<std::pair<std::string, std::string>>> new_hash_table2(table_size);
+
+    // Re-insert elements into new tables
+    for (const auto& slot : hash_table1) {
+        if (slot) {
+            // Simplified insert logic for rehashing; actual implementation may need to handle collisions again
+            size_t new_pos = _hash_function1(slot->first) % table_size;
+            new_hash_table1[new_pos] = slot;
+        }
+    }
+    for (const auto& slot : hash_table2) {
+        if (slot) {
+            size_t new_pos = _hash_function2(slot->first) % table_size;
+            new_hash_table2[new_pos] = slot;
+        }
+    }
+
+    // Replace old tables with new ones
+    hash_table1 = std::move(new_hash_table1);
+    hash_table2 = std::move(new_hash_table2);
+}
+
 // Insert method
 void CuckooHashing::insert(const std::string& key, const std::string& value) {
     size_t pos1 = _hash_function1(key);
@@ -33,8 +70,33 @@ void CuckooHashing::insert(const std::string& key, const std::string& value) {
     }
 
     // Handle collision or rehash as needed
-    // This might involve moving the existing item to its alternate location,
-    // and possibly a chain of moves or rehashing.
+    std::pair<std::string, std::string> displaced = hash_table2[pos2].value(); // Save displaced pair
+    hash_table2[pos2] = std::make_pair(key, value); // Insert the new key-value pair
+
+    for (int attempt = 0; attempt < hash_table1.size(); ++attempt) { // Limit attempts to avoid infinite loop
+        std::swap(displaced.first, displaced.second); // Swap key-value for the hash function calculation
+
+        size_t newPos = _hash_function1(displaced.first);
+        if (!hash_table1[newPos] || hash_table1[newPos]->first == displaced.first) {
+            hash_table1[newPos] = displaced;
+            return;
+        }
+        std::swap(displaced, hash_table1[newPos].value()); // Displace the existing pair
+
+        newPos = _hash_function2(displaced.first);
+        if (!hash_table2[newPos] || hash_table2[newPos]->first == displaced.first) {
+            hash_table2[newPos] = displaced;
+            return;
+        }
+        std::swap(displaced, hash_table2[newPos].value()); // Displace the existing pair again
+    }
+
+    // If we're here, it means we couldn't resolve the collision in the limited attempts
+    // This is where you might want to rehash or resize the table
+    if (isTableFull()) {
+        rehash(); // Placeholder for rehashing logic
+        insert(key, value); // Try inserting again after rehashing
+    }
 }
 
 // Remove method

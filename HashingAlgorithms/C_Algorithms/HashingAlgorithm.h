@@ -14,6 +14,7 @@ public:
     virtual void insert(const std::string& key, const std::string& value) = 0;
     virtual void remove(const std::string& key) = 0;
     virtual std::string search(const std::string& key) = 0;
+    virtual void printTableInfo() = 0;
 };
 
 class Chaining : public HashingAlgorithm {
@@ -27,7 +28,7 @@ public:
     void insert(const std::string& key, const std::string& value) override;
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
-    // Additional methods and members as needed
+    void printTableInfo() override;
 };
 
 class CuckooHashing : public HashingAlgorithm {
@@ -36,14 +37,15 @@ private:
     std::vector<std::optional<std::pair<std::string, std::string>>> hash_table2;
     size_t _hash_function1(const std::string& key) const;
     size_t _hash_function2(const std::string& key) const;
-
+    bool isTableFull() const;
+    void rehash();
 public:
     size_t table_size;
     CuckooHashing(size_t table_size = 10);
     void insert(const std::string& key, const std::string& value) override;
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
-    // Additional methods and members as needed
+    void printTableInfo() override;
 };
 
 class OpenAddressing : public HashingAlgorithm {
@@ -57,6 +59,7 @@ public:
     void insert(const std::string& key, const std::string& value) override;
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
+    void printTableInfo() override;
 };
 
 #endif // HASHING_ALGORITHM_H

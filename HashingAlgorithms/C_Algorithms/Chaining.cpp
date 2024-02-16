@@ -45,3 +45,7 @@ size_t Chaining::_hash_function(const std::string& key) const {
     std::hash<std::string> hash_fn;
     return hash_fn(key) % table_size;
 }
+
+void Chaining::printTableInfo() {
+
+}
