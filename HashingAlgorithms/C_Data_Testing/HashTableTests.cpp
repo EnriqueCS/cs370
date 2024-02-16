@@ -6,7 +6,7 @@
 #include <iostream>
 
 // Assume HashingAlgorithm is a class that has insert and printTableInfo methods
-void InsertFromFileAndPrintInfo(HashingAlgorithm* hashTable, const std::string& fileName, int durationInSeconds) {
+void InsertFromFileAndPrintInfo(HashingAlgorithm* hashTable, const std::string& fileName,const std::string& out, int durationInSeconds) {
     std::ifstream file(fileName);
     if (!file) {
         std::cerr << "Failed to open file: " << fileName << std::endl;
@@ -33,24 +33,45 @@ void InsertFromFileAndPrintInfo(HashingAlgorithm* hashTable, const std::string& 
     }
 
     // Call printTableInfo at the end
-    hashTable->printTableInfo();
+    hashTable->printTableInfo(out);
 }
 
 // Adjusted to accept HashingAlgorithm pointer
-void TestEnglishDictionary(HashingAlgorithm* hashTable) {
+void TestEnglishDictionary(HashingAlgorithm* hashTable, const std::string& out) {
     // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "words.txt", 20); // 20 Seconds limit
+    InsertFromFileAndPrintInfo(hashTable, "words.txt", "Results/EnglishDict_" + out, 20); // 20 Seconds limit
+}
+void TestRandomEnglish1Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
+    // Ensure the path to the file is correct relative to the executable or use an absolute path
+    InsertFromFileAndPrintInfo(hashTable, "mixed_words1.txt", "Results/Rand1_EnglishDict_" + out, 20); // 20 Seconds limit
+}
+void TestRandomEnglish2Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
+    // Ensure the path to the file is correct relative to the executable or use an absolute path
+    InsertFromFileAndPrintInfo(hashTable, "mixed_words2.txt", "Results/Rand2_EnglishDict_" + out, 20); // 20 Seconds limit
+}
+void TestRandomEnglish3Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
+    // Ensure the path to the file is correct relative to the executable or use an absolute path
+    InsertFromFileAndPrintInfo(hashTable, "mixed_words3.txt", "Results/Rand3_EnglishDict_" + out, 20); // 20 Seconds limit
 }
 
 // Test cases
 TEST_F(ChainingTest, EnglishDictionary) {
-    TestEnglishDictionary(hashTable);
+    TestEnglishDictionary(hashTable, "Chaining.json");
+    TestRandomEnglish1Dictionary(hashTable, "Chaining.json");
+    TestRandomEnglish2Dictionary(hashTable, "Chaining.json");
+    TestRandomEnglish3Dictionary(hashTable, "Chaining.json");
 }
 
 TEST_F(CuckooHashingTest, EnglishDictionary) {
-    TestEnglishDictionary(hashTable);
+    TestEnglishDictionary(hashTable, "Cuckoo.json");
+    TestRandomEnglish1Dictionary(hashTable, "Cuckoo.json");
+    TestRandomEnglish2Dictionary(hashTable, "Cuckoo.json");
+    TestRandomEnglish3Dictionary(hashTable, "Cuckoo.json");
 }
 
 TEST_F(OpenAddressingTest, EnglishDictionary) {
-    TestEnglishDictionary(hashTable);
+    TestEnglishDictionary(hashTable, "OpenAddressing.json");
+    TestRandomEnglish1Dictionary(hashTable, "OpenAddressing.json");
+    TestRandomEnglish2Dictionary(hashTable, "OpenAddressing.json");
+    TestRandomEnglish3Dictionary(hashTable, "OpenAddressing.json");
 }

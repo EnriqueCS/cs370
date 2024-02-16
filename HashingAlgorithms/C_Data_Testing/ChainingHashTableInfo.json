@@ -1,8 +1,0 @@
-{
-    "average_chain_length": 466.55,
-    "empty_buckets": 0,
-    "load_factor": 466.55,
-    "max_chain_length": 540,
-    "min_chain_length": 404,
-    "total_entries": 466550
-}
