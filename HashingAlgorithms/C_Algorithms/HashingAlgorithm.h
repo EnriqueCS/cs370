@@ -2,6 +2,9 @@
 #ifndef HASHING_ALGORITHM_H
 #define HASHING_ALGORITHM_H
 
+#include <nlohmann/json.hpp>
+#include <iostream>
+#include <fstream>
 #include <stdexcept>
 #include <string>
 #include <vector>
@@ -60,6 +63,7 @@ public:
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
     void printTableInfo() override;
+    void rehash();
 };
 
 #endif // HASHING_ALGORITHM_H

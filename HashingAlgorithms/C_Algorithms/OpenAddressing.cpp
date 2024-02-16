@@ -12,10 +12,33 @@ size_t OpenAddressing::_hash_function(const std::string& key) const {
     return hash_fn(key) % table_size;
 }
 
+void OpenAddressing::rehash() {
+    size_t new_table_size = table_size * 2; // Double the size
+    std::vector<std::optional<std::pair<std::string, std::string>>> new_hash_table(new_table_size);
+
+    // Rehash all existing elements
+    for (auto& entry : hash_table) {
+        if (entry) {
+            size_t index = _hash_function(entry->first);
+            for (size_t i = 0; i < new_table_size; ++i) {
+                size_t probe_index = (index + i) % new_table_size;
+                if (!new_hash_table[probe_index]) {
+                    new_hash_table[probe_index] = *entry;
+                    break;
+                }
+            }
+        }
+    }
+
+    // Replace the old table with the new table
+    hash_table = std::move(new_hash_table);
+    table_size = new_table_size;
+}
+
 // Insert method
 void OpenAddressing::insert(const std::string& key, const std::string& value) {
-    if (count == table_size) {
-        throw std::runtime_error("Hash Table is full");
+    if (count >= table_size) {
+        rehash();
     }
 
     size_t index = _hash_function(key);
