@@ -41,14 +41,17 @@ TEST_F(CuckooHashingTest, Remove) {
     EXPECT_EQ(cuckooHashing->search("key2"), "value2");
 }
 
-// Test Table Full Scenario
-TEST_F(CuckooHashingTest, TableFull) {
+// Test Table Full Scenario with Rehashing
+TEST_F(CuckooHashingTest, HandleRehashOnFull) {
     // Assuming table size is small and a full table scenario can be simulated easily
     for (size_t i = 0; i < cuckooHashing->table_size; ++i) {
         cuckooHashing->insert("key" + std::to_string(i), "value" + std::to_string(i));
     }
 
-    // Next insertion should result in table being full, considering the cuckoo hashing might rehash
-    // This behavior might need to be adjusted based on actual cuckoo hashing implementation details
-    EXPECT_ANY_THROW(cuckooHashing->insert("extraKey", "extraValue"));
+    // Inserting an extra key-value pair which should trigger rehashing if the table is full
+    cuckooHashing->insert("extraKey", "extraValue");
+
+    // Check if the extra key can be found, indicating successful rehashing and insertion
+    std::string value = cuckooHashing->search("extraKey");
+    EXPECT_EQ(value, "extraValue");
 }
