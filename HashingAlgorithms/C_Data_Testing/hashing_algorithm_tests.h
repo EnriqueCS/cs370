@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include "HashingAlgorithm.h" // Include your hashing algorithm header
+#include <fstream> // Include for file reading
+#define SIZE_VARIABLE 10
 
 // Test fixture for Chaining
 class ChainingTest : public ::testing::Test {
@@ -7,7 +9,7 @@ protected:
     Chaining* hashTable;
 
     void SetUp() override {
-        hashTable = new Chaining(10); // Initialize with table size of 10
+        hashTable = new Chaining(SIZE_VARIABLE); // Initialize with table size of 10
     }
 
     void TearDown() override {
@@ -21,7 +23,7 @@ protected:
     CuckooHashing* hashTable;
 
     void SetUp() override {
-        hashTable = new CuckooHashing(10); // Initialize with table size of 10
+        hashTable = new CuckooHashing(SIZE_VARIABLE); // Initialize with table size of 10
     }
 
     void TearDown() override {
@@ -35,7 +37,7 @@ protected:
     OpenAddressing* hashTable;
 
     void SetUp() override {
-        hashTable = new OpenAddressing(10); // Initialize with table size of 10
+        hashTable = new OpenAddressing(SIZE_VARIABLE); // Initialize with table size of 10
     }
 
     void TearDown() override {
