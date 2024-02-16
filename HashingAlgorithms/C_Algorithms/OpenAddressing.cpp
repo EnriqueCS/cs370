@@ -83,7 +83,7 @@ std::string OpenAddressing::search(const std::string& key) {
     throw std::logic_error("Key not found");
 }
 
-void OpenAddressing::printTableInfo() {
+void OpenAddressing::printTableInfo(const std::string& filename) {
     double loadFactor = static_cast<double>(count) / table_size;
     std::vector<size_t> probeLengths(table_size, 0); // Vector to track probe lengths for each insert
 
@@ -114,9 +114,7 @@ void OpenAddressing::printTableInfo() {
     j["average_probe_length"] = avgProbeLength;
     j["maximum_probe_length"] = maxProbeLength;
 
-    std::ofstream o("OpenAddressingInfo.json");
+    std::ofstream o(filename);
     o << j.dump(4); // Pretty print with 4 spaces indent
     o.close();
-
-    std::cout << "Open Addressing Hash Table information saved to OpenAddressingInfo.json\n";
 }

@@ -127,7 +127,7 @@ std::string CuckooHashing::search(const std::string& key) {
     throw std::logic_error("Key not found");
 }
 
-void CuckooHashing::printTableInfo() {
+void CuckooHashing::printTableInfo(const std::string& filename) {
     size_t entriesTable1 = 0, entriesTable2 = 0;
     for (const auto& entry : hash_table1) {
         if (entry) ++entriesTable1;
@@ -150,9 +150,7 @@ void CuckooHashing::printTableInfo() {
     j["total_entries"] = totalEntries;
     // Add rehash count if you track it: j["rehash_count"] = rehashCount;
 
-    std::ofstream o("CuckooHashingInfo.json");
+    std::ofstream o(filename);
     o << j.dump(4); // Pretty print with 4 spaces indent
     o.close();
-
-    std::cout << "Cuckoo Hashing table information saved to CuckooHashingInfo.json\n";
 }

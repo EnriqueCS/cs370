@@ -17,7 +17,7 @@ public:
     virtual void insert(const std::string& key, const std::string& value) = 0;
     virtual void remove(const std::string& key) = 0;
     virtual std::string search(const std::string& key) = 0;
-    virtual void printTableInfo() = 0;
+    virtual void printTableInfo(const std::string& filename) = 0;
 };
 
 class Chaining : public HashingAlgorithm {
@@ -31,7 +31,7 @@ public:
     void insert(const std::string& key, const std::string& value) override;
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
-    void printTableInfo() override;
+    void printTableInfo(const std::string& filename) override;
 };
 
 class CuckooHashing : public HashingAlgorithm {
@@ -48,7 +48,7 @@ public:
     void insert(const std::string& key, const std::string& value) override;
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
-    void printTableInfo() override;
+    void printTableInfo(const std::string& filename) override;
 };
 
 class OpenAddressing : public HashingAlgorithm {
@@ -62,7 +62,7 @@ public:
     void insert(const std::string& key, const std::string& value) override;
     void remove(const std::string& key) override;
     std::string search(const std::string& key) override;
-    void printTableInfo() override;
+    void printTableInfo(const std::string& filename) override;
     void rehash();
 };
 

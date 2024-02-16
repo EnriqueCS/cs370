@@ -46,7 +46,7 @@ size_t Chaining::_hash_function(const std::string& key) const {
     return hash_fn(key) % table_size;
 }
 
-void Chaining::printTableInfo() {
+void Chaining::printTableInfo(const std::string& filename) {
     size_t totalEntries = 0;
     size_t emptyBuckets = 0;
     size_t maxLength = 0;
@@ -76,9 +76,7 @@ void Chaining::printTableInfo() {
     j["total_entries"] = totalEntries;
     j["empty_buckets"] = emptyBuckets;
 
-    std::ofstream o("ChainingHashTableInfo.json");
+    std::ofstream o(filename);
     o << j.dump(4); // Pretty print with 4 spaces indent
     o.close();
-
-    std::cout << "Hash table information saved to ChainingHashTableInfo.json\n";
 }
