@@ -47,5 +47,38 @@ size_t Chaining::_hash_function(const std::string& key) const {
 }
 
 void Chaining::printTableInfo() {
+    size_t totalEntries = 0;
+    size_t emptyBuckets = 0;
+    size_t maxLength = 0;
+    size_t minLength = std::numeric_limits<size_t>::max();
+    double totalChainLength = 0;
 
+    for (const auto& bucket : hash_table) {
+        size_t bucketSize = bucket.size();
+        totalEntries += bucketSize;
+        if (bucketSize == 0) ++emptyBuckets;
+        else {
+            if (bucketSize > maxLength) maxLength = bucketSize;
+            if (bucketSize < minLength) minLength = bucketSize;
+        }
+        totalChainLength += bucketSize;
+    }
+
+    size_t nonEmptyBuckets = table_size - emptyBuckets;
+    double averageChainLength = nonEmptyBuckets ? totalChainLength / nonEmptyBuckets : 0;
+    double loadFactor = static_cast<double>(totalEntries) / table_size;
+
+    nlohmann::json j;
+    j["load_factor"] = loadFactor;
+    j["average_chain_length"] = averageChainLength;
+    j["max_chain_length"] = maxLength;
+    j["min_chain_length"] = minLength == std::numeric_limits<size_t>::max() ? 0 : minLength;
+    j["total_entries"] = totalEntries;
+    j["empty_buckets"] = emptyBuckets;
+
+    std::ofstream o("ChainingHashTableInfo.json");
+    o << j.dump(4); // Pretty print with 4 spaces indent
+    o.close();
+
+    std::cout << "Hash table information saved to ChainingHashTableInfo.json\n";
 }

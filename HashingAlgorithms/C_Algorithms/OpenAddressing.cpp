@@ -59,3 +59,41 @@ std::string OpenAddressing::search(const std::string& key) {
     }
     throw std::logic_error("Key not found");
 }
+
+void OpenAddressing::printTableInfo() {
+    double loadFactor = static_cast<double>(count) / table_size;
+    std::vector<size_t> probeLengths(table_size, 0); // Vector to track probe lengths for each insert
+
+    // Recalculate probe lengths for each filled slot to simulate insertion process
+    for (size_t idx = 0; idx < table_size; ++idx) {
+        if (hash_table[idx]) {
+            size_t index = _hash_function(hash_table[idx]->first);
+            size_t probeLength = 1;
+            for (size_t i = 0; i < table_size; ++i) {
+                size_t probe_index = (index + i) % table_size;
+                if (probe_index == idx) {
+                    probeLengths[idx] = probeLength;
+                    break;
+                }
+                if (!hash_table[probe_index]) break; // Encounter an empty slot
+                ++probeLength;
+            }
+        }
+    }
+    // Calculate average and maximum probe length
+    double avgProbeLength = count > 0 ? std::accumulate(probeLengths.begin(), probeLengths.end(), 0.0) / count : 0;
+    size_t maxProbeLength = *std::max_element(probeLengths.begin(), probeLengths.end());
+
+    nlohmann::json j;
+    j["table_size"] = table_size;
+    j["load_factor"] = loadFactor;
+    j["total_entries"] = count;
+    j["average_probe_length"] = avgProbeLength;
+    j["maximum_probe_length"] = maxProbeLength;
+
+    std::ofstream o("OpenAddressingInfo.json");
+    o << j.dump(4); // Pretty print with 4 spaces indent
+    o.close();
+
+    std::cout << "Open Addressing Hash Table information saved to OpenAddressingInfo.json\n";
+}

@@ -126,3 +126,33 @@ std::string CuckooHashing::search(const std::string& key) {
     }
     throw std::logic_error("Key not found");
 }
+
+void CuckooHashing::printTableInfo() {
+    size_t entriesTable1 = 0, entriesTable2 = 0;
+    for (const auto& entry : hash_table1) {
+        if (entry) ++entriesTable1;
+    }
+    for (const auto& entry : hash_table2) {
+        if (entry) ++entriesTable2;
+    }
+
+    double loadFactor1 = static_cast<double>(entriesTable1) / table_size;
+    double loadFactor2 = static_cast<double>(entriesTable2) / table_size;
+    // Assuming 'rehashCount' tracks the number of rehashes; add this member if you haven't already.
+    size_t totalEntries = entriesTable1 + entriesTable2;
+
+    nlohmann::json j;
+    j["table_size"] = table_size;
+    j["load_factor_table1"] = loadFactor1;
+    j["load_factor_table2"] = loadFactor2;
+    j["entries_table1"] = entriesTable1;
+    j["entries_table2"] = entriesTable2;
+    j["total_entries"] = totalEntries;
+    // Add rehash count if you track it: j["rehash_count"] = rehashCount;
+
+    std::ofstream o("CuckooHashingInfo.json");
+    o << j.dump(4); // Pretty print with 4 spaces indent
+    o.close();
+
+    std::cout << "Cuckoo Hashing table information saved to CuckooHashingInfo.json\n";
+}
