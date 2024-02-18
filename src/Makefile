@@ -6,7 +6,7 @@ compile_sanity:
 	cd Sanity_Checks && make > ../log.txt 2>&1 && cd ..
 
 compile_data:
-	cd Data_Testing && make >> ../log.txt 2>&1 && cd ..
+	cd Testing && make >> ../log.txt 2>&1 && cd ..
 
 run_sanity: run_ChainingTest run_CuckooHashingTest run_OpenAddressingTest
 
@@ -26,7 +26,7 @@ clean_sanity:
 	cd Sanity_Checks && make clean >> ../log.txt 2>&1 && cd ..
 
 clean_data:
-	cd Data_Testing && make clean >> ../log.txt 2>&1 && cd ..
+	cd Testing && make clean >> ../log.txt 2>&1 && cd ..
 
 process_data:
 	cd ResultProcessing && make >>../log.txt 2>&1 && cd ..

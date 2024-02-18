@@ -35,31 +35,31 @@
         "total_entries": 116208
     },
     "English_Dict": {
-        "average_probe_length": 0.8701979306223288,
-        "load_factor": 0.775859765625,
+        "average_probe_length": 0.8701185395062885,
+        "load_factor": 0.77591484375,
         "maximum_probe_length": 139,
         "table_size": 2560000,
-        "total_entries": 1986201
+        "total_entries": 1986342
     },
     "English_DictR2": {
-        "average_probe_length": 1.0497173364147425,
-        "load_factor": 0.593613671875,
+        "average_probe_length": 1.049650215292619,
+        "load_factor": 0.59366875,
         "maximum_probe_length": 139,
         "table_size": 2560000,
-        "total_entries": 1519651
+        "total_entries": 1519792
     },
     "English_DictR3": {
-        "average_probe_length": 1114.1439397426652,
-        "load_factor": 0.9164859375,
+        "average_probe_length": 1119.160232285424,
+        "load_factor": 0.91670625,
         "maximum_probe_length": 139034,
         "table_size": 640000,
-        "total_entries": 586551
+        "total_entries": 586692
     },
     "English_DictR1": {
-        "average_probe_length": 2.180995934862848,
-        "load_factor": 0.82273515625,
+        "average_probe_length": 2.1775736250548308,
+        "load_factor": 0.8228453125,
         "maximum_probe_length": 3217,
         "table_size": 1280000,
-        "total_entries": 1053101
+        "total_entries": 1053242
     }
 }

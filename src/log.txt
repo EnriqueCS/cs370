@@ -9,10 +9,11 @@ g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include   -c 
 g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include   -c -o ../Algorithms/OpenAddressing.o ../Algorithms/OpenAddressing.cpp
 g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include test_open_addressing.o ../Algorithms/OpenAddressing.o -o ../Executables/OpenAddressingTest -L/workspaces/cs-370/googletest/googletest/lib -lgtest -lgtest_main
 make[1]: Leaving directory '/workspaces/cs-370/src/Sanity_Checks'
-make[1]: Entering directory '/workspaces/cs-370/src/Data_Testing'
+make[1]: Entering directory '/workspaces/cs-370/src/Testing'
 g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include   -c -o HashTableTests.o HashTableTests.cpp
-g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include HashTableTests.o ../Algorithms/Chaining.o ../Algorithms/CuckooHashing.o ../Algorithms/OpenAddressing.o -o ../Executables/MainTest -L/workspaces/cs-370/googletest/googletest/lib -lgtest -lgtest_main
-make[1]: Leaving directory '/workspaces/cs-370/src/Data_Testing'
+g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include   -c -o HashTableUtil.o HashTableUtil.cpp
+g++ -std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include HashTableTests.o HashTableUtil.o ../Algorithms/Chaining.o ../Algorithms/CuckooHashing.o ../Algorithms/OpenAddressing.o -o ../Executables/MainTest -L/workspaces/cs-370/googletest/googletest/lib -lgtest -lgtest_main
+make[1]: Leaving directory '/workspaces/cs-370/src/Testing'
 [==========] Running 6 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 6 tests from ChainingTest
@@ -77,8 +78,8 @@ Testing file: Data/English/DictR3.txt with result path: Results/English/DictR3/C
 Testing file: Data/English/DictR1.txt with result path: Results/English/DictR1/Chaining.json
 Testing file: Data/English/DictR2.txt with result path: Results/English/DictR2/Chaining.json
 Testing file: Data/English/Dict.txt with result path: Results/English/Dict/Chaining.json
-[       OK ] ChainingTest.AllDictionaries (4719 ms)
-[----------] 1 test from ChainingTest (4720 ms total)
+[       OK ] ChainingTest.AllDictionaries (3506 ms)
+[----------] 1 test from ChainingTest (3506 ms total)
 
 [----------] 1 test from CuckooHashingTest
 [ RUN      ] CuckooHashingTest.AllDictionaries
@@ -93,8 +94,8 @@ Testing file: Data/English/DictR3.txt with result path: Results/English/DictR3/C
 Testing file: Data/English/DictR1.txt with result path: Results/English/DictR1/Cuckoo.json
 Testing file: Data/English/DictR2.txt with result path: Results/English/DictR2/Cuckoo.json
 Testing file: Data/English/Dict.txt with result path: Results/English/Dict/Cuckoo.json
-[       OK ] CuckooHashingTest.AllDictionaries (3855 ms)
-[----------] 1 test from CuckooHashingTest (3855 ms total)
+[       OK ] CuckooHashingTest.AllDictionaries (3690 ms)
+[----------] 1 test from CuckooHashingTest (3690 ms total)
 
 [----------] 1 test from OpenAddressingTest
 [ RUN      ] OpenAddressingTest.AllDictionaries
@@ -110,11 +111,11 @@ Time limit of 20 seconds reached. Stopping insertion.
 Testing file: Data/English/DictR1.txt with result path: Results/English/DictR1/OpenAddressing.json
 Testing file: Data/English/DictR2.txt with result path: Results/English/DictR2/OpenAddressing.json
 Testing file: Data/English/Dict.txt with result path: Results/English/Dict/OpenAddressing.json
-[       OK ] OpenAddressingTest.AllDictionaries (35859 ms)
-[----------] 1 test from OpenAddressingTest (35859 ms total)
+[       OK ] OpenAddressingTest.AllDictionaries (35889 ms)
+[----------] 1 test from OpenAddressingTest (35889 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 3 test suites ran. (44435 ms total)
+[==========] 3 tests from 3 test suites ran. (43087 ms total)
 [  PASSED  ] 3 tests.
 make[1]: Entering directory '/workspaces/cs-370/src/ResultProcessing'
 Saved Cuckoo's data to ../IndividualProcessing/Cuckoo/Cuckoo.json
