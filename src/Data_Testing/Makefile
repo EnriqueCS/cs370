@@ -16,7 +16,7 @@ SOURCES=HashTableTests.cpp ../Algorithms/Chaining.cpp ../Algorithms/CuckooHashin
 OBJECTS=$(SOURCES:.cpp=.o)
 
 # Executable names
-DICTIONARY_TEST=../Executables/TestDictionary
+DICTIONARY_TEST=../Executables/MainTest
 
 # Default target
 all: $(DICTIONARY_TEST)
