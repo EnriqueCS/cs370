@@ -116,3 +116,8 @@ Testing file: Data/English/Dict.txt with result path: Results/English/Dict/OpenA
 [----------] Global test environment tear-down
 [==========] 3 tests from 3 test suites ran. (44435 ms total)
 [  PASSED  ] 3 tests.
+make[1]: Entering directory '/workspaces/cs-370/src/ResultProcessing'
+Saved Cuckoo's data to ../IndividualProcessing/Cuckoo/Cuckoo.json
+Saved OpenAddressing's data to ../IndividualProcessing/OpenAddressing/OpenAddressing.json
+Saved Chaining's data to ../IndividualProcessing/Chaining/Chaining.json
+make[1]: Leaving directory '/workspaces/cs-370/src/ResultProcessing'

@@ -1,6 +1,6 @@
 .PHONY: all compile_sanity compile_data run_sanity run_individual run_tests clean_sanity clean_data clean
 
-all: compile_sanity compile_data run_sanity run_tests
+all: compile_sanity compile_data run_sanity run_tests process_data
 
 compile_sanity:
 	cd Sanity_Checks && make > ../log.txt 2>&1 && cd ..
@@ -27,5 +27,8 @@ clean_sanity:
 
 clean_data:
 	cd Data_Testing && make clean >> ../log.txt 2>&1 && cd ..
+
+process_data:
+	cd ResultProcessing && make >>../log.txt 2>&1 && cd ..
 
 clean: clean_sanity clean_data
