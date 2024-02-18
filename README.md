@@ -1,13 +1,15 @@
 # Project Structure Overview
 
-This project is organized into four primary directories: `Monolith`, `Readings`, `Syllabus`, and `WeeklyReports`. Each directory serves a distinct purpose in the context of the project.
+This document provides an overview of the project's directory structure, outlining the purpose and contents of each folder within the project repository. Understanding this structure is essential for navigating and contributing to the project efficiently.
 
-## Directories
+- **googletest**: Contains files related to Google's testing framework, used for conducting automated tests to ensure code quality and reliability.
 
-- **Monolith**: Contains core project files. A separate `README.md` within this folder explains the specific rationale behind its structure. Note that some large files in the `Monolith` directory are not included in the repository due to their size but are present on my local machine.
+- **HashingAlgorithms**: This directory is dedicated to the implementation of various hashing algorithms. It includes source code, documentation, and tests for each algorithm.
 
-- **Readings**: Includes materials and resources for reference.
+- **MeetingFeedback**: A collection of notes and feedback from project meetings. This folder serves as a record of discussions, decisions, and action items agreed upon during meetings.
 
-- **Syllabus**: Outlines the scope of the project and the timeline for its implementation.
+- **Readings**: Provides additional reading materials relevant to the project. These may include research papers, articles, and other resources that contribute to a deeper understanding of the project's technical and theoretical aspects.
 
-- **WeeklyReports**: This directory holds the weekly progress reports of the project. Each report, named in the format `MMReportDD-DD.md`, provides a comprehensive overview of the developments, challenges, and any significant changes in the project's trajectory for that week. These reports are vital for tracking the project's progress and ensuring alignment with the project goals and timelines.
+- **Syllabus**: Contains the initial syllabus for the project. This document outlines the project's objectives, expected outcomes, timelines, and evaluation criteria.
+
+- **WeeklyReports**: Holds the weekly progress reports of the project. Each report is named in the format `MMReportDD-DD.md` and offers a detailed account of the week's developments, challenges faced, and any significant changes affecting the project's direction. These reports are crucial for monitoring the project's progress and ensuring it remains on track with its goals and deadlines.
