@@ -10,13 +10,13 @@ CXXFLAGS=-std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include
 LDFLAGS=-L/workspaces/cs-370/googletest/googletest/lib -lgtest -lgtest_main
 
 # Source files for ChainingTest
-SOURCES_CHAINING=test_chaining.cpp ../C_Algorithms/Chaining.cpp
+SOURCES_CHAINING=test_chaining.cpp ../Algorithms/Chaining.cpp
 
 # Source files for CuckooHashingTest
-SOURCES_CUCKOO=test_cuckoo_hashing.cpp ../C_Algorithms/CuckooHashing.cpp
+SOURCES_CUCKOO=test_cuckoo_hashing.cpp ../Algorithms/CuckooHashing.cpp
 
 # Source files for OpenAddressingTest
-SOURCES_OPEN_ADDRESSING=test_open_addressing.cpp ../C_Algorithms/OpenAddressing.cpp
+SOURCES_OPEN_ADDRESSING=test_open_addressing.cpp ../Algorithms/OpenAddressing.cpp
 
 # Object files for ChainingTest
 OBJECTS_CHAINING=$(SOURCES_CHAINING:.cpp=.o)

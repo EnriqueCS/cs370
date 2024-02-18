@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../C_Algorithms/HashingAlgorithm.h" // Make sure this path matches your Chaining implementation file location
+#include "../Algorithms/HashingAlgorithm.h" // Make sure this path matches your Chaining implementation file location
 
 // Test Fixture for Chaining Hash Table
 class ChainingTest : public ::testing::Test {
