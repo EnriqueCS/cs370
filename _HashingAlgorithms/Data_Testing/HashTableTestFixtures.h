@@ -4,7 +4,7 @@
 #define HASH_TABLE_TEST_FIXTURES_H
 
 #include <gtest/gtest.h>
-#include "../C_Algorithms/HashingAlgorithm.h" // Adjust the path as needed
+#include "../Algorithms/HashingAlgorithm.h" // Adjust the path as needed
 
 #define SIZE_VARIABLE 10000
 
