@@ -1,0 +1,15 @@
+{
+    "Data/Census": [
+        "Data/Census/GovUnits2022_Addresses.txt",
+        "Data/Census/GovUnits2022_ZIP.txt",
+        "Data/Census/GovUnits2022_Title.txt",
+        "Data/Census/GovUnits2022_UnitName.txt",
+        "Data/Census/GovUnits2022_Population.txt"
+    ],
+    "Data/English": [
+        "Data/English/DictR3.txt",
+        "Data/English/DictR1.txt",
+        "Data/English/DictR2.txt",
+        "Data/English/Dict.txt"
+    ]
+}

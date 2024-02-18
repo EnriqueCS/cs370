@@ -1,0 +1,8 @@
+{
+    "entries_table1": 19936,
+    "entries_table2": 19927,
+    "load_factor_table1": 0.9968,
+    "load_factor_table2": 0.99635,
+    "table_size": 20000,
+    "total_entries": 39863
+}

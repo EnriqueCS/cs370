@@ -1,6 +1,7 @@
 // HashTableTests.cpp
 
 #include "HashTableTestFixtures.h"
+#include "nlohmann/json.hpp"
 #include <chrono>
 #include <fstream>
 #include <iostream>
@@ -36,42 +37,75 @@ void InsertFromFileAndPrintInfo(HashingAlgorithm* hashTable, const std::string& 
     hashTable->printTableInfo(out);
 }
 
-// Adjusted to accept HashingAlgorithm pointer
-void TestEnglishDictionary(HashingAlgorithm* hashTable, const std::string& out) {
-    // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "Data/English/Dict.txt", "Results/English_Dict/" + out, 20); // 20 Seconds limit
-}
-void TestRandomEnglish1Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
-    // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "Data/English/DictR1.txt", "Results/English_DictR1/" + out, 20); // 20 Seconds limit
-}
-void TestRandomEnglish2Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
-    // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "Data/English/DictR2.txt", "Results/English_DictR2/" + out, 20); // 20 Seconds limit
-}
-void TestRandomEnglish3Dictionary(HashingAlgorithm* hashTable, const std::string& out) {
-    // Ensure the path to the file is correct relative to the executable or use an absolute path
-    InsertFromFileAndPrintInfo(hashTable, "Data/English/DictR3.txt", "Results/English_DictR3/" + out, 20); // 20 Seconds limit
+
+// Function to load JSON data from a file
+nlohmann::json load_test_data(const std::string& jsonFilePath) {
+    std::ifstream file(jsonFilePath);
+    if (!file.is_open()) {
+        std::cerr << "Failed to open JSON file: " << jsonFilePath << std::endl;
+        exit(1);
+    }
+    nlohmann::json jsonData;
+    file >> jsonData;
+    return jsonData;
 }
 
-// Test cases
-TEST_F(ChainingTest, EnglishDictionary) {
-    TestEnglishDictionary(hashTable, "Chaining.json");
-    TestRandomEnglish1Dictionary(hashTable, "Chaining.json");
-    TestRandomEnglish2Dictionary(hashTable, "Chaining.json");
-    TestRandomEnglish3Dictionary(hashTable, "Chaining.json");
+std::string removeDataPrefix(const std::string& str) {
+    std::string prefix = "Data/";
+    if (str.substr(0, prefix.size()) == prefix) {
+        return str.substr(prefix.size());
+    }
+    return str;
 }
 
-TEST_F(CuckooHashingTest, EnglishDictionary) {
-    TestEnglishDictionary(hashTable, "Cuckoo.json");
-    TestRandomEnglish1Dictionary(hashTable, "Cuckoo.json");
-    TestRandomEnglish2Dictionary(hashTable, "Cuckoo.json");
-    TestRandomEnglish3Dictionary(hashTable, "Cuckoo.json");
+// Refactored function to test dictionaries
+void TestDictionaries(HashingAlgorithm* hashTable, const std::string& jsonFilePath, const std::string& testCategory, const std::string& out) {
+    std::cout << "Loading test data from: " << jsonFilePath << std::endl; // Debug print
+    auto testData = load_test_data(jsonFilePath);
+
+    if (testData.find(testCategory) == testData.end()) {
+        std::cout << "Test category '" << testCategory << "' not found in JSON file." << std::endl; // Debug print
+        return;
+    }
+
+    for (const auto& filePathJson : testData[testCategory]) {
+        // Convert the JSON element to std::string
+        std::string filePath = filePathJson.get<std::string>();
+
+        // Extract the filename from the filePath
+        size_t lastSlashPos = filePath.find_last_of("/\\") + 1;
+        std::string fileName = filePath.substr(lastSlashPos);
+        
+        // Optionally, remove the file extension if needed
+        size_t lastDotPos = fileName.find_last_of('.');
+        std::string fileNameWithoutExt = (lastDotPos != std::string::npos) ? fileName.substr(0, lastDotPos) : fileName;
+        
+        std::string resultPath = "Results/" + 
+                                removeDataPrefix(testCategory) + 
+                                "/" + 
+                                fileNameWithoutExt +  // Use the filename without the extension
+                                "/" + 
+                                out;  // Append the output file designation
+
+        std::cout << "Testing file: " << filePath << " with result path: " << resultPath << std::endl; // Debug print
+        InsertFromFileAndPrintInfo(hashTable, filePath, resultPath, 20); // 20 seconds limit
+    }
 }
 
-TEST_F(OpenAddressingTest, EnglishDictionary) {
-    TestEnglishDictionary(hashTable, "OpenAddressing.json");
-    TestRandomEnglish1Dictionary(hashTable, "OpenAddressing.json");
-    TestRandomEnglish2Dictionary(hashTable, "OpenAddressing.json");
-    TestRandomEnglish3Dictionary(hashTable, "OpenAddressing.json");
+// Example test case refactored
+void RunAllTests(HashingAlgorithm* hashTable, const std::string& jsonFilePath, const std::string& outFileName) {
+    TestDictionaries(hashTable, jsonFilePath, "Data/Census", outFileName);
+    TestDictionaries(hashTable, jsonFilePath, "Data/English", outFileName);
+}
+
+TEST_F(ChainingTest, AllDictionaries) {
+    RunAllTests(hashTable, "Data/files_structure.json", "Chaining.json");
+}
+
+TEST_F(CuckooHashingTest, AllDictionaries) {
+    RunAllTests(hashTable, "Data/files_structure.json", "Cuckoo.json");
+}
+
+TEST_F(OpenAddressingTest, AllDictionaries) {
+    RunAllTests(hashTable, "Data/files_structure.json", "OpenAddressing.json");
 }
