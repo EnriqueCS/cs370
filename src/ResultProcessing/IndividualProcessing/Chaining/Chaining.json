@@ -1,0 +1,74 @@
+{
+    "Census_GovUnits2022_Population": {
+        "average_chain_length": 3.958712314767501,
+        "empty_buckets": 215,
+        "load_factor": 3.8736,
+        "max_chain_length": 15,
+        "min_chain_length": 1,
+        "total_entries": 38736
+    },
+    "Census_GovUnits2022_Addresses": {
+        "average_chain_length": 3.958712314767501,
+        "empty_buckets": 215,
+        "load_factor": 3.8736,
+        "max_chain_length": 15,
+        "min_chain_length": 1,
+        "total_entries": 38736
+    },
+    "Census_GovUnits2022_ZIP": {
+        "average_chain_length": 3.958712314767501,
+        "empty_buckets": 215,
+        "load_factor": 3.8736,
+        "max_chain_length": 15,
+        "min_chain_length": 1,
+        "total_entries": 38736
+    },
+    "Census_GovUnits2022_UnitName": {
+        "average_chain_length": 3.958712314767501,
+        "empty_buckets": 215,
+        "load_factor": 3.8736,
+        "max_chain_length": 15,
+        "min_chain_length": 1,
+        "total_entries": 38736
+    },
+    "Census_GovUnits2022_Title": {
+        "average_chain_length": 3.958712314767501,
+        "empty_buckets": 215,
+        "load_factor": 3.8736,
+        "max_chain_length": 15,
+        "min_chain_length": 1,
+        "total_entries": 38736
+    },
+    "English_Dict": {
+        "average_chain_length": 46.655,
+        "empty_buckets": 0,
+        "load_factor": 46.655,
+        "max_chain_length": 75,
+        "min_chain_length": 20,
+        "total_entries": 466550
+    },
+    "English_DictR2": {
+        "average_chain_length": 46.655,
+        "empty_buckets": 0,
+        "load_factor": 46.655,
+        "max_chain_length": 75,
+        "min_chain_length": 20,
+        "total_entries": 466550
+    },
+    "English_DictR3": {
+        "average_chain_length": 46.655,
+        "empty_buckets": 0,
+        "load_factor": 46.655,
+        "max_chain_length": 75,
+        "min_chain_length": 20,
+        "total_entries": 466550
+    },
+    "English_DictR1": {
+        "average_chain_length": 46.655,
+        "empty_buckets": 0,
+        "load_factor": 46.655,
+        "max_chain_length": 75,
+        "min_chain_length": 20,
+        "total_entries": 466550
+    }
+}
