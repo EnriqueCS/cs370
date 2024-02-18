@@ -1,0 +1,231 @@
+{
+    "Census": {
+        "GovUnits2022_Population": {
+            "Cuckoo": {
+                "entries_table1": 19936,
+                "entries_table2": 19927,
+                "load_factor_table1": 0.9968,
+                "load_factor_table2": 0.99635,
+                "table_size": 20000,
+                "total_entries": 39863
+            },
+            "OpenAddressing": {
+                "average_probe_length": 0.8252375051631557,
+                "load_factor": 0.60525,
+                "maximum_probe_length": 69,
+                "table_size": 320000,
+                "total_entries": 193680
+            },
+            "Chaining": {
+                "average_chain_length": 3.958712314767501,
+                "empty_buckets": 215,
+                "load_factor": 3.8736,
+                "max_chain_length": 15,
+                "min_chain_length": 1,
+                "total_entries": 38736
+            }
+        },
+        "GovUnits2022_Addresses": {
+            "Cuckoo": {
+                "entries_table1": 14511,
+                "entries_table2": 12297,
+                "load_factor_table1": 0.72555,
+                "load_factor_table2": 0.61485,
+                "table_size": 20000,
+                "total_entries": 26808
+            },
+            "OpenAddressing": {
+                "average_probe_length": 4598.31952189178,
+                "load_factor": 0.9684,
+                "maximum_probe_length": 37239,
+                "table_size": 40000,
+                "total_entries": 38736
+            },
+            "Chaining": {
+                "average_chain_length": 3.958712314767501,
+                "empty_buckets": 215,
+                "load_factor": 3.8736,
+                "max_chain_length": 15,
+                "min_chain_length": 1,
+                "total_entries": 38736
+            }
+        },
+        "GovUnits2022_ZIP": {
+            "Cuckoo": {
+                "entries_table1": 19468,
+                "entries_table2": 19343,
+                "load_factor_table1": 0.9734,
+                "load_factor_table2": 0.96715,
+                "table_size": 20000,
+                "total_entries": 38811
+            },
+            "OpenAddressing": {
+                "average_probe_length": 10.896711069805866,
+                "load_factor": 0.9684,
+                "maximum_probe_length": 6034,
+                "table_size": 80000,
+                "total_entries": 77472
+            },
+            "Chaining": {
+                "average_chain_length": 3.958712314767501,
+                "empty_buckets": 215,
+                "load_factor": 3.8736,
+                "max_chain_length": 15,
+                "min_chain_length": 1,
+                "total_entries": 38736
+            }
+        },
+        "GovUnits2022_UnitName": {
+            "Cuckoo": {
+                "entries_table1": 19858,
+                "entries_table2": 19844,
+                "load_factor_table1": 0.9929,
+                "load_factor_table2": 0.9922,
+                "table_size": 20000,
+                "total_entries": 39702
+            },
+            "OpenAddressing": {
+                "average_probe_length": 4.418628665840561,
+                "load_factor": 0.9684,
+                "maximum_probe_length": 307,
+                "table_size": 160000,
+                "total_entries": 154944
+            },
+            "Chaining": {
+                "average_chain_length": 3.958712314767501,
+                "empty_buckets": 215,
+                "load_factor": 3.8736,
+                "max_chain_length": 15,
+                "min_chain_length": 1,
+                "total_entries": 38736
+            }
+        },
+        "GovUnits2022_Title": {
+            "Cuckoo": {
+                "entries_table1": 19593,
+                "entries_table2": 19542,
+                "load_factor_table1": 0.97965,
+                "load_factor_table2": 0.9771,
+                "table_size": 20000,
+                "total_entries": 39135
+            },
+            "OpenAddressing": {
+                "average_probe_length": 5.876015420625086,
+                "load_factor": 0.7263,
+                "maximum_probe_length": 307,
+                "table_size": 160000,
+                "total_entries": 116208
+            },
+            "Chaining": {
+                "average_chain_length": 3.958712314767501,
+                "empty_buckets": 215,
+                "load_factor": 3.8736,
+                "max_chain_length": 15,
+                "min_chain_length": 1,
+                "total_entries": 38736
+            }
+        }
+    },
+    "English": {
+        "Dict": {
+            "Cuckoo": {
+                "entries_table1": 302407,
+                "entries_table2": 299363,
+                "load_factor_table1": 0.945021875,
+                "load_factor_table2": 0.935509375,
+                "table_size": 320000,
+                "total_entries": 601770
+            },
+            "OpenAddressing": {
+                "average_probe_length": 0.8701979306223288,
+                "load_factor": 0.775859765625,
+                "maximum_probe_length": 139,
+                "table_size": 2560000,
+                "total_entries": 1986201
+            },
+            "Chaining": {
+                "average_chain_length": 46.655,
+                "empty_buckets": 0,
+                "load_factor": 46.655,
+                "max_chain_length": 75,
+                "min_chain_length": 20,
+                "total_entries": 466550
+            }
+        },
+        "DictR2": {
+            "Cuckoo": {
+                "entries_table1": 301457,
+                "entries_table2": 296956,
+                "load_factor_table1": 0.942053125,
+                "load_factor_table2": 0.9279875,
+                "table_size": 320000,
+                "total_entries": 598413
+            },
+            "OpenAddressing": {
+                "average_probe_length": 1.0497173364147425,
+                "load_factor": 0.593613671875,
+                "maximum_probe_length": 139,
+                "table_size": 2560000,
+                "total_entries": 1519651
+            },
+            "Chaining": {
+                "average_chain_length": 46.655,
+                "empty_buckets": 0,
+                "load_factor": 46.655,
+                "max_chain_length": 75,
+                "min_chain_length": 20,
+                "total_entries": 466550
+            }
+        },
+        "DictR3": {
+            "Cuckoo": {
+                "entries_table1": 233013,
+                "entries_table2": 197666,
+                "load_factor_table1": 0.728165625,
+                "load_factor_table2": 0.61770625,
+                "table_size": 320000,
+                "total_entries": 430679
+            },
+            "OpenAddressing": {
+                "average_probe_length": 1114.1439397426652,
+                "load_factor": 0.9164859375,
+                "maximum_probe_length": 139034,
+                "table_size": 640000,
+                "total_entries": 586551
+            },
+            "Chaining": {
+                "average_chain_length": 46.655,
+                "empty_buckets": 0,
+                "load_factor": 46.655,
+                "max_chain_length": 75,
+                "min_chain_length": 20,
+                "total_entries": 466550
+            }
+        },
+        "DictR1": {
+            "Cuckoo": {
+                "entries_table1": 296876,
+                "entries_table2": 285595,
+                "load_factor_table1": 0.9277375,
+                "load_factor_table2": 0.892484375,
+                "table_size": 320000,
+                "total_entries": 582471
+            },
+            "OpenAddressing": {
+                "average_probe_length": 2.180995934862848,
+                "load_factor": 0.82273515625,
+                "maximum_probe_length": 3217,
+                "table_size": 1280000,
+                "total_entries": 1053101
+            },
+            "Chaining": {
+                "average_chain_length": 46.655,
+                "empty_buckets": 0,
+                "load_factor": 46.655,
+                "max_chain_length": 75,
+                "min_chain_length": 20,
+                "total_entries": 466550
+            }
+        }
+    }
+}
