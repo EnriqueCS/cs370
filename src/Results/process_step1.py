@@ -31,7 +31,7 @@ def process_folder(root_dir):
 
     return combined_data
 
-def save_to_json(data, file_name='processed_results.json'):
+def save_to_json(data, file_name='step1_results.json'):
     """
     Save the combined data to a JSON file.
     """
