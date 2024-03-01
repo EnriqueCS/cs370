@@ -4,10 +4,10 @@
 CXX=g++
 
 # Compiler flags
-CXXFLAGS=-std=c++17 -pthread -I/workspaces/cs-370/googletest/googletest/include
+CXXFLAGS=-std=c++17 -pthread -I../../googletest/googletest/include -I/usr/local/include
 
-# Assuming the Google Test libraries are in the following path; adjust if necessary
-LDFLAGS=-L/workspaces/cs-370/googletest/googletest/lib -lgtest -lgtest_main
+# Linker flags
+LDFLAGS=-L../../googletest/googletest/lib -L/usr/local/lib -lgtest -lgtest_main -lpapi
 
 # Source files for ChainingTest
 SOURCES_CHAINING=test_chaining.cpp ../Algorithms/Chaining.cpp

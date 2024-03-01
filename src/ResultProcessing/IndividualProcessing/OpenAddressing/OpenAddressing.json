@@ -1,11 +1,4 @@
 {
-    "Census_GovUnits2022_Population": {
-        "average_probe_length": 0.8252375051631557,
-        "load_factor": 0.60525,
-        "maximum_probe_length": 69,
-        "table_size": 320000,
-        "total_entries": 193680
-    },
     "Census_GovUnits2022_Addresses": {
         "average_probe_length": 4598.31952189178,
         "load_factor": 0.9684,
@@ -13,19 +6,12 @@
         "table_size": 40000,
         "total_entries": 38736
     },
-    "Census_GovUnits2022_ZIP": {
-        "average_probe_length": 10.896711069805866,
-        "load_factor": 0.9684,
-        "maximum_probe_length": 6034,
-        "table_size": 80000,
-        "total_entries": 77472
-    },
-    "Census_GovUnits2022_UnitName": {
-        "average_probe_length": 4.418628665840561,
-        "load_factor": 0.9684,
-        "maximum_probe_length": 307,
-        "table_size": 160000,
-        "total_entries": 154944
+    "Census_GovUnits2022_Population": {
+        "average_probe_length": 0.8252375051631557,
+        "load_factor": 0.60525,
+        "maximum_probe_length": 69,
+        "table_size": 320000,
+        "total_entries": 193680
     },
     "Census_GovUnits2022_Title": {
         "average_probe_length": 5.876015420625086,
@@ -34,32 +20,46 @@
         "table_size": 160000,
         "total_entries": 116208
     },
+    "Census_GovUnits2022_UnitName": {
+        "average_probe_length": 4.418628665840561,
+        "load_factor": 0.9684,
+        "maximum_probe_length": 307,
+        "table_size": 160000,
+        "total_entries": 154944
+    },
+    "Census_GovUnits2022_ZIP": {
+        "average_probe_length": 10.896711069805866,
+        "load_factor": 0.9684,
+        "maximum_probe_length": 6034,
+        "table_size": 80000,
+        "total_entries": 77472
+    },
     "English_Dict": {
-        "average_probe_length": 0.8701185395062885,
-        "load_factor": 0.77591484375,
-        "maximum_probe_length": 139,
+        "average_probe_length": 0.8707669800702784,
+        "load_factor": 0.7732640625,
+        "maximum_probe_length": 140,
         "table_size": 2560000,
-        "total_entries": 1986342
-    },
-    "English_DictR2": {
-        "average_probe_length": 1.049650215292619,
-        "load_factor": 0.59366875,
-        "maximum_probe_length": 139,
-        "table_size": 2560000,
-        "total_entries": 1519792
-    },
-    "English_DictR3": {
-        "average_probe_length": 1119.160232285424,
-        "load_factor": 0.91670625,
-        "maximum_probe_length": 139034,
-        "table_size": 640000,
-        "total_entries": 586692
+        "total_entries": 1979556
     },
     "English_DictR1": {
-        "average_probe_length": 2.1775736250548308,
-        "load_factor": 0.8228453125,
-        "maximum_probe_length": 3217,
+        "average_probe_length": 2.3340226440481016,
+        "load_factor": 0.81754375,
+        "maximum_probe_length": 3235,
         "table_size": 1280000,
-        "total_entries": 1053242
+        "total_entries": 1046456
+    },
+    "English_DictR2": {
+        "average_probe_length": 1.0488391982583016,
+        "load_factor": 0.59101796875,
+        "maximum_probe_length": 140,
+        "table_size": 2560000,
+        "total_entries": 1513006
+    },
+    "English_DictR3": {
+        "average_probe_length": 916.2838356561235,
+        "load_factor": 0.906103125,
+        "maximum_probe_length": 136188,
+        "table_size": 640000,
+        "total_entries": 579906
     }
 }

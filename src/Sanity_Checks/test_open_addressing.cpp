@@ -1,19 +1,4 @@
-#include <gtest/gtest.h>
-#include "../Algorithms/HashingAlgorithm.h" // Make sure this path matches your Chaining implementation file location
-
-// Test Fixture for OpenAddressing
-class OpenAddressingTest : public ::testing::Test {
-protected:
-    OpenAddressing* openAddressing;
-
-    void SetUp() override {
-        openAddressing = new OpenAddressing(10); // Initialize with a small table for testing
-    }
-
-    void TearDown() override {
-        delete openAddressing;
-    }
-};
+#include "./test_header.h"
 
 // Test Insertion and Search
 TEST_F(OpenAddressingTest, InsertAndSearch) {
@@ -31,7 +16,7 @@ TEST_F(OpenAddressingTest, InsertAndSearch) {
 TEST_F(OpenAddressingTest, Remove) {
     openAddressing->insert("key1", "value1");
     openAddressing->insert("key2", "value2");
-
+\
     openAddressing->remove("key1");
     // After removal, searching for "key1" should throw an exception
     EXPECT_THROW(openAddressing->search("key1"), std::logic_error);

@@ -1,7 +1,7 @@
 {
-    "average_probe_length": 2.1775736250548308,
-    "load_factor": 0.8228453125,
-    "maximum_probe_length": 3217,
+    "average_probe_length": 2.3340226440481016,
+    "load_factor": 0.81754375,
+    "maximum_probe_length": 3235,
     "table_size": 1280000,
-    "total_entries": 1053242
+    "total_entries": 1046456
 }

@@ -1,20 +1,4 @@
-#include <gtest/gtest.h>
-#include "../Algorithms/HashingAlgorithm.h" // Make sure this path matches your Chaining implementation file location
-
-// Test Fixture for CuckooHashing
-class CuckooHashingTest : public ::testing::Test {
-protected:
-    CuckooHashing* cuckooHashing;
-
-    void SetUp() override {
-        // Initialize CuckooHashing with a small table size for testing
-        cuckooHashing = new CuckooHashing(10);
-    }
-
-    void TearDown() override {
-        delete cuckooHashing;
-    }
-};
+#include "./test_header.h"
 
 // Test Insertion and Search
 TEST_F(CuckooHashingTest, InsertAndSearch) {

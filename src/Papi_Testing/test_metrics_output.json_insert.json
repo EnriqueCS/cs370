@@ -1,0 +1,10 @@
+{
+    "branchMissPredictions": 0,
+    "cacheMisses": 0,
+    "cpuCycles": 0,
+    "dataHazards": 0,
+    "instructionCount": 0,
+    "ipc": 0.0,
+    "memoryAccesses": 0,
+    "tlbMisses": 0
+}

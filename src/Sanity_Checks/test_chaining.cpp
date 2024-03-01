@@ -1,20 +1,4 @@
-#include <gtest/gtest.h>
-#include "../Algorithms/HashingAlgorithm.h" // Make sure this path matches your Chaining implementation file location
-
-// Test Fixture for Chaining Hash Table
-class ChainingTest : public ::testing::Test {
-protected:
-    Chaining* hashTable;
-
-    void SetUp() override {
-        // Initialize with a small table size to test collision handling easily
-        hashTable = new Chaining(5);
-    }
-
-    void TearDown() override {
-        delete hashTable;
-    }
-};
+#include "./test_header.h"
 
 // Test basic insertion and search
 TEST_F(ChainingTest, HandlesInsertionAndSearch) {

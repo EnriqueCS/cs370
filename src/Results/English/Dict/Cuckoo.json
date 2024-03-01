@@ -1,8 +1,8 @@
 {
-    "entries_table1": 302407,
-    "entries_table2": 299363,
-    "load_factor_table1": 0.945021875,
-    "load_factor_table2": 0.935509375,
+    "entries_table1": 302382,
+    "entries_table2": 299330,
+    "load_factor_table1": 0.94494375,
+    "load_factor_table2": 0.93540625,
     "table_size": 320000,
-    "total_entries": 601770
+    "total_entries": 601712
 }
