@@ -4,13 +4,13 @@
 CXX=g++
 
 # Compiler flags
-CXXFLAGS=-std=c++17 -pthread -I../../googletest/googletest/include -I/usr/local/include
+CXXFLAGS=-std=c++17 -pthread -I/usr/include
 
 # Linker flags
-LDFLAGS=-L../../googletest/googletest/lib -L/usr/local/lib -lgtest -lgtest_main -lpapi -pthread
+LDFLAGS=-lpapi -pthread
 
 # Source files
-SOURCES=./papi_metrics.cpp ./papi_runner.cpp \
+SOURCES=./TestingLib/papi_metrics.cpp ./papi_runner.cpp \
         ../Algorithms/Chaining.cpp ../Algorithms/CuckooHashing.cpp ../Algorithms/OpenAddressing.cpp
 
 # Object files
