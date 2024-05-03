@@ -1,5 +1,5 @@
 papi:
-	cd src && $(MAKE) clean && $(MAKE) && $(MAKE) run-papi
+	cd src/Papi_Testing && $(MAKE) clean && $(MAKE) && $(MAKE) run-papi
 
 results:
 	cd test && $(MAKE) run-final > ignore.txt
