@@ -1,93 +1,137 @@
+// Assuming the presence of "HashingAlgorithmConfig.h" for HashingAlgorithmConfig struct definition
 #include "../Algorithms/HashingAlgorithm.h"
-#include "./TestingLib/papi_metrics.h"
 #include "./TestingLib/test_fixture.h"
+#include "./Util/papi_avail.h"
 #include <fstream>
 #include <filesystem>
 #include <vector>
 #include <string>
+#include <iterator>
+#include <iostream>
 
 namespace fs = std::filesystem;
+using MetricInfo = std::pair<int, std::string>;
+typedef fs::path FilePath; // Typedef for filesystem path
 
-// Example usage of HashingPerformanceMonitorTestFixture
-void exampleTest() {
-    // Initialize the test fixture with specific algorithm type, output file location, and table size
-    HashingPerformanceMonitorTestFixture testFixture(HashingAlgorithmType::CHAINING, "out/test_out", 10);
+// Process a single metric for a file using a specific hashing algorithm configuration
+std::string processMetric(const FilePath& filePath, const HashingConfig& hashConfig, const MetricInfo& metric) {
+    HashingPerformanceMonitorTestFixture testFixture(hashConfig, metric);
     testFixture.SetUp();
-    testFixture.monitor->insert("key", "value");
-    testFixture.monitor->writeTotalMetricsToTxt(testFixture.testOutputFile);
+
+    std::ifstream fileStream(filePath);
+    if (!fileStream) {
+        testFixture.TearDown();
+        return "Failed to open file: " + filePath.string();
+    }
+
+    std::string line;
+    std::vector<std::string> lines; // Vector to store each line with an ID
+
+    while (getline(fileStream, line)) {
+        lines.push_back(line); // Store line with its ID
+    }
+
+    // Assuming testFixture.getPerformanceData() processes these lines with IDs
+    std::string metricsString = testFixture.getPerformanceData(lines);
     testFixture.TearDown();
+    fileStream.close();
+    return metricsString;
 }
 
-std::string getAlgorithmName(HashingAlgorithmType algType) {
-    switch (algType) {
-        case HashingAlgorithmType::CHAINING: return "Chaining";
-        case HashingAlgorithmType::CUCKOO_HASHING: return "Cuckoo";
-        case HashingAlgorithmType::OPEN_ADDRESSING: return "OpenAddressing";
-        default: return "Unknown";
+std::string processAllMetrics(const FilePath& filePath, const HashingConfig& hashConfig) {
+    std::string allMetrics;
+
+    for (const MetricInfo& metric : availMetrics) {
+        std::string metricResult = processMetric(filePath, hashConfig, metric);
+        allMetrics += metric.second + "\n" + metricResult + "\n\n";
+    }
+
+    return allMetrics;
+}
+
+void writeMetricsToFile(const std::string& fileName, const FilePath& outputDir, const std::string& allMetrics) {
+    // Construct the full path with a proper file name, including a separator between the file name and "metrics_summary.txt"
+    FilePath metricsOutputPath = outputDir / (fileName + "_metrics_summary.txt");
+
+    std::ofstream outFile(metricsOutputPath);
+    if (!outFile) {
+        std::cerr << "Failed to open file for writing: " << metricsOutputPath << std::endl;
+        return;
+    }
+
+    outFile << allMetrics;
+    outFile.close();
+
+    std::cout << "Metrics written to: " << metricsOutputPath << std::endl;
+}
+
+void processFile(const FilePath& filePath, const FilePath& outputDir, const HashingConfig& hashConfig) {
+    std::string file = filePath.filename().stem().string();
+    std::string allMetrics = "---> File: " + file + "\n" + processAllMetrics(filePath, hashConfig);
+    writeMetricsToFile(file, outputDir, allMetrics);
+}
+
+// Process all files in a directory, using a specific hashing algorithm configuration
+void processFilesInDirectory(const FilePath& directoryPath, const FilePath& outputDirBase, const FilePath& relativePath, const HashingAlgorithmConfig& defaultAlgConfig) {
+    bool dirCreated = false;
+    FilePath outputDir;
+    int hashConfigNumber = 1000; // Default hash config number
+    FilePath dataDetailsPath = directoryPath / "data_details";
+
+    // Read hash config number from data_details file
+    std::ifstream file(dataDetailsPath);
+    if (file) {
+        std::string line;
+        if (std::getline(file, line)) {
+            try {
+                hashConfigNumber = std::stoi(line); // Set hash config number from the file
+                std::cout << "Hash config number set to " << hashConfigNumber << " from file data_details" << std::endl;
+            } catch (const std::exception& e) {
+                std::cerr << "Error reading hash config number: " << e.what() << std::endl;
+            }
+        }
+        file.close();
+    } else {
+        std::cerr << "Failed to open data_details file." << std::endl;
+        return; // Exit if data_details cannot be read
+    }
+
+    // Process all files in the directory
+    for (const auto& fileEntry : fs::directory_iterator(directoryPath)) {
+        if (fileEntry.is_directory() || fileEntry.path().filename() == "data_details") continue;
+
+        if (!dirCreated) {
+            outputDir = outputDirBase / relativePath / fileEntry.path().filename().stem() / defaultAlgConfig.getName();
+            std::cout << "Creating output directory: " << outputDir << std::endl;
+            fs::create_directories(outputDir);
+            dirCreated = true;
+        }
+
+        processFile(fileEntry.path(), outputDir, defaultAlgConfig.getHashConfig(hashConfigNumber));
     }
 }
 
-void processFile(const fs::path& filePath, const fs::path& outputDir, HashingAlgorithmType algType) {
-    // Metric information for the HashingPerformanceMonitor, replace with actual metrics you're interested in
-    std::vector<MetricInfo> metricInfos = {
-        {PAPI_TOT_CYC, "Total Cycles"},
-        {PAPI_TOT_INS, "Total Instructions"},
-        {PAPI_L3_TCM, "Level 3 Cache Misses"},
-        {PAPI_BR_MSP, "Branch Mispredictions"}
-        // Add more metrics as needed
+// Process the entire directory tree, using all specified hashing algorithm configurations
+void processDirectory(const FilePath& inputDir, const FilePath& outputDirBase) {
+    std::vector<HashingAlgorithmConfig> hashingAlgorithms = {
+        HashingAlgorithmConfig(HashingAlgorithmType::CHAINING),
+        HashingAlgorithmConfig(HashingAlgorithmType::CUCKOO_HASHING),
+        HashingAlgorithmConfig(HashingAlgorithmType::OPEN_ADDRESSING)
     };
 
-    // Initialize test fixture for each file, now also passing metric information
-    HashingPerformanceMonitorTestFixture testFixture(algType, outputDir.string(), 1000, metricInfos);
-    testFixture.SetUp();
-
-    // Open the file and insert each element into the hashtable
-    std::ifstream fileStream(filePath);
-    std::string line;
-    while (getline(fileStream, line)) {
-        // Assuming each line is an element to insert
-        testFixture.monitor->insert(line, "value"); // Adjust based on file format
-    }
-
-    // Prepare filename for the metrics output
-    std::string filenameWithoutExt = filePath.stem().string(); // This gets the filename without the extension
-    // Construct the full path for the output metrics file
-    fs::path outputFilePath = outputDir / (filenameWithoutExt + "_metrics.txt");
-    
-    // Write metrics to text file for this file's test
-    testFixture.monitor->writeTotalMetricsToTxt(outputFilePath.string());
-    testFixture.TearDown();
-
-    fileStream.close();
-}
-
-void processDirectory(const fs::path& inputDir, const fs::path& outputDirBase, const std::vector<HashingAlgorithmType>& hashingAlgorithms) {
     for (const auto& entry : fs::recursive_directory_iterator(inputDir)) {
-        if (entry.is_directory()) {
-            auto relativePath = fs::relative(entry.path(), inputDir);
-            for (HashingAlgorithmType algType : hashingAlgorithms) {
-                std::string algName = getAlgorithmName(algType);
-                for (const auto& fileEntry : fs::directory_iterator(entry.path())) {
-                    if (!fileEntry.is_directory()) {
-                        fs::path outputDir = outputDirBase / relativePath / algName;
-                        fs::create_directories(outputDir);
-                        processFile(fileEntry.path(), outputDir, algType);
-                    }
-                }
-            }
+        if (!entry.is_directory()) continue;
+
+        auto relativePath = fs::relative(entry.path(), inputDir);
+        for (const HashingAlgorithmConfig& algConfig : hashingAlgorithms) {
+            processFilesInDirectory(entry.path(), outputDirBase, relativePath, algConfig);
         }
     }
 }
 
 int main() {
-    // exampleTest();
-    fs::path inputDataDir = "../Data";
-    fs::path outputDataDir = "../Papi_Results";
-    std::vector<HashingAlgorithmType> hashingAlgorithms = {
-        HashingAlgorithmType::CHAINING, 
-        HashingAlgorithmType::CUCKOO_HASHING, 
-        HashingAlgorithmType::OPEN_ADDRESSING
-    };
-    processDirectory(inputDataDir, outputDataDir, hashingAlgorithms);
+    FilePath inputDataDir = "../Data";
+    FilePath outputDataDir = "../Papi_Results";
+    processDirectory(inputDataDir, outputDataDir);
     return 0;
 }

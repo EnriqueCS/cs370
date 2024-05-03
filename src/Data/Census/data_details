@@ -1,0 +1,10 @@
+38736
+The composition of addresses is pseudo-random; while they may appear random, they often contain similar substrings. 
+
+Unit names bear resemblance to addresses in their structure, but they exhibit a greater frequency of repeating substrings.
+
+Population data is pseudo-random due to recognizable patterns within the data, yet it provides a reliable numerical representation. 
+
+Government units exhibit a significant amount of duplication in their information, making them excellent candidates for testing hash table implementations. 
+
+Lastly, zip codes, despite ostensibly appearing random, have inherent patterns that underlie their distribution.

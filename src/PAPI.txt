@@ -1,0 +1,41 @@
+This is from the parent directory
+src
+|Papi_Testing: Current Location
+|Papi_results
+|Data
+
+INPUT:
+Data
+|DIR 1
+||DIR 1
+|||file1.txt
+|||file2.txt
+|||...
+|||fileI.txt
+||DIR 2
+||...
+||DIR K
+|DIR 2
+|...
+|DIR N
+
+OUTPUT:
+Papi_Results
+|DIR 1
+||DIR 1
+|||DIR 1
+||||DIR Chaining
+||||| insert.txt
+||||| remove.txt
+||||| search.txt
+||||DIR Cuckoo
+||||DIR OpenAddressing
+|||DIR 2
+|||...
+|||DIR I
+||DIR 2
+||...
+||DIR K
+|DIR 2
+|...
+|DIR N

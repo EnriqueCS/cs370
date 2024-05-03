@@ -1,0 +1,124 @@
+---> File: GovUnits2022_Addresses
+Level 1 cache misses
+Total Strings: 38736
+
+Insert All Metric: 393390 units
+Search Metric (Table is full): 153122 units
+Remove All Metric: 272951 units
+Search Metric (Table is Empty): 447637 units
+
+Load Factor 75.000000% - Insert Metric: 235086 units
+Load Factor 75.000000% - Search Metric: 1168 units
+Load Factor 75.000000% - Remove Metric: 174729 units
+
+Load Factor 50.000000% - Insert Metric: 118573 units
+Load Factor 50.000000% - Search Metric: 1133 units
+Load Factor 50.000000% - Remove Metric: 94835 units
+
+Load Factor 25.000000% - Insert Metric: 42596 units
+Load Factor 25.000000% - Search Metric: 1090 units
+Load Factor 25.000000% - Remove Metric: 36741 units
+
+Total Strings: 38736
+
+Insert All Metric: 20 ms
+Search Metric (Table is full): 10 ms
+Remove All Metric: 16 ms
+Search Metric (Table is Empty): 27 ms
+
+Load Factor 75.000000% - Insert Metric: 12 ms
+Load Factor 75.000000% - Search Metric: 0 ms
+Load Factor 75.000000% - Remove Metric: 21 ms
+
+Load Factor 50.000000% - Insert Metric: 7 ms
+Load Factor 50.000000% - Search Metric: 0 ms
+Load Factor 50.000000% - Remove Metric: 6 ms
+
+Load Factor 25.000000% - Insert Metric: 4 ms
+Load Factor 25.000000% - Search Metric: 0 ms
+Load Factor 25.000000% - Remove Metric: 6 ms
+
+
+
+Level 2 cache misses
+Total Strings: 38736
+
+Insert All Metric: 232116 units
+Search Metric (Table is full): 97164 units
+Remove All Metric: 136191 units
+Search Metric (Table is Empty): 199242 units
+
+Load Factor 75.000000% - Insert Metric: 134260 units
+Load Factor 75.000000% - Search Metric: 836 units
+Load Factor 75.000000% - Remove Metric: 87334 units
+
+Load Factor 50.000000% - Insert Metric: 65214 units
+Load Factor 50.000000% - Search Metric: 821 units
+Load Factor 50.000000% - Remove Metric: 48877 units
+
+Load Factor 25.000000% - Insert Metric: 24325 units
+Load Factor 25.000000% - Search Metric: 727 units
+Load Factor 25.000000% - Remove Metric: 20687 units
+
+Total Strings: 38736
+
+Insert All Metric: 52 ms
+Search Metric (Table is full): 28 ms
+Remove All Metric: 36 ms
+Search Metric (Table is Empty): 27 ms
+
+Load Factor 75.000000% - Insert Metric: 12 ms
+Load Factor 75.000000% - Search Metric: 0 ms
+Load Factor 75.000000% - Remove Metric: 11 ms
+
+Load Factor 50.000000% - Insert Metric: 6 ms
+Load Factor 50.000000% - Search Metric: 0 ms
+Load Factor 50.000000% - Remove Metric: 6 ms
+
+Load Factor 25.000000% - Insert Metric: 2 ms
+Load Factor 25.000000% - Search Metric: 0 ms
+Load Factor 25.000000% - Remove Metric: 2 ms
+
+
+
+Level 3 cache misses
+Total Strings: 38736
+
+Insert All Metric: 14 units
+Search Metric (Table is full): 0 units
+Remove All Metric: 11 units
+Search Metric (Table is Empty): 14 units
+
+Load Factor 75.000000% - Insert Metric: 16 units
+Load Factor 75.000000% - Search Metric: 0 units
+Load Factor 75.000000% - Remove Metric: 1 units
+
+Load Factor 50.000000% - Insert Metric: 1 units
+Load Factor 50.000000% - Search Metric: 0 units
+Load Factor 50.000000% - Remove Metric: 0 units
+
+Load Factor 25.000000% - Insert Metric: 0 units
+Load Factor 25.000000% - Search Metric: 0 units
+Load Factor 25.000000% - Remove Metric: 0 units
+
+Total Strings: 38736
+
+Insert All Metric: 18 ms
+Search Metric (Table is full): 10 ms
+Remove All Metric: 16 ms
+Search Metric (Table is Empty): 28 ms
+
+Load Factor 75.000000% - Insert Metric: 12 ms
+Load Factor 75.000000% - Search Metric: 0 ms
+Load Factor 75.000000% - Remove Metric: 11 ms
+
+Load Factor 50.000000% - Insert Metric: 6 ms
+Load Factor 50.000000% - Search Metric: 0 ms
+Load Factor 50.000000% - Remove Metric: 6 ms
+
+Load Factor 25.000000% - Insert Metric: 2 ms
+Load Factor 25.000000% - Search Metric: 0 ms
+Load Factor 25.000000% - Remove Metric: 2 ms
+
+
+

@@ -1,0 +1,1501 @@
+{
+    "non_unique_strings": {
+        "Level 1 cache misses": {
+            "Total Strings": 2000000,
+            "Metrics": {
+                "Search Metric (Table is full)": 88135455,
+                "Search Metric (Table is Empty)": 18302980,
+                "Load Factor 2.000000%": {
+                    "Insert Metric": 164832,
+                    "Search Metric": 69124,
+                    "Remove Metric": 140390
+                },
+                "Load Factor 4.000000%": {
+                    "Insert Metric": 511112,
+                    "Search Metric": 69462,
+                    "Remove Metric": 312733
+                },
+                "Load Factor 6.000000%": {
+                    "Insert Metric": 1321068,
+                    "Search Metric": 69432,
+                    "Remove Metric": 549455
+                },
+                "Load Factor 8.000000%": {
+                    "Insert Metric": 2787666,
+                    "Search Metric": 69474,
+                    "Remove Metric": 863922
+                },
+                "Load Factor 10.000000%": {
+                    "Insert Metric": 4865524,
+                    "Search Metric": 69276,
+                    "Remove Metric": 1229346
+                },
+                "Load Factor 12.000000%": {
+                    "Insert Metric": 7342717,
+                    "Search Metric": 69256,
+                    "Remove Metric": 1628992
+                },
+                "Load Factor 14.000000%": {
+                    "Insert Metric": 10006696,
+                    "Search Metric": 69670,
+                    "Remove Metric": 2041910
+                },
+                "Load Factor 16.000000%": {
+                    "Insert Metric": 12717128,
+                    "Search Metric": 69332,
+                    "Remove Metric": 2455272
+                },
+                "Load Factor 18.000000%": {
+                    "Insert Metric": 15444086,
+                    "Search Metric": 69366,
+                    "Remove Metric": 2876121
+                },
+                "Load Factor 20.000000%": {
+                    "Insert Metric": 18172672,
+                    "Search Metric": 69310,
+                    "Remove Metric": 3296397
+                },
+                "Load Factor 22.000000%": {
+                    "Insert Metric": 20907782,
+                    "Search Metric": 69476,
+                    "Remove Metric": 3716487
+                },
+                "Load Factor 24.000000%": {
+                    "Insert Metric": 23632607,
+                    "Search Metric": 69549,
+                    "Remove Metric": 4142281
+                },
+                "Load Factor 26.000000%": {
+                    "Insert Metric": 26362456,
+                    "Search Metric": 69298,
+                    "Remove Metric": 4569200
+                },
+                "Load Factor 28.000000%": {
+                    "Insert Metric": 29097025,
+                    "Search Metric": 69430,
+                    "Remove Metric": 4994400
+                },
+                "Load Factor 30.000000%": {
+                    "Insert Metric": 31829845,
+                    "Search Metric": 69519,
+                    "Remove Metric": 5428963
+                },
+                "Load Factor 32.000000%": {
+                    "Insert Metric": 34564462,
+                    "Search Metric": 69578,
+                    "Remove Metric": 5865232
+                },
+                "Load Factor 34.000000%": {
+                    "Insert Metric": 37299338,
+                    "Search Metric": 69598,
+                    "Remove Metric": 6298749
+                },
+                "Load Factor 36.000000%": {
+                    "Insert Metric": 40032149,
+                    "Search Metric": 69651,
+                    "Remove Metric": 6736847
+                },
+                "Load Factor 38.000000%": {
+                    "Insert Metric": 42760217,
+                    "Search Metric": 69528,
+                    "Remove Metric": 7171151
+                },
+                "Load Factor 40.000000%": {
+                    "Insert Metric": 45492944,
+                    "Search Metric": 69581,
+                    "Remove Metric": 7612884
+                },
+                "Load Factor 42.000000%": {
+                    "Insert Metric": 48216343,
+                    "Search Metric": 69627,
+                    "Remove Metric": 8045924
+                },
+                "Load Factor 44.000000%": {
+                    "Insert Metric": 50948378,
+                    "Search Metric": 69747,
+                    "Remove Metric": 8483103
+                },
+                "Load Factor 46.000000%": {
+                    "Insert Metric": 53677874,
+                    "Search Metric": 69630,
+                    "Remove Metric": 8921733
+                },
+                "Load Factor 48.000000%": {
+                    "Insert Metric": 56404363,
+                    "Search Metric": 69817,
+                    "Remove Metric": 9361616
+                },
+                "Load Factor 50.000000%": {
+                    "Insert Metric": 59132575,
+                    "Search Metric": 69736,
+                    "Remove Metric": 9800974
+                },
+                "Load Factor 52.000000%": {
+                    "Insert Metric": 61862514,
+                    "Search Metric": 69827,
+                    "Remove Metric": 10237763
+                },
+                "Load Factor 54.000000%": {
+                    "Insert Metric": 64586601,
+                    "Search Metric": 69757,
+                    "Remove Metric": 10675523
+                },
+                "Load Factor 56.000000%": {
+                    "Insert Metric": 67316527,
+                    "Search Metric": 69643,
+                    "Remove Metric": 11117179
+                },
+                "Load Factor 58.000000%": {
+                    "Insert Metric": 70045007,
+                    "Search Metric": 69861,
+                    "Remove Metric": 11558773
+                },
+                "Load Factor 60.000000%": {
+                    "Insert Metric": 72776212,
+                    "Search Metric": 69919,
+                    "Remove Metric": 11993707
+                },
+                "Load Factor 62.000000%": {
+                    "Insert Metric": 75502767,
+                    "Search Metric": 69791,
+                    "Remove Metric": 12426950
+                },
+                "Load Factor 64.000000%": {
+                    "Insert Metric": 78227224,
+                    "Search Metric": 69844,
+                    "Remove Metric": 12867030
+                },
+                "Load Factor 66.000000%": {
+                    "Insert Metric": 80949416,
+                    "Search Metric": 69980,
+                    "Remove Metric": 13309049
+                },
+                "Load Factor 68.000000%": {
+                    "Insert Metric": 83680483,
+                    "Search Metric": 69884,
+                    "Remove Metric": 13747162
+                },
+                "Load Factor 70.000000%": {
+                    "Insert Metric": 86410443,
+                    "Search Metric": 69912,
+                    "Remove Metric": 14183943
+                },
+                "Load Factor 72.000000%": {
+                    "Insert Metric": 89131248,
+                    "Search Metric": 69938,
+                    "Remove Metric": 14618906
+                },
+                "Load Factor 74.000000%": {
+                    "Insert Metric": 91863219,
+                    "Search Metric": 69888,
+                    "Remove Metric": 15065544
+                },
+                "Load Factor 76.000000%": {
+                    "Insert Metric": 94584855,
+                    "Search Metric": 69820,
+                    "Remove Metric": 15504384
+                },
+                "Load Factor 78.000000%": {
+                    "Insert Metric": 97310199,
+                    "Search Metric": 69884,
+                    "Remove Metric": 15936954
+                },
+                "Load Factor 80.000000%": {
+                    "Insert Metric": 100035737,
+                    "Search Metric": 69993,
+                    "Remove Metric": 16374728
+                },
+                "Load Factor 82.000000%": {
+                    "Insert Metric": 102761702,
+                    "Search Metric": 70035,
+                    "Remove Metric": 16811209
+                },
+                "Load Factor 84.000000%": {
+                    "Insert Metric": 105489408,
+                    "Search Metric": 69842,
+                    "Remove Metric": 17249706
+                },
+                "Load Factor 86.000000%": {
+                    "Insert Metric": 108209597,
+                    "Search Metric": 69959,
+                    "Remove Metric": 17688351
+                },
+                "Load Factor 88.000000%": {
+                    "Insert Metric": 110940790,
+                    "Search Metric": 70063,
+                    "Remove Metric": 18120138
+                },
+                "Load Factor 90.000000%": {
+                    "Insert Metric": 113663587,
+                    "Search Metric": 69868,
+                    "Remove Metric": 18552939
+                },
+                "Load Factor 92.000000%": {
+                    "Insert Metric": 116389524,
+                    "Search Metric": 70011,
+                    "Remove Metric": 18995303
+                },
+                "Load Factor 94.000000%": {
+                    "Insert Metric": 119113668,
+                    "Search Metric": 70016,
+                    "Remove Metric": 19429801
+                },
+                "Load Factor 96.000000%": {
+                    "Insert Metric": 121837085,
+                    "Search Metric": 69975,
+                    "Remove Metric": 19864396
+                },
+                "Load Factor 98.000000%": {
+                    "Insert Metric": 124561796,
+                    "Search Metric": 69938,
+                    "Remove Metric": 20290911
+                }
+            },
+            "Timing": {
+                "Load Factor 2.000000%": {
+                    "Insert Metric": 8025,
+                    "Search Metric": 2857,
+                    "Remove Metric": 6239
+                },
+                "Load Factor 4.000000%": {
+                    "Insert Metric": 13886,
+                    "Search Metric": 2932,
+                    "Remove Metric": 12720
+                },
+                "Load Factor 6.000000%": {
+                    "Insert Metric": 20076,
+                    "Search Metric": 3148,
+                    "Remove Metric": 21433
+                },
+                "Load Factor 8.000000%": {
+                    "Insert Metric": 28952,
+                    "Search Metric": 3573,
+                    "Remove Metric": 31672
+                },
+                "Load Factor 10.000000%": {
+                    "Insert Metric": 39144,
+                    "Search Metric": 3733,
+                    "Remove Metric": 42684
+                },
+                "Load Factor 12.000000%": {
+                    "Insert Metric": 52033,
+                    "Search Metric": 3925,
+                    "Remove Metric": 53206
+                },
+                "Load Factor 14.000000%": {
+                    "Insert Metric": 63671,
+                    "Search Metric": 3945,
+                    "Remove Metric": 63919
+                },
+                "Load Factor 16.000000%": {
+                    "Insert Metric": 79216,
+                    "Search Metric": 3974,
+                    "Remove Metric": 75490
+                },
+                "Load Factor 18.000000%": {
+                    "Insert Metric": 101472,
+                    "Search Metric": 3962,
+                    "Remove Metric": 88431
+                },
+                "Load Factor 20.000000%": {
+                    "Insert Metric": 137773,
+                    "Search Metric": 3939,
+                    "Remove Metric": 103942
+                },
+                "Load Factor 22.000000%": {
+                    "Insert Metric": 202370,
+                    "Search Metric": 4042,
+                    "Remove Metric": 124330
+                },
+                "Load Factor 24.000000%": {
+                    "Insert Metric": 307765,
+                    "Search Metric": 3936,
+                    "Remove Metric": 149673
+                },
+                "Load Factor 26.000000%": {
+                    "Insert Metric": 464097,
+                    "Search Metric": 3961,
+                    "Remove Metric": 178815
+                },
+                "Load Factor 28.000000%": {
+                    "Insert Metric": 661118,
+                    "Search Metric": 3952,
+                    "Remove Metric": 215222
+                },
+                "Load Factor 30.000000%": {
+                    "Insert Metric": 881615,
+                    "Search Metric": 4115,
+                    "Remove Metric": 254507
+                },
+                "Load Factor 32.000000%": {
+                    "Insert Metric": 1096159,
+                    "Search Metric": 3967,
+                    "Remove Metric": 293138
+                },
+                "Load Factor 34.000000%": {
+                    "Insert Metric": 1286434,
+                    "Search Metric": 3929,
+                    "Remove Metric": 333996
+                },
+                "Load Factor 36.000000%": {
+                    "Insert Metric": 1450494,
+                    "Search Metric": 3907,
+                    "Remove Metric": 373712
+                },
+                "Load Factor 38.000000%": {
+                    "Insert Metric": 1594574,
+                    "Search Metric": 3913,
+                    "Remove Metric": 412718
+                },
+                "Load Factor 40.000000%": {
+                    "Insert Metric": 1724711,
+                    "Search Metric": 3918,
+                    "Remove Metric": 450682
+                },
+                "Load Factor 42.000000%": {
+                    "Insert Metric": 1853089,
+                    "Search Metric": 3937,
+                    "Remove Metric": 485818
+                },
+                "Load Factor 44.000000%": {
+                    "Insert Metric": 1975532,
+                    "Search Metric": 3916,
+                    "Remove Metric": 524745
+                },
+                "Load Factor 46.000000%": {
+                    "Insert Metric": 2089002,
+                    "Search Metric": 3935,
+                    "Remove Metric": 559503
+                },
+                "Load Factor 48.000000%": {
+                    "Insert Metric": 2205557,
+                    "Search Metric": 3922,
+                    "Remove Metric": 596057
+                },
+                "Load Factor 50.000000%": {
+                    "Insert Metric": 2319545,
+                    "Search Metric": 3928,
+                    "Remove Metric": 635998
+                },
+                "Load Factor 52.000000%": {
+                    "Insert Metric": 2435379,
+                    "Search Metric": 3927,
+                    "Remove Metric": 668570
+                },
+                "Load Factor 54.000000%": {
+                    "Insert Metric": 2547898,
+                    "Search Metric": 3929,
+                    "Remove Metric": 703346
+                },
+                "Load Factor 56.000000%": {
+                    "Insert Metric": 2920380,
+                    "Search Metric": 9240,
+                    "Remove Metric": 783692
+                },
+                "Load Factor 58.000000%": {
+                    "Insert Metric": 2775057,
+                    "Search Metric": 3932,
+                    "Remove Metric": 775784
+                },
+                "Load Factor 60.000000%": {
+                    "Insert Metric": 2887292,
+                    "Search Metric": 3961,
+                    "Remove Metric": 807680
+                },
+                "Load Factor 62.000000%": {
+                    "Insert Metric": 3001012,
+                    "Search Metric": 3919,
+                    "Remove Metric": 844497
+                },
+                "Load Factor 64.000000%": {
+                    "Insert Metric": 3112993,
+                    "Search Metric": 3925,
+                    "Remove Metric": 879634
+                },
+                "Load Factor 66.000000%": {
+                    "Insert Metric": 3222975,
+                    "Search Metric": 3927,
+                    "Remove Metric": 910597
+                },
+                "Load Factor 68.000000%": {
+                    "Insert Metric": 3337984,
+                    "Search Metric": 3943,
+                    "Remove Metric": 947234
+                },
+                "Load Factor 70.000000%": {
+                    "Insert Metric": 3445679,
+                    "Search Metric": 3933,
+                    "Remove Metric": 983324
+                },
+                "Load Factor 72.000000%": {
+                    "Insert Metric": 3558556,
+                    "Search Metric": 3939,
+                    "Remove Metric": 1015393
+                },
+                "Load Factor 74.000000%": {
+                    "Insert Metric": 3666767,
+                    "Search Metric": 3926,
+                    "Remove Metric": 1048045
+                },
+                "Load Factor 76.000000%": {
+                    "Insert Metric": 3778496,
+                    "Search Metric": 3931,
+                    "Remove Metric": 1387381
+                },
+                "Load Factor 78.000000%": {
+                    "Insert Metric": 3895051,
+                    "Search Metric": 3938,
+                    "Remove Metric": 1122623
+                },
+                "Load Factor 80.000000%": {
+                    "Insert Metric": 4005769,
+                    "Search Metric": 3968,
+                    "Remove Metric": 1157477
+                },
+                "Load Factor 82.000000%": {
+                    "Insert Metric": 4113182,
+                    "Search Metric": 3975,
+                    "Remove Metric": 1188178
+                },
+                "Load Factor 84.000000%": {
+                    "Insert Metric": 4230510,
+                    "Search Metric": 3956,
+                    "Remove Metric": 1222547
+                },
+                "Load Factor 86.000000%": {
+                    "Insert Metric": 4338556,
+                    "Search Metric": 3941,
+                    "Remove Metric": 1258445
+                },
+                "Load Factor 88.000000%": {
+                    "Insert Metric": 4448748,
+                    "Search Metric": 3926,
+                    "Remove Metric": 1294074
+                },
+                "Load Factor 90.000000%": {
+                    "Insert Metric": 4560063,
+                    "Search Metric": 3976,
+                    "Remove Metric": 1332980
+                },
+                "Load Factor 92.000000%": {
+                    "Insert Metric": 4677672,
+                    "Search Metric": 3962,
+                    "Remove Metric": 1370882
+                },
+                "Load Factor 94.000000%": {
+                    "Insert Metric": 4789185,
+                    "Search Metric": 4083,
+                    "Remove Metric": 1405188
+                },
+                "Load Factor 96.000000%": {
+                    "Insert Metric": 4900091,
+                    "Search Metric": 3947,
+                    "Remove Metric": 1442363
+                },
+                "Load Factor 98.000000%": {
+                    "Insert Metric": 5010146,
+                    "Search Metric": 3978,
+                    "Remove Metric": 1484142
+                }
+            }
+        },
+        "Level 2 cache misses": {
+            "Total Strings": 2000000,
+            "Metrics": {
+                "Search Metric (Table is full)": 12326642,
+                "Search Metric (Table is Empty)": 15219873,
+                "Load Factor 2.000000%": {
+                    "Insert Metric": 126689,
+                    "Search Metric": 57106,
+                    "Remove Metric": 116297
+                },
+                "Load Factor 4.000000%": {
+                    "Insert Metric": 315102,
+                    "Search Metric": 57592,
+                    "Remove Metric": 254827
+                },
+                "Load Factor 6.000000%": {
+                    "Insert Metric": 579400,
+                    "Search Metric": 57835,
+                    "Remove Metric": 441952
+                },
+                "Load Factor 8.000000%": {
+                    "Insert Metric": 833001,
+                    "Search Metric": 57317,
+                    "Remove Metric": 687788
+                },
+                "Load Factor 10.000000%": {
+                    "Insert Metric": 1066121,
+                    "Search Metric": 58054,
+                    "Remove Metric": 981256
+                },
+                "Load Factor 12.000000%": {
+                    "Insert Metric": 1364625,
+                    "Search Metric": 57423,
+                    "Remove Metric": 1298838
+                },
+                "Load Factor 14.000000%": {
+                    "Insert Metric": 1675010,
+                    "Search Metric": 57349,
+                    "Remove Metric": 1629149
+                },
+                "Load Factor 16.000000%": {
+                    "Insert Metric": 1976973,
+                    "Search Metric": 57353,
+                    "Remove Metric": 1963052
+                },
+                "Load Factor 18.000000%": {
+                    "Insert Metric": 2313772,
+                    "Search Metric": 57467,
+                    "Remove Metric": 2297057
+                },
+                "Load Factor 20.000000%": {
+                    "Insert Metric": 2631986,
+                    "Search Metric": 57431,
+                    "Remove Metric": 2633302
+                },
+                "Load Factor 22.000000%": {
+                    "Insert Metric": 2954207,
+                    "Search Metric": 57618,
+                    "Remove Metric": 2969215
+                },
+                "Load Factor 24.000000%": {
+                    "Insert Metric": 3260680,
+                    "Search Metric": 57439,
+                    "Remove Metric": 3309007
+                },
+                "Load Factor 26.000000%": {
+                    "Insert Metric": 3576860,
+                    "Search Metric": 57299,
+                    "Remove Metric": 3645491
+                },
+                "Load Factor 28.000000%": {
+                    "Insert Metric": 3899079,
+                    "Search Metric": 57571,
+                    "Remove Metric": 3983948
+                },
+                "Load Factor 30.000000%": {
+                    "Insert Metric": 4220317,
+                    "Search Metric": 57332,
+                    "Remove Metric": 4322471
+                },
+                "Load Factor 32.000000%": {
+                    "Insert Metric": 4535770,
+                    "Search Metric": 57274,
+                    "Remove Metric": 4663793
+                },
+                "Load Factor 34.000000%": {
+                    "Insert Metric": 4847386,
+                    "Search Metric": 57378,
+                    "Remove Metric": 5005790
+                },
+                "Load Factor 36.000000%": {
+                    "Insert Metric": 5137230,
+                    "Search Metric": 57502,
+                    "Remove Metric": 5341315
+                },
+                "Load Factor 38.000000%": {
+                    "Insert Metric": 5449235,
+                    "Search Metric": 57564,
+                    "Remove Metric": 5686307
+                },
+                "Load Factor 40.000000%": {
+                    "Insert Metric": 5795041,
+                    "Search Metric": 57950,
+                    "Remove Metric": 6017285
+                },
+                "Load Factor 42.000000%": {
+                    "Insert Metric": 6119384,
+                    "Search Metric": 57398,
+                    "Remove Metric": 6369564
+                },
+                "Load Factor 44.000000%": {
+                    "Insert Metric": 6355710,
+                    "Search Metric": 57509,
+                    "Remove Metric": 6708263
+                },
+                "Load Factor 46.000000%": {
+                    "Insert Metric": 6716748,
+                    "Search Metric": 57516,
+                    "Remove Metric": 7047117
+                },
+                "Load Factor 48.000000%": {
+                    "Insert Metric": 7034321,
+                    "Search Metric": 57484,
+                    "Remove Metric": 7364083
+                },
+                "Load Factor 50.000000%": {
+                    "Insert Metric": 7351625,
+                    "Search Metric": 57502,
+                    "Remove Metric": 7731568
+                },
+                "Load Factor 52.000000%": {
+                    "Insert Metric": 7676998,
+                    "Search Metric": 57680,
+                    "Remove Metric": 8070556
+                },
+                "Load Factor 54.000000%": {
+                    "Insert Metric": 7924229,
+                    "Search Metric": 57473,
+                    "Remove Metric": 8409635
+                },
+                "Load Factor 56.000000%": {
+                    "Insert Metric": 8306553,
+                    "Search Metric": 57441,
+                    "Remove Metric": 8755949
+                },
+                "Load Factor 58.000000%": {
+                    "Insert Metric": 8609799,
+                    "Search Metric": 57476,
+                    "Remove Metric": 9096511
+                },
+                "Load Factor 60.000000%": {
+                    "Insert Metric": 8919117,
+                    "Search Metric": 57561,
+                    "Remove Metric": 9436166
+                },
+                "Load Factor 62.000000%": {
+                    "Insert Metric": 9233553,
+                    "Search Metric": 57529,
+                    "Remove Metric": 9771838
+                },
+                "Load Factor 64.000000%": {
+                    "Insert Metric": 9554688,
+                    "Search Metric": 57719,
+                    "Remove Metric": 10114634
+                },
+                "Load Factor 66.000000%": {
+                    "Insert Metric": 9871047,
+                    "Search Metric": 57571,
+                    "Remove Metric": 10456215
+                },
+                "Load Factor 68.000000%": {
+                    "Insert Metric": 10187853,
+                    "Search Metric": 57684,
+                    "Remove Metric": 10799694
+                },
+                "Load Factor 70.000000%": {
+                    "Insert Metric": 10500060,
+                    "Search Metric": 57754,
+                    "Remove Metric": 11118505
+                },
+                "Load Factor 72.000000%": {
+                    "Insert Metric": 10816809,
+                    "Search Metric": 57738,
+                    "Remove Metric": 11478880
+                },
+                "Load Factor 74.000000%": {
+                    "Insert Metric": 11137403,
+                    "Search Metric": 57536,
+                    "Remove Metric": 11822913
+                },
+                "Load Factor 76.000000%": {
+                    "Insert Metric": 11446536,
+                    "Search Metric": 57615,
+                    "Remove Metric": 12163041
+                },
+                "Load Factor 78.000000%": {
+                    "Insert Metric": 11770887,
+                    "Search Metric": 57591,
+                    "Remove Metric": 12502364
+                },
+                "Load Factor 80.000000%": {
+                    "Insert Metric": 12013226,
+                    "Search Metric": 57580,
+                    "Remove Metric": 12845516
+                },
+                "Load Factor 82.000000%": {
+                    "Insert Metric": 12392822,
+                    "Search Metric": 57726,
+                    "Remove Metric": 13171252
+                },
+                "Load Factor 84.000000%": {
+                    "Insert Metric": 12714200,
+                    "Search Metric": 57560,
+                    "Remove Metric": 13528206
+                },
+                "Load Factor 86.000000%": {
+                    "Insert Metric": 13019819,
+                    "Search Metric": 57540,
+                    "Remove Metric": 13946146
+                },
+                "Load Factor 88.000000%": {
+                    "Insert Metric": 13886590,
+                    "Search Metric": 57793,
+                    "Remove Metric": 14345703
+                },
+                "Load Factor 90.000000%": {
+                    "Insert Metric": 14371318,
+                    "Search Metric": 57651,
+                    "Remove Metric": 14742339
+                },
+                "Load Factor 92.000000%": {
+                    "Insert Metric": 14819253,
+                    "Search Metric": 57944,
+                    "Remove Metric": 15092745
+                },
+                "Load Factor 94.000000%": {
+                    "Insert Metric": 15194696,
+                    "Search Metric": 57866,
+                    "Remove Metric": 15438082
+                },
+                "Load Factor 96.000000%": {
+                    "Insert Metric": 15509217,
+                    "Search Metric": 57761,
+                    "Remove Metric": 15793185
+                },
+                "Load Factor 98.000000%": {
+                    "Insert Metric": 15870330,
+                    "Search Metric": 57634,
+                    "Remove Metric": 16133847
+                }
+            },
+            "Timing": {
+                "Load Factor 2.000000%": {
+                    "Insert Metric": 8035,
+                    "Search Metric": 2862,
+                    "Remove Metric": 6246
+                },
+                "Load Factor 4.000000%": {
+                    "Insert Metric": 13828,
+                    "Search Metric": 3012,
+                    "Remove Metric": 13444
+                },
+                "Load Factor 6.000000%": {
+                    "Insert Metric": 20663,
+                    "Search Metric": 3263,
+                    "Remove Metric": 21957
+                },
+                "Load Factor 8.000000%": {
+                    "Insert Metric": 28839,
+                    "Search Metric": 3441,
+                    "Remove Metric": 31499
+                },
+                "Load Factor 10.000000%": {
+                    "Insert Metric": 38492,
+                    "Search Metric": 3710,
+                    "Remove Metric": 41633
+                },
+                "Load Factor 12.000000%": {
+                    "Insert Metric": 49891,
+                    "Search Metric": 3846,
+                    "Remove Metric": 52271
+                },
+                "Load Factor 14.000000%": {
+                    "Insert Metric": 62860,
+                    "Search Metric": 3895,
+                    "Remove Metric": 62892
+                },
+                "Load Factor 16.000000%": {
+                    "Insert Metric": 79565,
+                    "Search Metric": 3940,
+                    "Remove Metric": 75081
+                },
+                "Load Factor 18.000000%": {
+                    "Insert Metric": 100928,
+                    "Search Metric": 3938,
+                    "Remove Metric": 88420
+                },
+                "Load Factor 20.000000%": {
+                    "Insert Metric": 138828,
+                    "Search Metric": 4002,
+                    "Remove Metric": 104378
+                },
+                "Load Factor 22.000000%": {
+                    "Insert Metric": 202613,
+                    "Search Metric": 3947,
+                    "Remove Metric": 123766
+                },
+                "Load Factor 24.000000%": {
+                    "Insert Metric": 309139,
+                    "Search Metric": 3948,
+                    "Remove Metric": 149451
+                },
+                "Load Factor 26.000000%": {
+                    "Insert Metric": 463767,
+                    "Search Metric": 3921,
+                    "Remove Metric": 179322
+                },
+                "Load Factor 28.000000%": {
+                    "Insert Metric": 664287,
+                    "Search Metric": 3922,
+                    "Remove Metric": 214613
+                },
+                "Load Factor 30.000000%": {
+                    "Insert Metric": 885361,
+                    "Search Metric": 3954,
+                    "Remove Metric": 253689
+                },
+                "Load Factor 32.000000%": {
+                    "Insert Metric": 1100125,
+                    "Search Metric": 3899,
+                    "Remove Metric": 293903
+                },
+                "Load Factor 34.000000%": {
+                    "Insert Metric": 1288999,
+                    "Search Metric": 3917,
+                    "Remove Metric": 333824
+                },
+                "Load Factor 36.000000%": {
+                    "Insert Metric": 1455180,
+                    "Search Metric": 3950,
+                    "Remove Metric": 375514
+                },
+                "Load Factor 38.000000%": {
+                    "Insert Metric": 1598343,
+                    "Search Metric": 3944,
+                    "Remove Metric": 412775
+                },
+                "Load Factor 40.000000%": {
+                    "Insert Metric": 1729084,
+                    "Search Metric": 3956,
+                    "Remove Metric": 451392
+                },
+                "Load Factor 42.000000%": {
+                    "Insert Metric": 1853884,
+                    "Search Metric": 3934,
+                    "Remove Metric": 488455
+                },
+                "Load Factor 44.000000%": {
+                    "Insert Metric": 1973414,
+                    "Search Metric": 3978,
+                    "Remove Metric": 527328
+                },
+                "Load Factor 46.000000%": {
+                    "Insert Metric": 2092914,
+                    "Search Metric": 3926,
+                    "Remove Metric": 561590
+                },
+                "Load Factor 48.000000%": {
+                    "Insert Metric": 2210109,
+                    "Search Metric": 3962,
+                    "Remove Metric": 599215
+                },
+                "Load Factor 50.000000%": {
+                    "Insert Metric": 2327404,
+                    "Search Metric": 3944,
+                    "Remove Metric": 633159
+                },
+                "Load Factor 52.000000%": {
+                    "Insert Metric": 2440830,
+                    "Search Metric": 3930,
+                    "Remove Metric": 670860
+                },
+                "Load Factor 54.000000%": {
+                    "Insert Metric": 2554797,
+                    "Search Metric": 3968,
+                    "Remove Metric": 707698
+                },
+                "Load Factor 56.000000%": {
+                    "Insert Metric": 2668255,
+                    "Search Metric": 4181,
+                    "Remove Metric": 742635
+                },
+                "Load Factor 58.000000%": {
+                    "Insert Metric": 2785734,
+                    "Search Metric": 3955,
+                    "Remove Metric": 779374
+                },
+                "Load Factor 60.000000%": {
+                    "Insert Metric": 2896421,
+                    "Search Metric": 3960,
+                    "Remove Metric": 813150
+                },
+                "Load Factor 62.000000%": {
+                    "Insert Metric": 3005703,
+                    "Search Metric": 3964,
+                    "Remove Metric": 846697
+                },
+                "Load Factor 64.000000%": {
+                    "Insert Metric": 3119232,
+                    "Search Metric": 4092,
+                    "Remove Metric": 882319
+                },
+                "Load Factor 66.000000%": {
+                    "Insert Metric": 3229795,
+                    "Search Metric": 3988,
+                    "Remove Metric": 915503
+                },
+                "Load Factor 68.000000%": {
+                    "Insert Metric": 3342319,
+                    "Search Metric": 4042,
+                    "Remove Metric": 954487
+                },
+                "Load Factor 70.000000%": {
+                    "Insert Metric": 3460986,
+                    "Search Metric": 3971,
+                    "Remove Metric": 984114
+                },
+                "Load Factor 72.000000%": {
+                    "Insert Metric": 3569589,
+                    "Search Metric": 4006,
+                    "Remove Metric": 1022505
+                },
+                "Load Factor 74.000000%": {
+                    "Insert Metric": 3674816,
+                    "Search Metric": 3969,
+                    "Remove Metric": 1053423
+                },
+                "Load Factor 76.000000%": {
+                    "Insert Metric": 3787893,
+                    "Search Metric": 4003,
+                    "Remove Metric": 1087772
+                },
+                "Load Factor 78.000000%": {
+                    "Insert Metric": 3898070,
+                    "Search Metric": 3960,
+                    "Remove Metric": 1122110
+                },
+                "Load Factor 80.000000%": {
+                    "Insert Metric": 4014342,
+                    "Search Metric": 3997,
+                    "Remove Metric": 1157527
+                },
+                "Load Factor 82.000000%": {
+                    "Insert Metric": 4124134,
+                    "Search Metric": 3988,
+                    "Remove Metric": 1193765
+                },
+                "Load Factor 84.000000%": {
+                    "Insert Metric": 4237021,
+                    "Search Metric": 3974,
+                    "Remove Metric": 1229646
+                },
+                "Load Factor 86.000000%": {
+                    "Insert Metric": 4351396,
+                    "Search Metric": 4002,
+                    "Remove Metric": 1263140
+                },
+                "Load Factor 88.000000%": {
+                    "Insert Metric": 4459589,
+                    "Search Metric": 3971,
+                    "Remove Metric": 1301348
+                },
+                "Load Factor 90.000000%": {
+                    "Insert Metric": 4575953,
+                    "Search Metric": 3974,
+                    "Remove Metric": 1335301
+                },
+                "Load Factor 92.000000%": {
+                    "Insert Metric": 4755370,
+                    "Search Metric": 3958,
+                    "Remove Metric": 1373319
+                },
+                "Load Factor 94.000000%": {
+                    "Insert Metric": 5193950,
+                    "Search Metric": 4003,
+                    "Remove Metric": 1447726
+                },
+                "Load Factor 96.000000%": {
+                    "Insert Metric": 4920707,
+                    "Search Metric": 3998,
+                    "Remove Metric": 1500256
+                },
+                "Load Factor 98.000000%": {
+                    "Insert Metric": 5330868,
+                    "Search Metric": 3954,
+                    "Remove Metric": 1758097
+                }
+            }
+        },
+        "Level 3 cache misses": {
+            "Total Strings": 2000000,
+            "Metrics": {
+                "Search Metric (Table is full)": 75617887,
+                "Search Metric (Table is Empty)": 3018225,
+                "Load Factor 2.000000%": {
+                    "Insert Metric": 37837,
+                    "Search Metric": 12055,
+                    "Remove Metric": 24205
+                },
+                "Load Factor 4.000000%": {
+                    "Insert Metric": 194113,
+                    "Search Metric": 12137,
+                    "Remove Metric": 57285
+                },
+                "Load Factor 6.000000%": {
+                    "Insert Metric": 728301,
+                    "Search Metric": 11979,
+                    "Remove Metric": 106829
+                },
+                "Load Factor 8.000000%": {
+                    "Insert Metric": 1917898,
+                    "Search Metric": 11829,
+                    "Remove Metric": 173714
+                },
+                "Load Factor 10.000000%": {
+                    "Insert Metric": 3731998,
+                    "Search Metric": 11943,
+                    "Remove Metric": 246602
+                },
+                "Load Factor 12.000000%": {
+                    "Insert Metric": 5901610,
+                    "Search Metric": 11901,
+                    "Remove Metric": 325332
+                },
+                "Load Factor 14.000000%": {
+                    "Insert Metric": 8237411,
+                    "Search Metric": 11969,
+                    "Remove Metric": 405871
+                },
+                "Load Factor 16.000000%": {
+                    "Insert Metric": 10622673,
+                    "Search Metric": 11981,
+                    "Remove Metric": 486367
+                },
+                "Load Factor 18.000000%": {
+                    "Insert Metric": 13013331,
+                    "Search Metric": 11906,
+                    "Remove Metric": 568648
+                },
+                "Load Factor 20.000000%": {
+                    "Insert Metric": 15402662,
+                    "Search Metric": 12022,
+                    "Remove Metric": 651146
+                },
+                "Load Factor 22.000000%": {
+                    "Insert Metric": 17799932,
+                    "Search Metric": 11985,
+                    "Remove Metric": 735026
+                },
+                "Load Factor 24.000000%": {
+                    "Insert Metric": 20199833,
+                    "Search Metric": 12004,
+                    "Remove Metric": 820832
+                },
+                "Load Factor 26.000000%": {
+                    "Insert Metric": 22598321,
+                    "Search Metric": 11915,
+                    "Remove Metric": 908973
+                },
+                "Load Factor 28.000000%": {
+                    "Insert Metric": 25001459,
+                    "Search Metric": 11871,
+                    "Remove Metric": 996354
+                },
+                "Load Factor 30.000000%": {
+                    "Insert Metric": 27401057,
+                    "Search Metric": 12021,
+                    "Remove Metric": 1087446
+                },
+                "Load Factor 32.000000%": {
+                    "Insert Metric": 29796991,
+                    "Search Metric": 12090,
+                    "Remove Metric": 1180831
+                },
+                "Load Factor 34.000000%": {
+                    "Insert Metric": 32201563,
+                    "Search Metric": 12041,
+                    "Remove Metric": 1272261
+                },
+                "Load Factor 36.000000%": {
+                    "Insert Metric": 34602558,
+                    "Search Metric": 11978,
+                    "Remove Metric": 1370102
+                },
+                "Load Factor 38.000000%": {
+                    "Insert Metric": 36998597,
+                    "Search Metric": 11940,
+                    "Remove Metric": 1461440
+                },
+                "Load Factor 40.000000%": {
+                    "Insert Metric": 39398331,
+                    "Search Metric": 11955,
+                    "Remove Metric": 1556877
+                },
+                "Load Factor 42.000000%": {
+                    "Insert Metric": 41789345,
+                    "Search Metric": 11954,
+                    "Remove Metric": 1650588
+                },
+                "Load Factor 44.000000%": {
+                    "Insert Metric": 44186199,
+                    "Search Metric": 12035,
+                    "Remove Metric": 1745004
+                },
+                "Load Factor 46.000000%": {
+                    "Insert Metric": 46583755,
+                    "Search Metric": 12008,
+                    "Remove Metric": 1841591
+                },
+                "Load Factor 48.000000%": {
+                    "Insert Metric": 48979768,
+                    "Search Metric": 12137,
+                    "Remove Metric": 1938891
+                },
+                "Load Factor 50.000000%": {
+                    "Insert Metric": 51381867,
+                    "Search Metric": 12014,
+                    "Remove Metric": 2036230
+                },
+                "Load Factor 52.000000%": {
+                    "Insert Metric": 53774010,
+                    "Search Metric": 12295,
+                    "Remove Metric": 2129937
+                },
+                "Load Factor 54.000000%": {
+                    "Insert Metric": 56163767,
+                    "Search Metric": 12112,
+                    "Remove Metric": 2226906
+                },
+                "Load Factor 56.000000%": {
+                    "Insert Metric": 58564587,
+                    "Search Metric": 12104,
+                    "Remove Metric": 2322549
+                },
+                "Load Factor 58.000000%": {
+                    "Insert Metric": 60952220,
+                    "Search Metric": 12169,
+                    "Remove Metric": 2419323
+                },
+                "Load Factor 60.000000%": {
+                    "Insert Metric": 63351996,
+                    "Search Metric": 12281,
+                    "Remove Metric": 2513765
+                },
+                "Load Factor 62.000000%": {
+                    "Insert Metric": 65748713,
+                    "Search Metric": 12052,
+                    "Remove Metric": 2609265
+                },
+                "Load Factor 64.000000%": {
+                    "Insert Metric": 68140080,
+                    "Search Metric": 12058,
+                    "Remove Metric": 2704730
+                },
+                "Load Factor 66.000000%": {
+                    "Insert Metric": 70542998,
+                    "Search Metric": 12063,
+                    "Remove Metric": 2800189
+                },
+                "Load Factor 68.000000%": {
+                    "Insert Metric": 72934187,
+                    "Search Metric": 12288,
+                    "Remove Metric": 2897042
+                },
+                "Load Factor 70.000000%": {
+                    "Insert Metric": 75326068,
+                    "Search Metric": 12386,
+                    "Remove Metric": 2991139
+                },
+                "Load Factor 72.000000%": {
+                    "Insert Metric": 77713613,
+                    "Search Metric": 12285,
+                    "Remove Metric": 3089006
+                },
+                "Load Factor 74.000000%": {
+                    "Insert Metric": 80112536,
+                    "Search Metric": 12232,
+                    "Remove Metric": 3186188
+                },
+                "Load Factor 76.000000%": {
+                    "Insert Metric": 82505291,
+                    "Search Metric": 12257,
+                    "Remove Metric": 3280248
+                },
+                "Load Factor 78.000000%": {
+                    "Insert Metric": 84899404,
+                    "Search Metric": 12190,
+                    "Remove Metric": 3374969
+                },
+                "Load Factor 80.000000%": {
+                    "Insert Metric": 87285897,
+                    "Search Metric": 12401,
+                    "Remove Metric": 3469456
+                },
+                "Load Factor 82.000000%": {
+                    "Insert Metric": 89678840,
+                    "Search Metric": 12316,
+                    "Remove Metric": 3562978
+                },
+                "Load Factor 84.000000%": {
+                    "Insert Metric": 92077875,
+                    "Search Metric": 12220,
+                    "Remove Metric": 3656936
+                },
+                "Load Factor 86.000000%": {
+                    "Insert Metric": 94466867,
+                    "Search Metric": 12292,
+                    "Remove Metric": 3752428
+                },
+                "Load Factor 88.000000%": {
+                    "Insert Metric": 96870736,
+                    "Search Metric": 12420,
+                    "Remove Metric": 3845253
+                },
+                "Load Factor 90.000000%": {
+                    "Insert Metric": 99264428,
+                    "Search Metric": 12245,
+                    "Remove Metric": 3937360
+                },
+                "Load Factor 92.000000%": {
+                    "Insert Metric": 101647874,
+                    "Search Metric": 12224,
+                    "Remove Metric": 4035112
+                },
+                "Load Factor 94.000000%": {
+                    "Insert Metric": 104041338,
+                    "Search Metric": 12140,
+                    "Remove Metric": 4129601
+                },
+                "Load Factor 96.000000%": {
+                    "Insert Metric": 106435978,
+                    "Search Metric": 12303,
+                    "Remove Metric": 4222929
+                },
+                "Load Factor 98.000000%": {
+                    "Insert Metric": 108824557,
+                    "Search Metric": 12244,
+                    "Remove Metric": 4314424
+                }
+            },
+            "Timing": {
+                "Load Factor 2.000000%": {
+                    "Insert Metric": 8438,
+                    "Search Metric": 3169,
+                    "Remove Metric": 7048
+                },
+                "Load Factor 4.000000%": {
+                    "Insert Metric": 14914,
+                    "Search Metric": 3987,
+                    "Remove Metric": 17022
+                },
+                "Load Factor 6.000000%": {
+                    "Insert Metric": 25220,
+                    "Search Metric": 4153,
+                    "Remove Metric": 26970
+                },
+                "Load Factor 8.000000%": {
+                    "Insert Metric": 35037,
+                    "Search Metric": 4186,
+                    "Remove Metric": 36645
+                },
+                "Load Factor 10.000000%": {
+                    "Insert Metric": 44892,
+                    "Search Metric": 4171,
+                    "Remove Metric": 46164
+                },
+                "Load Factor 12.000000%": {
+                    "Insert Metric": 55585,
+                    "Search Metric": 4165,
+                    "Remove Metric": 56392
+                },
+                "Load Factor 14.000000%": {
+                    "Insert Metric": 68265,
+                    "Search Metric": 4196,
+                    "Remove Metric": 67637
+                },
+                "Load Factor 16.000000%": {
+                    "Insert Metric": 84216,
+                    "Search Metric": 4180,
+                    "Remove Metric": 79484
+                },
+                "Load Factor 18.000000%": {
+                    "Insert Metric": 106890,
+                    "Search Metric": 4147,
+                    "Remove Metric": 92736
+                },
+                "Load Factor 20.000000%": {
+                    "Insert Metric": 144081,
+                    "Search Metric": 4127,
+                    "Remove Metric": 109567
+                },
+                "Load Factor 22.000000%": {
+                    "Insert Metric": 210253,
+                    "Search Metric": 4112,
+                    "Remove Metric": 130189
+                },
+                "Load Factor 24.000000%": {
+                    "Insert Metric": 317107,
+                    "Search Metric": 4122,
+                    "Remove Metric": 155722
+                },
+                "Load Factor 26.000000%": {
+                    "Insert Metric": 472019,
+                    "Search Metric": 4130,
+                    "Remove Metric": 188359
+                },
+                "Load Factor 28.000000%": {
+                    "Insert Metric": 671705,
+                    "Search Metric": 4154,
+                    "Remove Metric": 225004
+                },
+                "Load Factor 30.000000%": {
+                    "Insert Metric": 894048,
+                    "Search Metric": 4107,
+                    "Remove Metric": 264890
+                },
+                "Load Factor 32.000000%": {
+                    "Insert Metric": 1109598,
+                    "Search Metric": 4091,
+                    "Remove Metric": 305633
+                },
+                "Load Factor 34.000000%": {
+                    "Insert Metric": 1301438,
+                    "Search Metric": 4101,
+                    "Remove Metric": 348259
+                },
+                "Load Factor 36.000000%": {
+                    "Insert Metric": 1465871,
+                    "Search Metric": 4118,
+                    "Remove Metric": 388840
+                },
+                "Load Factor 38.000000%": {
+                    "Insert Metric": 1610783,
+                    "Search Metric": 4112,
+                    "Remove Metric": 428680
+                },
+                "Load Factor 40.000000%": {
+                    "Insert Metric": 1743767,
+                    "Search Metric": 4100,
+                    "Remove Metric": 467244
+                },
+                "Load Factor 42.000000%": {
+                    "Insert Metric": 1869790,
+                    "Search Metric": 4188,
+                    "Remove Metric": 511430
+                },
+                "Load Factor 44.000000%": {
+                    "Insert Metric": 1988892,
+                    "Search Metric": 4112,
+                    "Remove Metric": 543941
+                },
+                "Load Factor 46.000000%": {
+                    "Insert Metric": 2107561,
+                    "Search Metric": 4208,
+                    "Remove Metric": 583381
+                },
+                "Load Factor 48.000000%": {
+                    "Insert Metric": 2228210,
+                    "Search Metric": 4144,
+                    "Remove Metric": 617868
+                },
+                "Load Factor 50.000000%": {
+                    "Insert Metric": 2341631,
+                    "Search Metric": 4153,
+                    "Remove Metric": 655592
+                },
+                "Load Factor 52.000000%": {
+                    "Insert Metric": 2461993,
+                    "Search Metric": 4110,
+                    "Remove Metric": 692675
+                },
+                "Load Factor 54.000000%": {
+                    "Insert Metric": 2573460,
+                    "Search Metric": 4129,
+                    "Remove Metric": 731091
+                },
+                "Load Factor 56.000000%": {
+                    "Insert Metric": 2686372,
+                    "Search Metric": 4373,
+                    "Remove Metric": 766094
+                },
+                "Load Factor 58.000000%": {
+                    "Insert Metric": 2802968,
+                    "Search Metric": 4135,
+                    "Remove Metric": 802180
+                },
+                "Load Factor 60.000000%": {
+                    "Insert Metric": 2919295,
+                    "Search Metric": 4128,
+                    "Remove Metric": 838273
+                },
+                "Load Factor 62.000000%": {
+                    "Insert Metric": 3027130,
+                    "Search Metric": 4126,
+                    "Remove Metric": 874602
+                },
+                "Load Factor 64.000000%": {
+                    "Insert Metric": 3141525,
+                    "Search Metric": 4112,
+                    "Remove Metric": 909523
+                },
+                "Load Factor 66.000000%": {
+                    "Insert Metric": 3253292,
+                    "Search Metric": 4141,
+                    "Remove Metric": 945751
+                },
+                "Load Factor 68.000000%": {
+                    "Insert Metric": 3367525,
+                    "Search Metric": 4156,
+                    "Remove Metric": 981042
+                },
+                "Load Factor 70.000000%": {
+                    "Insert Metric": 3478969,
+                    "Search Metric": 4167,
+                    "Remove Metric": 1016915
+                },
+                "Load Factor 72.000000%": {
+                    "Insert Metric": 3586799,
+                    "Search Metric": 4128,
+                    "Remove Metric": 1051031
+                },
+                "Load Factor 74.000000%": {
+                    "Insert Metric": 3700896,
+                    "Search Metric": 4120,
+                    "Remove Metric": 1085903
+                },
+                "Load Factor 76.000000%": {
+                    "Insert Metric": 3813122,
+                    "Search Metric": 4121,
+                    "Remove Metric": 1123129
+                },
+                "Load Factor 78.000000%": {
+                    "Insert Metric": 3929931,
+                    "Search Metric": 4132,
+                    "Remove Metric": 1157808
+                },
+                "Load Factor 80.000000%": {
+                    "Insert Metric": 4039282,
+                    "Search Metric": 4165,
+                    "Remove Metric": 1194134
+                },
+                "Load Factor 82.000000%": {
+                    "Insert Metric": 4162690,
+                    "Search Metric": 4137,
+                    "Remove Metric": 1233267
+                },
+                "Load Factor 84.000000%": {
+                    "Insert Metric": 4266484,
+                    "Search Metric": 4149,
+                    "Remove Metric": 1265975
+                },
+                "Load Factor 86.000000%": {
+                    "Insert Metric": 4377466,
+                    "Search Metric": 4135,
+                    "Remove Metric": 1302708
+                },
+                "Load Factor 88.000000%": {
+                    "Insert Metric": 4496780,
+                    "Search Metric": 4144,
+                    "Remove Metric": 1341041
+                },
+                "Load Factor 90.000000%": {
+                    "Insert Metric": 4621021,
+                    "Search Metric": 4134,
+                    "Remove Metric": 1377406
+                },
+                "Load Factor 92.000000%": {
+                    "Insert Metric": 4735312,
+                    "Search Metric": 4116,
+                    "Remove Metric": 1417539
+                },
+                "Load Factor 94.000000%": {
+                    "Insert Metric": 5216537,
+                    "Search Metric": 4548,
+                    "Remove Metric": 1525623
+                },
+                "Load Factor 96.000000%": {
+                    "Insert Metric": 5055920,
+                    "Search Metric": 4595,
+                    "Remove Metric": 1566806
+                },
+                "Load Factor 98.000000%": {
+                    "Insert Metric": 5145179,
+                    "Search Metric": 4338,
+                    "Remove Metric": 1543342
+                }
+            }
+        }
+    }
+}

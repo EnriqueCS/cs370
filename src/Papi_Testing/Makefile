@@ -1,5 +1,4 @@
 # Makefile for Hashing Tests
-
 # Compiler
 CXX=g++
 
@@ -10,8 +9,14 @@ CXXFLAGS=-std=c++17 -pthread -I/usr/include
 LDFLAGS=-lpapi -pthread
 
 # Source files
-SOURCES=./TestingLib/papi_metrics.cpp ./papi_runner.cpp \
-        ../Algorithms/Chaining.cpp ../Algorithms/CuckooHashing.cpp ../Algorithms/OpenAddressing.cpp
+SOURCES=./papi_runner.cpp \
+		./TestingLib/CPPFiles/func_tester.cpp \
+		./TestingLib/CPPFiles/func_testerT.cpp \
+		./TestingLib/CPPFiles/counter_manager.cpp \
+		./Util/papi_log.cpp \
+        ../Algorithms/CPPFiles/Chaining.cpp \
+		../Algorithms/CPPFiles/CuckooHashing.cpp \
+		../Algorithms/CPPFiles/OpenAddressing.cpp
 
 # Object files
 OBJECTS=$(SOURCES:.cpp=.o)
@@ -27,5 +32,9 @@ $(EXECUTABLE): $(OBJECTS)
 
 clean:
 	rm -f $(OBJECTS) $(EXECUTABLE)
+	rm -rf ../Papi_Results
+
+run-papi:
+	../Executables/PapiTest
 
 .PHONY: all clean

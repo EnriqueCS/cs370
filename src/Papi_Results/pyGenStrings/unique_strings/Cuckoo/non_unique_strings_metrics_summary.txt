@@ -1,0 +1,1637 @@
+---> File: non_unique_strings
+Level 1 cache misses
+Total Strings: 2000000
+
+Insert All Metric: 12868989 units
+Search Metric (Table is full): 8983419 units
+Remove All Metric: 9174337 units
+Search Metric (Table is Empty): 8811397 units
+
+Load Factor 2.000000% - Insert Metric: 179377 units
+Load Factor 2.000000% - Search Metric: 69386 units
+Load Factor 2.000000% - Remove Metric: 138648 units
+
+Load Factor 4.000000% - Insert Metric: 359109 units
+Load Factor 4.000000% - Search Metric: 70901 units
+Load Factor 4.000000% - Remove Metric: 280292 units
+
+Load Factor 6.000000% - Insert Metric: 541783 units
+Load Factor 6.000000% - Search Metric: 71862 units
+Load Factor 6.000000% - Remove Metric: 424387 units
+
+Load Factor 8.000000% - Insert Metric: 727630 units
+Load Factor 8.000000% - Search Metric: 72999 units
+Load Factor 8.000000% - Remove Metric: 570939 units
+
+Load Factor 10.000000% - Insert Metric: 913951 units
+Load Factor 10.000000% - Search Metric: 74061 units
+Load Factor 10.000000% - Remove Metric: 719754 units
+
+Load Factor 12.000000% - Insert Metric: 1102549 units
+Load Factor 12.000000% - Search Metric: 75122 units
+Load Factor 12.000000% - Remove Metric: 871212 units
+
+Load Factor 14.000000% - Insert Metric: 1293859 units
+Load Factor 14.000000% - Search Metric: 76371 units
+Load Factor 14.000000% - Remove Metric: 1023924 units
+
+Load Factor 16.000000% - Insert Metric: 1485963 units
+Load Factor 16.000000% - Search Metric: 77353 units
+Load Factor 16.000000% - Remove Metric: 1179338 units
+
+Load Factor 18.000000% - Insert Metric: 1680616 units
+Load Factor 18.000000% - Search Metric: 78288 units
+Load Factor 18.000000% - Remove Metric: 1336583 units
+
+Load Factor 20.000000% - Insert Metric: 1876694 units
+Load Factor 20.000000% - Search Metric: 79352 units
+Load Factor 20.000000% - Remove Metric: 1496479 units
+
+Load Factor 22.000000% - Insert Metric: 2076308 units
+Load Factor 22.000000% - Search Metric: 80259 units
+Load Factor 22.000000% - Remove Metric: 1657953 units
+
+Load Factor 24.000000% - Insert Metric: 2277601 units
+Load Factor 24.000000% - Search Metric: 81146 units
+Load Factor 24.000000% - Remove Metric: 1822027 units
+
+Load Factor 26.000000% - Insert Metric: 2478124 units
+Load Factor 26.000000% - Search Metric: 82113 units
+Load Factor 26.000000% - Remove Metric: 1986325 units
+
+Load Factor 28.000000% - Insert Metric: 2682676 units
+Load Factor 28.000000% - Search Metric: 83014 units
+Load Factor 28.000000% - Remove Metric: 2154256 units
+
+Load Factor 30.000000% - Insert Metric: 2890311 units
+Load Factor 30.000000% - Search Metric: 83949 units
+Load Factor 30.000000% - Remove Metric: 2323772 units
+
+Load Factor 32.000000% - Insert Metric: 3098115 units
+Load Factor 32.000000% - Search Metric: 84590 units
+Load Factor 32.000000% - Remove Metric: 2494400 units
+
+Load Factor 34.000000% - Insert Metric: 3309090 units
+Load Factor 34.000000% - Search Metric: 85539 units
+Load Factor 34.000000% - Remove Metric: 2665604 units
+
+Load Factor 36.000000% - Insert Metric: 3524862 units
+Load Factor 36.000000% - Search Metric: 86031 units
+Load Factor 36.000000% - Remove Metric: 2841319 units
+
+Load Factor 38.000000% - Insert Metric: 3744180 units
+Load Factor 38.000000% - Search Metric: 86861 units
+Load Factor 38.000000% - Remove Metric: 3016163 units
+
+Load Factor 40.000000% - Insert Metric: 3961929 units
+Load Factor 40.000000% - Search Metric: 87595 units
+Load Factor 40.000000% - Remove Metric: 3194920 units
+
+Load Factor 42.000000% - Insert Metric: 4185445 units
+Load Factor 42.000000% - Search Metric: 88266 units
+Load Factor 42.000000% - Remove Metric: 3372597 units
+
+Load Factor 44.000000% - Insert Metric: 4406530 units
+Load Factor 44.000000% - Search Metric: 88760 units
+Load Factor 44.000000% - Remove Metric: 3554205 units
+
+Load Factor 46.000000% - Insert Metric: 4641767 units
+Load Factor 46.000000% - Search Metric: 89374 units
+Load Factor 46.000000% - Remove Metric: 3738474 units
+
+Load Factor 48.000000% - Insert Metric: 4871320 units
+Load Factor 48.000000% - Search Metric: 89985 units
+Load Factor 48.000000% - Remove Metric: 3923250 units
+
+Load Factor 50.000000% - Insert Metric: 5109969 units
+Load Factor 50.000000% - Search Metric: 90437 units
+Load Factor 50.000000% - Remove Metric: 4107830 units
+
+Load Factor 52.000000% - Insert Metric: 5350301 units
+Load Factor 52.000000% - Search Metric: 91001 units
+Load Factor 52.000000% - Remove Metric: 4294386 units
+
+Load Factor 54.000000% - Insert Metric: 5593437 units
+Load Factor 54.000000% - Search Metric: 91746 units
+Load Factor 54.000000% - Remove Metric: 4484226 units
+
+Load Factor 56.000000% - Insert Metric: 5843307 units
+Load Factor 56.000000% - Search Metric: 92185 units
+Load Factor 56.000000% - Remove Metric: 4673860 units
+
+Load Factor 58.000000% - Insert Metric: 6092972 units
+Load Factor 58.000000% - Search Metric: 92620 units
+Load Factor 58.000000% - Remove Metric: 4865423 units
+
+Load Factor 60.000000% - Insert Metric: 6353403 units
+Load Factor 60.000000% - Search Metric: 93048 units
+Load Factor 60.000000% - Remove Metric: 5088654 units
+
+Load Factor 62.000000% - Insert Metric: 6802121 units
+Load Factor 62.000000% - Search Metric: 94791 units
+Load Factor 62.000000% - Remove Metric: 5330260 units
+
+Load Factor 64.000000% - Insert Metric: 6986591 units
+Load Factor 64.000000% - Search Metric: 94091 units
+Load Factor 64.000000% - Remove Metric: 5493561 units
+
+Load Factor 66.000000% - Insert Metric: 7209219 units
+Load Factor 66.000000% - Search Metric: 94294 units
+Load Factor 66.000000% - Remove Metric: 5656673 units
+
+Load Factor 68.000000% - Insert Metric: 7442473 units
+Load Factor 68.000000% - Search Metric: 94363 units
+Load Factor 68.000000% - Remove Metric: 5846557 units
+
+Load Factor 70.000000% - Insert Metric: 7722006 units
+Load Factor 70.000000% - Search Metric: 94775 units
+Load Factor 70.000000% - Remove Metric: 6045705 units
+
+Load Factor 72.000000% - Insert Metric: 8021939 units
+Load Factor 72.000000% - Search Metric: 95083 units
+Load Factor 72.000000% - Remove Metric: 6247568 units
+
+Load Factor 74.000000% - Insert Metric: 8307153 units
+Load Factor 74.000000% - Search Metric: 95302 units
+Load Factor 74.000000% - Remove Metric: 6448403 units
+
+Load Factor 76.000000% - Insert Metric: 8612949 units
+Load Factor 76.000000% - Search Metric: 95646 units
+Load Factor 76.000000% - Remove Metric: 6655890 units
+
+Load Factor 78.000000% - Insert Metric: 8919938 units
+Load Factor 78.000000% - Search Metric: 95926 units
+Load Factor 78.000000% - Remove Metric: 6859362 units
+
+Load Factor 80.000000% - Insert Metric: 9235775 units
+Load Factor 80.000000% - Search Metric: 96198 units
+Load Factor 80.000000% - Remove Metric: 7088696 units
+
+Load Factor 82.000000% - Insert Metric: 9772114 units
+Load Factor 82.000000% - Search Metric: 97724 units
+Load Factor 82.000000% - Remove Metric: 7447826 units
+
+Load Factor 84.000000% - Insert Metric: 10174147 units
+Load Factor 84.000000% - Search Metric: 97241 units
+Load Factor 84.000000% - Remove Metric: 7546693 units
+
+Load Factor 86.000000% - Insert Metric: 10505639 units
+Load Factor 86.000000% - Search Metric: 97489 units
+Load Factor 86.000000% - Remove Metric: 7765227 units
+
+Load Factor 88.000000% - Insert Metric: 10568940 units
+Load Factor 88.000000% - Search Metric: 97010 units
+Load Factor 88.000000% - Remove Metric: 7898921 units
+
+Load Factor 90.000000% - Insert Metric: 10921950 units
+Load Factor 90.000000% - Search Metric: 97128 units
+Load Factor 90.000000% - Remove Metric: 8113978 units
+
+Load Factor 92.000000% - Insert Metric: 11290819 units
+Load Factor 92.000000% - Search Metric: 97266 units
+Load Factor 92.000000% - Remove Metric: 8325236 units
+
+Load Factor 94.000000% - Insert Metric: 11657921 units
+Load Factor 94.000000% - Search Metric: 97527 units
+Load Factor 94.000000% - Remove Metric: 8534514 units
+
+Load Factor 96.000000% - Insert Metric: 12051748 units
+Load Factor 96.000000% - Search Metric: 97595 units
+Load Factor 96.000000% - Remove Metric: 8751761 units
+
+Load Factor 98.000000% - Insert Metric: 12454410 units
+Load Factor 98.000000% - Search Metric: 97568 units
+Load Factor 98.000000% - Remove Metric: 8965702 units
+
+Total Strings: 2000000
+
+Insert All Metric: 977351 ms
+Search Metric (Table is full): 477944 ms
+Remove All Metric: 661510 ms
+Search Metric (Table is Empty): 1050452 ms
+
+Load Factor 2.000000% - Insert Metric: 16361 ms
+Load Factor 2.000000% - Search Metric: 2593 ms
+Load Factor 2.000000% - Remove Metric: 7612 ms
+
+Load Factor 4.000000% - Insert Metric: 27110 ms
+Load Factor 4.000000% - Search Metric: 2951 ms
+Load Factor 4.000000% - Remove Metric: 16619 ms
+
+Load Factor 6.000000% - Insert Metric: 42750 ms
+Load Factor 6.000000% - Search Metric: 3474 ms
+Load Factor 6.000000% - Remove Metric: 28142 ms
+
+Load Factor 8.000000% - Insert Metric: 61877 ms
+Load Factor 8.000000% - Search Metric: 3766 ms
+Load Factor 8.000000% - Remove Metric: 40314 ms
+
+Load Factor 10.000000% - Insert Metric: 81703 ms
+Load Factor 10.000000% - Search Metric: 4139 ms
+Load Factor 10.000000% - Remove Metric: 53842 ms
+
+Load Factor 12.000000% - Insert Metric: 101089 ms
+Load Factor 12.000000% - Search Metric: 4182 ms
+Load Factor 12.000000% - Remove Metric: 65686 ms
+
+Load Factor 14.000000% - Insert Metric: 118865 ms
+Load Factor 14.000000% - Search Metric: 4302 ms
+Load Factor 14.000000% - Remove Metric: 78094 ms
+
+Load Factor 16.000000% - Insert Metric: 136870 ms
+Load Factor 16.000000% - Search Metric: 4337 ms
+Load Factor 16.000000% - Remove Metric: 90391 ms
+
+Load Factor 18.000000% - Insert Metric: 153019 ms
+Load Factor 18.000000% - Search Metric: 4370 ms
+Load Factor 18.000000% - Remove Metric: 101212 ms
+
+Load Factor 20.000000% - Insert Metric: 171029 ms
+Load Factor 20.000000% - Search Metric: 4440 ms
+Load Factor 20.000000% - Remove Metric: 113902 ms
+
+Load Factor 22.000000% - Insert Metric: 188039 ms
+Load Factor 22.000000% - Search Metric: 4489 ms
+Load Factor 22.000000% - Remove Metric: 126232 ms
+
+Load Factor 24.000000% - Insert Metric: 207704 ms
+Load Factor 24.000000% - Search Metric: 4557 ms
+Load Factor 24.000000% - Remove Metric: 139018 ms
+
+Load Factor 26.000000% - Insert Metric: 224958 ms
+Load Factor 26.000000% - Search Metric: 4628 ms
+Load Factor 26.000000% - Remove Metric: 153561 ms
+
+Load Factor 28.000000% - Insert Metric: 246478 ms
+Load Factor 28.000000% - Search Metric: 4732 ms
+Load Factor 28.000000% - Remove Metric: 168074 ms
+
+Load Factor 30.000000% - Insert Metric: 265655 ms
+Load Factor 30.000000% - Search Metric: 4796 ms
+Load Factor 30.000000% - Remove Metric: 182527 ms
+
+Load Factor 32.000000% - Insert Metric: 284189 ms
+Load Factor 32.000000% - Search Metric: 4878 ms
+Load Factor 32.000000% - Remove Metric: 195158 ms
+
+Load Factor 34.000000% - Insert Metric: 300417 ms
+Load Factor 34.000000% - Search Metric: 4860 ms
+Load Factor 34.000000% - Remove Metric: 206623 ms
+
+Load Factor 36.000000% - Insert Metric: 317057 ms
+Load Factor 36.000000% - Search Metric: 4866 ms
+Load Factor 36.000000% - Remove Metric: 220278 ms
+
+Load Factor 38.000000% - Insert Metric: 336749 ms
+Load Factor 38.000000% - Search Metric: 5204 ms
+Load Factor 38.000000% - Remove Metric: 234476 ms
+
+Load Factor 40.000000% - Insert Metric: 355089 ms
+Load Factor 40.000000% - Search Metric: 4937 ms
+Load Factor 40.000000% - Remove Metric: 247602 ms
+
+Load Factor 42.000000% - Insert Metric: 375008 ms
+Load Factor 42.000000% - Search Metric: 4976 ms
+Load Factor 42.000000% - Remove Metric: 261508 ms
+
+Load Factor 44.000000% - Insert Metric: 393683 ms
+Load Factor 44.000000% - Search Metric: 5016 ms
+Load Factor 44.000000% - Remove Metric: 275789 ms
+
+Load Factor 46.000000% - Insert Metric: 411916 ms
+Load Factor 46.000000% - Search Metric: 5081 ms
+Load Factor 46.000000% - Remove Metric: 291641 ms
+
+Load Factor 48.000000% - Insert Metric: 437380 ms
+Load Factor 48.000000% - Search Metric: 5155 ms
+Load Factor 48.000000% - Remove Metric: 309097 ms
+
+Load Factor 50.000000% - Insert Metric: 455205 ms
+Load Factor 50.000000% - Search Metric: 5151 ms
+Load Factor 50.000000% - Remove Metric: 321142 ms
+
+Load Factor 52.000000% - Insert Metric: 475399 ms
+Load Factor 52.000000% - Search Metric: 5208 ms
+Load Factor 52.000000% - Remove Metric: 336761 ms
+
+Load Factor 54.000000% - Insert Metric: 498494 ms
+Load Factor 54.000000% - Search Metric: 5317 ms
+Load Factor 54.000000% - Remove Metric: 365607 ms
+
+Load Factor 56.000000% - Insert Metric: 560621 ms
+Load Factor 56.000000% - Search Metric: 5220 ms
+Load Factor 56.000000% - Remove Metric: 366906 ms
+
+Load Factor 58.000000% - Insert Metric: 541830 ms
+Load Factor 58.000000% - Search Metric: 5307 ms
+Load Factor 58.000000% - Remove Metric: 385399 ms
+
+Load Factor 60.000000% - Insert Metric: 559243 ms
+Load Factor 60.000000% - Search Metric: 5303 ms
+Load Factor 60.000000% - Remove Metric: 396230 ms
+
+Load Factor 62.000000% - Insert Metric: 578307 ms
+Load Factor 62.000000% - Search Metric: 5400 ms
+Load Factor 62.000000% - Remove Metric: 411699 ms
+
+Load Factor 64.000000% - Insert Metric: 598607 ms
+Load Factor 64.000000% - Search Metric: 5364 ms
+Load Factor 64.000000% - Remove Metric: 428295 ms
+
+Load Factor 66.000000% - Insert Metric: 622842 ms
+Load Factor 66.000000% - Search Metric: 5392 ms
+Load Factor 66.000000% - Remove Metric: 443039 ms
+
+Load Factor 68.000000% - Insert Metric: 642046 ms
+Load Factor 68.000000% - Search Metric: 5346 ms
+Load Factor 68.000000% - Remove Metric: 459440 ms
+
+Load Factor 70.000000% - Insert Metric: 666563 ms
+Load Factor 70.000000% - Search Metric: 5402 ms
+Load Factor 70.000000% - Remove Metric: 474804 ms
+
+Load Factor 72.000000% - Insert Metric: 689977 ms
+Load Factor 72.000000% - Search Metric: 5512 ms
+Load Factor 72.000000% - Remove Metric: 496455 ms
+
+Load Factor 74.000000% - Insert Metric: 714263 ms
+Load Factor 74.000000% - Search Metric: 5522 ms
+Load Factor 74.000000% - Remove Metric: 511784 ms
+
+Load Factor 76.000000% - Insert Metric: 735389 ms
+Load Factor 76.000000% - Search Metric: 5441 ms
+Load Factor 76.000000% - Remove Metric: 522965 ms
+
+Load Factor 78.000000% - Insert Metric: 760921 ms
+Load Factor 78.000000% - Search Metric: 5440 ms
+Load Factor 78.000000% - Remove Metric: 546376 ms
+
+Load Factor 80.000000% - Insert Metric: 779656 ms
+Load Factor 80.000000% - Search Metric: 5541 ms
+Load Factor 80.000000% - Remove Metric: 558913 ms
+
+Load Factor 82.000000% - Insert Metric: 799018 ms
+Load Factor 82.000000% - Search Metric: 5553 ms
+Load Factor 82.000000% - Remove Metric: 572968 ms
+
+Load Factor 84.000000% - Insert Metric: 821799 ms
+Load Factor 84.000000% - Search Metric: 5515 ms
+Load Factor 84.000000% - Remove Metric: 591189 ms
+
+Load Factor 86.000000% - Insert Metric: 843306 ms
+Load Factor 86.000000% - Search Metric: 5570 ms
+Load Factor 86.000000% - Remove Metric: 611029 ms
+
+Load Factor 88.000000% - Insert Metric: 865397 ms
+Load Factor 88.000000% - Search Metric: 5526 ms
+Load Factor 88.000000% - Remove Metric: 624718 ms
+
+Load Factor 90.000000% - Insert Metric: 907111 ms
+Load Factor 90.000000% - Search Metric: 5588 ms
+Load Factor 90.000000% - Remove Metric: 643996 ms
+
+Load Factor 92.000000% - Insert Metric: 919150 ms
+Load Factor 92.000000% - Search Metric: 5526 ms
+Load Factor 92.000000% - Remove Metric: 724738 ms
+
+Load Factor 94.000000% - Insert Metric: 966942 ms
+Load Factor 94.000000% - Search Metric: 5532 ms
+Load Factor 94.000000% - Remove Metric: 668344 ms
+
+Load Factor 96.000000% - Insert Metric: 942069 ms
+Load Factor 96.000000% - Search Metric: 5350 ms
+Load Factor 96.000000% - Remove Metric: 665398 ms
+
+Load Factor 98.000000% - Insert Metric: 994153 ms
+Load Factor 98.000000% - Search Metric: 5538 ms
+Load Factor 98.000000% - Remove Metric: 702101 ms
+
+
+
+Level 2 cache misses
+Total Strings: 2000000
+
+Insert All Metric: 11376827 units
+Search Metric (Table is full): 8141395 units
+Remove All Metric: 8368028 units
+Search Metric (Table is Empty): 7442448 units
+
+Load Factor 2.000000% - Insert Metric: 151980 units
+Load Factor 2.000000% - Search Metric: 57697 units
+Load Factor 2.000000% - Remove Metric: 115743 units
+
+Load Factor 4.000000% - Insert Metric: 304661 units
+Load Factor 4.000000% - Search Metric: 59435 units
+Load Factor 4.000000% - Remove Metric: 235641 units
+
+Load Factor 6.000000% - Insert Metric: 459555 units
+Load Factor 6.000000% - Search Metric: 60987 units
+Load Factor 6.000000% - Remove Metric: 358003 units
+
+Load Factor 8.000000% - Insert Metric: 616706 units
+Load Factor 8.000000% - Search Metric: 62137 units
+Load Factor 8.000000% - Remove Metric: 484277 units
+
+Load Factor 10.000000% - Insert Metric: 776781 units
+Load Factor 10.000000% - Search Metric: 63647 units
+Load Factor 10.000000% - Remove Metric: 613495 units
+
+Load Factor 12.000000% - Insert Metric: 936915 units
+Load Factor 12.000000% - Search Metric: 65222 units
+Load Factor 12.000000% - Remove Metric: 744996 units
+
+Load Factor 14.000000% - Insert Metric: 1100521 units
+Load Factor 14.000000% - Search Metric: 66407 units
+Load Factor 14.000000% - Remove Metric: 880338 units
+
+Load Factor 16.000000% - Insert Metric: 1265095 units
+Load Factor 16.000000% - Search Metric: 67691 units
+Load Factor 16.000000% - Remove Metric: 1017816 units
+
+Load Factor 18.000000% - Insert Metric: 1432298 units
+Load Factor 18.000000% - Search Metric: 68778 units
+Load Factor 18.000000% - Remove Metric: 1157675 units
+
+Load Factor 20.000000% - Insert Metric: 1599904 units
+Load Factor 20.000000% - Search Metric: 69985 units
+Load Factor 20.000000% - Remove Metric: 1300223 units
+
+Load Factor 22.000000% - Insert Metric: 1771651 units
+Load Factor 22.000000% - Search Metric: 71191 units
+Load Factor 22.000000% - Remove Metric: 1446229 units
+
+Load Factor 24.000000% - Insert Metric: 1942236 units
+Load Factor 24.000000% - Search Metric: 72616 units
+Load Factor 24.000000% - Remove Metric: 1591837 units
+
+Load Factor 26.000000% - Insert Metric: 2115568 units
+Load Factor 26.000000% - Search Metric: 73322 units
+Load Factor 26.000000% - Remove Metric: 1739749 units
+
+Load Factor 28.000000% - Insert Metric: 2291754 units
+Load Factor 28.000000% - Search Metric: 74296 units
+Load Factor 28.000000% - Remove Metric: 1891673 units
+
+Load Factor 30.000000% - Insert Metric: 2468917 units
+Load Factor 30.000000% - Search Metric: 75344 units
+Load Factor 30.000000% - Remove Metric: 2044644 units
+
+Load Factor 32.000000% - Insert Metric: 2650519 units
+Load Factor 32.000000% - Search Metric: 76139 units
+Load Factor 32.000000% - Remove Metric: 2199413 units
+
+Load Factor 34.000000% - Insert Metric: 2830676 units
+Load Factor 34.000000% - Search Metric: 76921 units
+Load Factor 34.000000% - Remove Metric: 2355754 units
+
+Load Factor 36.000000% - Insert Metric: 3016476 units
+Load Factor 36.000000% - Search Metric: 77723 units
+Load Factor 36.000000% - Remove Metric: 2515389 units
+
+Load Factor 38.000000% - Insert Metric: 3207288 units
+Load Factor 38.000000% - Search Metric: 78339 units
+Load Factor 38.000000% - Remove Metric: 2674844 units
+
+Load Factor 40.000000% - Insert Metric: 3407125 units
+Load Factor 40.000000% - Search Metric: 79583 units
+Load Factor 40.000000% - Remove Metric: 2847733 units
+
+Load Factor 42.000000% - Insert Metric: 3600063 units
+Load Factor 42.000000% - Search Metric: 79962 units
+Load Factor 42.000000% - Remove Metric: 3002618 units
+
+Load Factor 44.000000% - Insert Metric: 3786682 units
+Load Factor 44.000000% - Search Metric: 80544 units
+Load Factor 44.000000% - Remove Metric: 3169940 units
+
+Load Factor 46.000000% - Insert Metric: 3986895 units
+Load Factor 46.000000% - Search Metric: 81219 units
+Load Factor 46.000000% - Remove Metric: 3334898 units
+
+Load Factor 48.000000% - Insert Metric: 4191008 units
+Load Factor 48.000000% - Search Metric: 81706 units
+Load Factor 48.000000% - Remove Metric: 3504239 units
+
+Load Factor 50.000000% - Insert Metric: 4397242 units
+Load Factor 50.000000% - Search Metric: 82260 units
+Load Factor 50.000000% - Remove Metric: 3676502 units
+
+Load Factor 52.000000% - Insert Metric: 4606660 units
+Load Factor 52.000000% - Search Metric: 82833 units
+Load Factor 52.000000% - Remove Metric: 3847591 units
+
+Load Factor 54.000000% - Insert Metric: 4820154 units
+Load Factor 54.000000% - Search Metric: 83469 units
+Load Factor 54.000000% - Remove Metric: 4022577 units
+
+Load Factor 56.000000% - Insert Metric: 5043381 units
+Load Factor 56.000000% - Search Metric: 84255 units
+Load Factor 56.000000% - Remove Metric: 4255294 units
+
+Load Factor 58.000000% - Insert Metric: 5474768 units
+Load Factor 58.000000% - Search Metric: 85325 units
+Load Factor 58.000000% - Remove Metric: 4461655 units
+
+Load Factor 60.000000% - Insert Metric: 5667157 units
+Load Factor 60.000000% - Search Metric: 85656 units
+Load Factor 60.000000% - Remove Metric: 4637321 units
+
+Load Factor 62.000000% - Insert Metric: 5903681 units
+Load Factor 62.000000% - Search Metric: 86748 units
+Load Factor 62.000000% - Remove Metric: 4825244 units
+
+Load Factor 64.000000% - Insert Metric: 6165784 units
+Load Factor 64.000000% - Search Metric: 87842 units
+Load Factor 64.000000% - Remove Metric: 5018050 units
+
+Load Factor 66.000000% - Insert Metric: 6384440 units
+Load Factor 66.000000% - Search Metric: 87242 units
+Load Factor 66.000000% - Remove Metric: 5207121 units
+
+Load Factor 68.000000% - Insert Metric: 6659010 units
+Load Factor 68.000000% - Search Metric: 87631 units
+Load Factor 68.000000% - Remove Metric: 5387941 units
+
+Load Factor 70.000000% - Insert Metric: 6914410 units
+Load Factor 70.000000% - Search Metric: 87738 units
+Load Factor 70.000000% - Remove Metric: 5561759 units
+
+Load Factor 72.000000% - Insert Metric: 7069676 units
+Load Factor 72.000000% - Search Metric: 87343 units
+Load Factor 72.000000% - Remove Metric: 5680143 units
+
+Load Factor 74.000000% - Insert Metric: 7304361 units
+Load Factor 74.000000% - Search Metric: 87508 units
+Load Factor 74.000000% - Remove Metric: 5871115 units
+
+Load Factor 76.000000% - Insert Metric: 7566166 units
+Load Factor 76.000000% - Search Metric: 87695 units
+Load Factor 76.000000% - Remove Metric: 6061038 units
+
+Load Factor 78.000000% - Insert Metric: 7846466 units
+Load Factor 78.000000% - Search Metric: 87975 units
+Load Factor 78.000000% - Remove Metric: 6253895 units
+
+Load Factor 80.000000% - Insert Metric: 8135065 units
+Load Factor 80.000000% - Search Metric: 88256 units
+Load Factor 80.000000% - Remove Metric: 6442597 units
+
+Load Factor 82.000000% - Insert Metric: 8457844 units
+Load Factor 82.000000% - Search Metric: 89147 units
+Load Factor 82.000000% - Remove Metric: 6645382 units
+
+Load Factor 84.000000% - Insert Metric: 8723478 units
+Load Factor 84.000000% - Search Metric: 88920 units
+Load Factor 84.000000% - Remove Metric: 6832626 units
+
+Load Factor 86.000000% - Insert Metric: 8992776 units
+Load Factor 86.000000% - Search Metric: 89001 units
+Load Factor 86.000000% - Remove Metric: 7028559 units
+
+Load Factor 88.000000% - Insert Metric: 9348287 units
+Load Factor 88.000000% - Search Metric: 89045 units
+Load Factor 88.000000% - Remove Metric: 7226381 units
+
+Load Factor 90.000000% - Insert Metric: 9668533 units
+Load Factor 90.000000% - Search Metric: 91325 units
+Load Factor 90.000000% - Remove Metric: 7470061 units
+
+Load Factor 92.000000% - Insert Metric: 9998430 units
+Load Factor 92.000000% - Search Metric: 89257 units
+Load Factor 92.000000% - Remove Metric: 7621302 units
+
+Load Factor 94.000000% - Insert Metric: 10339666 units
+Load Factor 94.000000% - Search Metric: 89483 units
+Load Factor 94.000000% - Remove Metric: 7818431 units
+
+Load Factor 96.000000% - Insert Metric: 10687806 units
+Load Factor 96.000000% - Search Metric: 89722 units
+Load Factor 96.000000% - Remove Metric: 8021327 units
+
+Load Factor 98.000000% - Insert Metric: 11089942 units
+Load Factor 98.000000% - Search Metric: 89744 units
+Load Factor 98.000000% - Remove Metric: 8226940 units
+
+Total Strings: 2000000
+
+Insert All Metric: 963697 ms
+Search Metric (Table is full): 460711 ms
+Remove All Metric: 655492 ms
+Search Metric (Table is Empty): 611385 ms
+
+Load Factor 2.000000% - Insert Metric: 16380 ms
+Load Factor 2.000000% - Search Metric: 2607 ms
+Load Factor 2.000000% - Remove Metric: 7626 ms
+
+Load Factor 4.000000% - Insert Metric: 27177 ms
+Load Factor 4.000000% - Search Metric: 2929 ms
+Load Factor 4.000000% - Remove Metric: 16601 ms
+
+Load Factor 6.000000% - Insert Metric: 42784 ms
+Load Factor 6.000000% - Search Metric: 3514 ms
+Load Factor 6.000000% - Remove Metric: 28732 ms
+
+Load Factor 8.000000% - Insert Metric: 64435 ms
+Load Factor 8.000000% - Search Metric: 4062 ms
+Load Factor 8.000000% - Remove Metric: 43883 ms
+
+Load Factor 10.000000% - Insert Metric: 86961 ms
+Load Factor 10.000000% - Search Metric: 4301 ms
+Load Factor 10.000000% - Remove Metric: 56872 ms
+
+Load Factor 12.000000% - Insert Metric: 106490 ms
+Load Factor 12.000000% - Search Metric: 4461 ms
+Load Factor 12.000000% - Remove Metric: 70149 ms
+
+Load Factor 14.000000% - Insert Metric: 123861 ms
+Load Factor 14.000000% - Search Metric: 4254 ms
+Load Factor 14.000000% - Remove Metric: 77030 ms
+
+Load Factor 16.000000% - Insert Metric: 134289 ms
+Load Factor 16.000000% - Search Metric: 4327 ms
+Load Factor 16.000000% - Remove Metric: 88914 ms
+
+Load Factor 18.000000% - Insert Metric: 152890 ms
+Load Factor 18.000000% - Search Metric: 4393 ms
+Load Factor 18.000000% - Remove Metric: 101398 ms
+
+Load Factor 20.000000% - Insert Metric: 170014 ms
+Load Factor 20.000000% - Search Metric: 4421 ms
+Load Factor 20.000000% - Remove Metric: 113806 ms
+
+Load Factor 22.000000% - Insert Metric: 187817 ms
+Load Factor 22.000000% - Search Metric: 4509 ms
+Load Factor 22.000000% - Remove Metric: 126126 ms
+
+Load Factor 24.000000% - Insert Metric: 205455 ms
+Load Factor 24.000000% - Search Metric: 4533 ms
+Load Factor 24.000000% - Remove Metric: 140307 ms
+
+Load Factor 26.000000% - Insert Metric: 230635 ms
+Load Factor 26.000000% - Search Metric: 4646 ms
+Load Factor 26.000000% - Remove Metric: 152579 ms
+
+Load Factor 28.000000% - Insert Metric: 243443 ms
+Load Factor 28.000000% - Search Metric: 4673 ms
+Load Factor 28.000000% - Remove Metric: 165203 ms
+
+Load Factor 30.000000% - Insert Metric: 261419 ms
+Load Factor 30.000000% - Search Metric: 4701 ms
+Load Factor 30.000000% - Remove Metric: 177877 ms
+
+Load Factor 32.000000% - Insert Metric: 279365 ms
+Load Factor 32.000000% - Search Metric: 4835 ms
+Load Factor 32.000000% - Remove Metric: 190093 ms
+
+Load Factor 34.000000% - Insert Metric: 297031 ms
+Load Factor 34.000000% - Search Metric: 4828 ms
+Load Factor 34.000000% - Remove Metric: 205829 ms
+
+Load Factor 36.000000% - Insert Metric: 317271 ms
+Load Factor 36.000000% - Search Metric: 4867 ms
+Load Factor 36.000000% - Remove Metric: 219758 ms
+
+Load Factor 38.000000% - Insert Metric: 337779 ms
+Load Factor 38.000000% - Search Metric: 4948 ms
+Load Factor 38.000000% - Remove Metric: 234258 ms
+
+Load Factor 40.000000% - Insert Metric: 357287 ms
+Load Factor 40.000000% - Search Metric: 4969 ms
+Load Factor 40.000000% - Remove Metric: 249325 ms
+
+Load Factor 42.000000% - Insert Metric: 376489 ms
+Load Factor 42.000000% - Search Metric: 5067 ms
+Load Factor 42.000000% - Remove Metric: 261764 ms
+
+Load Factor 44.000000% - Insert Metric: 395736 ms
+Load Factor 44.000000% - Search Metric: 5024 ms
+Load Factor 44.000000% - Remove Metric: 276043 ms
+
+Load Factor 46.000000% - Insert Metric: 413687 ms
+Load Factor 46.000000% - Search Metric: 5059 ms
+Load Factor 46.000000% - Remove Metric: 291209 ms
+
+Load Factor 48.000000% - Insert Metric: 432867 ms
+Load Factor 48.000000% - Search Metric: 5096 ms
+Load Factor 48.000000% - Remove Metric: 304932 ms
+
+Load Factor 50.000000% - Insert Metric: 454521 ms
+Load Factor 50.000000% - Search Metric: 5116 ms
+Load Factor 50.000000% - Remove Metric: 321128 ms
+
+Load Factor 52.000000% - Insert Metric: 474697 ms
+Load Factor 52.000000% - Search Metric: 5156 ms
+Load Factor 52.000000% - Remove Metric: 333759 ms
+
+Load Factor 54.000000% - Insert Metric: 495840 ms
+Load Factor 54.000000% - Search Metric: 5222 ms
+Load Factor 54.000000% - Remove Metric: 353895 ms
+
+Load Factor 56.000000% - Insert Metric: 514334 ms
+Load Factor 56.000000% - Search Metric: 5232 ms
+Load Factor 56.000000% - Remove Metric: 365350 ms
+
+Load Factor 58.000000% - Insert Metric: 534135 ms
+Load Factor 58.000000% - Search Metric: 5280 ms
+Load Factor 58.000000% - Remove Metric: 380425 ms
+
+Load Factor 60.000000% - Insert Metric: 560092 ms
+Load Factor 60.000000% - Search Metric: 5361 ms
+Load Factor 60.000000% - Remove Metric: 402098 ms
+
+Load Factor 62.000000% - Insert Metric: 581747 ms
+Load Factor 62.000000% - Search Metric: 5457 ms
+Load Factor 62.000000% - Remove Metric: 418128 ms
+
+Load Factor 64.000000% - Insert Metric: 606044 ms
+Load Factor 64.000000% - Search Metric: 5358 ms
+Load Factor 64.000000% - Remove Metric: 433901 ms
+
+Load Factor 66.000000% - Insert Metric: 623058 ms
+Load Factor 66.000000% - Search Metric: 5392 ms
+Load Factor 66.000000% - Remove Metric: 445043 ms
+
+Load Factor 68.000000% - Insert Metric: 642606 ms
+Load Factor 68.000000% - Search Metric: 5365 ms
+Load Factor 68.000000% - Remove Metric: 461182 ms
+
+Load Factor 70.000000% - Insert Metric: 660426 ms
+Load Factor 70.000000% - Search Metric: 5405 ms
+Load Factor 70.000000% - Remove Metric: 477418 ms
+
+Load Factor 72.000000% - Insert Metric: 685393 ms
+Load Factor 72.000000% - Search Metric: 5477 ms
+Load Factor 72.000000% - Remove Metric: 490840 ms
+
+Load Factor 74.000000% - Insert Metric: 708625 ms
+Load Factor 74.000000% - Search Metric: 5389 ms
+Load Factor 74.000000% - Remove Metric: 506271 ms
+
+Load Factor 76.000000% - Insert Metric: 742007 ms
+Load Factor 76.000000% - Search Metric: 5586 ms
+Load Factor 76.000000% - Remove Metric: 536501 ms
+
+Load Factor 78.000000% - Insert Metric: 754622 ms
+Load Factor 78.000000% - Search Metric: 5452 ms
+Load Factor 78.000000% - Remove Metric: 538673 ms
+
+Load Factor 80.000000% - Insert Metric: 775403 ms
+Load Factor 80.000000% - Search Metric: 5480 ms
+Load Factor 80.000000% - Remove Metric: 554466 ms
+
+Load Factor 82.000000% - Insert Metric: 794480 ms
+Load Factor 82.000000% - Search Metric: 5651 ms
+Load Factor 82.000000% - Remove Metric: 572524 ms
+
+Load Factor 84.000000% - Insert Metric: 816294 ms
+Load Factor 84.000000% - Search Metric: 5533 ms
+Load Factor 84.000000% - Remove Metric: 591964 ms
+
+Load Factor 86.000000% - Insert Metric: 840993 ms
+Load Factor 86.000000% - Search Metric: 5497 ms
+Load Factor 86.000000% - Remove Metric: 602746 ms
+
+Load Factor 88.000000% - Insert Metric: 868002 ms
+Load Factor 88.000000% - Search Metric: 5496 ms
+Load Factor 88.000000% - Remove Metric: 618506 ms
+
+Load Factor 90.000000% - Insert Metric: 887929 ms
+Load Factor 90.000000% - Search Metric: 5520 ms
+Load Factor 90.000000% - Remove Metric: 634547 ms
+
+Load Factor 92.000000% - Insert Metric: 913040 ms
+Load Factor 92.000000% - Search Metric: 5529 ms
+Load Factor 92.000000% - Remove Metric: 652036 ms
+
+Load Factor 94.000000% - Insert Metric: 936677 ms
+Load Factor 94.000000% - Search Metric: 5493 ms
+Load Factor 94.000000% - Remove Metric: 671691 ms
+
+Load Factor 96.000000% - Insert Metric: 968210 ms
+Load Factor 96.000000% - Search Metric: 5583 ms
+Load Factor 96.000000% - Remove Metric: 692637 ms
+
+Load Factor 98.000000% - Insert Metric: 998077 ms
+Load Factor 98.000000% - Search Metric: 5657 ms
+Load Factor 98.000000% - Remove Metric: 708289 ms
+
+
+
+Level 3 cache misses
+Total Strings: 2000000
+
+Insert All Metric: 6878704 units
+Search Metric (Table is full): 5512615 units
+Remove All Metric: 5673163 units
+Search Metric (Table is Empty): 4554636 units
+
+Load Factor 2.000000% - Insert Metric: 91692 units
+Load Factor 2.000000% - Search Metric: 17991 units
+Load Factor 2.000000% - Remove Metric: 18035 units
+
+Load Factor 4.000000% - Insert Metric: 96110 units
+Load Factor 4.000000% - Search Metric: 10016 units
+Load Factor 4.000000% - Remove Metric: 58107 units
+
+Load Factor 6.000000% - Insert Metric: 163616 units
+Load Factor 6.000000% - Search Metric: 27545 units
+Load Factor 6.000000% - Remove Metric: 150198 units
+
+Load Factor 8.000000% - Insert Metric: 299487 units
+Load Factor 8.000000% - Search Metric: 40487 units
+Load Factor 8.000000% - Remove Metric: 272396 units
+
+Load Factor 10.000000% - Insert Metric: 438939 units
+Load Factor 10.000000% - Search Metric: 43101 units
+Load Factor 10.000000% - Remove Metric: 360155 units
+
+Load Factor 12.000000% - Insert Metric: 550012 units
+Load Factor 12.000000% - Search Metric: 44586 units
+Load Factor 12.000000% - Remove Metric: 448098 units
+
+Load Factor 14.000000% - Insert Metric: 653633 units
+Load Factor 14.000000% - Search Metric: 46276 units
+Load Factor 14.000000% - Remove Metric: 547226 units
+
+Load Factor 16.000000% - Insert Metric: 758350 units
+Load Factor 16.000000% - Search Metric: 46796 units
+Load Factor 16.000000% - Remove Metric: 638026 units
+
+Load Factor 18.000000% - Insert Metric: 870380 units
+Load Factor 18.000000% - Search Metric: 48564 units
+Load Factor 18.000000% - Remove Metric: 747237 units
+
+Load Factor 20.000000% - Insert Metric: 968353 units
+Load Factor 20.000000% - Search Metric: 48460 units
+Load Factor 20.000000% - Remove Metric: 826998 units
+
+Load Factor 22.000000% - Insert Metric: 1073227 units
+Load Factor 22.000000% - Search Metric: 50174 units
+Load Factor 22.000000% - Remove Metric: 931753 units
+
+Load Factor 24.000000% - Insert Metric: 1168044 units
+Load Factor 24.000000% - Search Metric: 50134 units
+Load Factor 24.000000% - Remove Metric: 1023203 units
+
+Load Factor 26.000000% - Insert Metric: 1287822 units
+Load Factor 26.000000% - Search Metric: 51808 units
+Load Factor 26.000000% - Remove Metric: 1141380 units
+
+Load Factor 28.000000% - Insert Metric: 1390039 units
+Load Factor 28.000000% - Search Metric: 51437 units
+Load Factor 28.000000% - Remove Metric: 1223805 units
+
+Load Factor 30.000000% - Insert Metric: 1488766 units
+Load Factor 30.000000% - Search Metric: 52050 units
+Load Factor 30.000000% - Remove Metric: 1331400 units
+
+Load Factor 32.000000% - Insert Metric: 1597555 units
+Load Factor 32.000000% - Search Metric: 52802 units
+Load Factor 32.000000% - Remove Metric: 1430285 units
+
+Load Factor 34.000000% - Insert Metric: 1706535 units
+Load Factor 34.000000% - Search Metric: 53276 units
+Load Factor 34.000000% - Remove Metric: 1537404 units
+
+Load Factor 36.000000% - Insert Metric: 1819828 units
+Load Factor 36.000000% - Search Metric: 53970 units
+Load Factor 36.000000% - Remove Metric: 1645200 units
+
+Load Factor 38.000000% - Insert Metric: 1934755 units
+Load Factor 38.000000% - Search Metric: 54739 units
+Load Factor 38.000000% - Remove Metric: 1751225 units
+
+Load Factor 40.000000% - Insert Metric: 2048362 units
+Load Factor 40.000000% - Search Metric: 55114 units
+Load Factor 40.000000% - Remove Metric: 1858601 units
+
+Load Factor 42.000000% - Insert Metric: 2155493 units
+Load Factor 42.000000% - Search Metric: 54771 units
+Load Factor 42.000000% - Remove Metric: 1951537 units
+
+Load Factor 44.000000% - Insert Metric: 2263888 units
+Load Factor 44.000000% - Search Metric: 55249 units
+Load Factor 44.000000% - Remove Metric: 2077559 units
+
+Load Factor 46.000000% - Insert Metric: 2407906 units
+Load Factor 46.000000% - Search Metric: 55980 units
+Load Factor 46.000000% - Remove Metric: 2194804 units
+
+Load Factor 48.000000% - Insert Metric: 2536640 units
+Load Factor 48.000000% - Search Metric: 56427 units
+Load Factor 48.000000% - Remove Metric: 2325227 units
+
+Load Factor 50.000000% - Insert Metric: 2661942 units
+Load Factor 50.000000% - Search Metric: 56828 units
+Load Factor 50.000000% - Remove Metric: 2425171 units
+
+Load Factor 52.000000% - Insert Metric: 2790643 units
+Load Factor 52.000000% - Search Metric: 57223 units
+Load Factor 52.000000% - Remove Metric: 2543828 units
+
+Load Factor 54.000000% - Insert Metric: 2923291 units
+Load Factor 54.000000% - Search Metric: 57441 units
+Load Factor 54.000000% - Remove Metric: 2662493 units
+
+Load Factor 56.000000% - Insert Metric: 3055796 units
+Load Factor 56.000000% - Search Metric: 57596 units
+Load Factor 56.000000% - Remove Metric: 2777909 units
+
+Load Factor 58.000000% - Insert Metric: 3194256 units
+Load Factor 58.000000% - Search Metric: 58034 units
+Load Factor 58.000000% - Remove Metric: 2896631 units
+
+Load Factor 60.000000% - Insert Metric: 3338930 units
+Load Factor 60.000000% - Search Metric: 58137 units
+Load Factor 60.000000% - Remove Metric: 2990232 units
+
+Load Factor 62.000000% - Insert Metric: 3470544 units
+Load Factor 62.000000% - Search Metric: 58528 units
+Load Factor 62.000000% - Remove Metric: 3120164 units
+
+Load Factor 64.000000% - Insert Metric: 3642132 units
+Load Factor 64.000000% - Search Metric: 58581 units
+Load Factor 64.000000% - Remove Metric: 3272881 units
+
+Load Factor 66.000000% - Insert Metric: 3776118 units
+Load Factor 66.000000% - Search Metric: 58768 units
+Load Factor 66.000000% - Remove Metric: 3388987 units
+
+Load Factor 68.000000% - Insert Metric: 3933487 units
+Load Factor 68.000000% - Search Metric: 59081 units
+Load Factor 68.000000% - Remove Metric: 3528395 units
+
+Load Factor 70.000000% - Insert Metric: 4088002 units
+Load Factor 70.000000% - Search Metric: 59247 units
+Load Factor 70.000000% - Remove Metric: 3646254 units
+
+Load Factor 72.000000% - Insert Metric: 4259984 units
+Load Factor 72.000000% - Search Metric: 59284 units
+Load Factor 72.000000% - Remove Metric: 3770570 units
+
+Load Factor 74.000000% - Insert Metric: 4421582 units
+Load Factor 74.000000% - Search Metric: 59439 units
+Load Factor 74.000000% - Remove Metric: 3896306 units
+
+Load Factor 76.000000% - Insert Metric: 4539140 units
+Load Factor 76.000000% - Search Metric: 59318 units
+Load Factor 76.000000% - Remove Metric: 3990931 units
+
+Load Factor 78.000000% - Insert Metric: 4720177 units
+Load Factor 78.000000% - Search Metric: 59326 units
+Load Factor 78.000000% - Remove Metric: 4134927 units
+
+Load Factor 80.000000% - Insert Metric: 4929776 units
+Load Factor 80.000000% - Search Metric: 60382 units
+Load Factor 80.000000% - Remove Metric: 4286201 units
+
+Load Factor 82.000000% - Insert Metric: 5100401 units
+Load Factor 82.000000% - Search Metric: 60073 units
+Load Factor 82.000000% - Remove Metric: 4418253 units
+
+Load Factor 84.000000% - Insert Metric: 5285117 units
+Load Factor 84.000000% - Search Metric: 60061 units
+Load Factor 84.000000% - Remove Metric: 4555098 units
+
+Load Factor 86.000000% - Insert Metric: 5482744 units
+Load Factor 86.000000% - Search Metric: 60215 units
+Load Factor 86.000000% - Remove Metric: 4681984 units
+
+Load Factor 88.000000% - Insert Metric: 5675371 units
+Load Factor 88.000000% - Search Metric: 60353 units
+Load Factor 88.000000% - Remove Metric: 4819902 units
+
+Load Factor 90.000000% - Insert Metric: 5882787 units
+Load Factor 90.000000% - Search Metric: 60407 units
+Load Factor 90.000000% - Remove Metric: 4967799 units
+
+Load Factor 92.000000% - Insert Metric: 6070311 units
+Load Factor 92.000000% - Search Metric: 60388 units
+Load Factor 92.000000% - Remove Metric: 5083214 units
+
+Load Factor 94.000000% - Insert Metric: 6282228 units
+Load Factor 94.000000% - Search Metric: 60520 units
+Load Factor 94.000000% - Remove Metric: 5213698 units
+
+Load Factor 96.000000% - Insert Metric: 6486712 units
+Load Factor 96.000000% - Search Metric: 60423 units
+Load Factor 96.000000% - Remove Metric: 5362897 units
+
+Load Factor 98.000000% - Insert Metric: 6721741 units
+Load Factor 98.000000% - Search Metric: 60640 units
+Load Factor 98.000000% - Remove Metric: 5508007 units
+
+Total Strings: 2000000
+
+Insert All Metric: 959647 ms
+Search Metric (Table is full): 460341 ms
+Remove All Metric: 662216 ms
+Search Metric (Table is Empty): 613521 ms
+
+Load Factor 2.000000% - Insert Metric: 16439 ms
+Load Factor 2.000000% - Search Metric: 2592 ms
+Load Factor 2.000000% - Remove Metric: 7652 ms
+
+Load Factor 4.000000% - Insert Metric: 27193 ms
+Load Factor 4.000000% - Search Metric: 2953 ms
+Load Factor 4.000000% - Remove Metric: 16651 ms
+
+Load Factor 6.000000% - Insert Metric: 42368 ms
+Load Factor 6.000000% - Search Metric: 3374 ms
+Load Factor 6.000000% - Remove Metric: 28083 ms
+
+Load Factor 8.000000% - Insert Metric: 61898 ms
+Load Factor 8.000000% - Search Metric: 3798 ms
+Load Factor 8.000000% - Remove Metric: 40526 ms
+
+Load Factor 10.000000% - Insert Metric: 81593 ms
+Load Factor 10.000000% - Search Metric: 4034 ms
+Load Factor 10.000000% - Remove Metric: 54134 ms
+
+Load Factor 12.000000% - Insert Metric: 102198 ms
+Load Factor 12.000000% - Search Metric: 4273 ms
+Load Factor 12.000000% - Remove Metric: 66319 ms
+
+Load Factor 14.000000% - Insert Metric: 120063 ms
+Load Factor 14.000000% - Search Metric: 4384 ms
+Load Factor 14.000000% - Remove Metric: 78661 ms
+
+Load Factor 16.000000% - Insert Metric: 138238 ms
+Load Factor 16.000000% - Search Metric: 4427 ms
+Load Factor 16.000000% - Remove Metric: 90833 ms
+
+Load Factor 18.000000% - Insert Metric: 155021 ms
+Load Factor 18.000000% - Search Metric: 4479 ms
+Load Factor 18.000000% - Remove Metric: 103297 ms
+
+Load Factor 20.000000% - Insert Metric: 175011 ms
+Load Factor 20.000000% - Search Metric: 4475 ms
+Load Factor 20.000000% - Remove Metric: 117789 ms
+
+Load Factor 22.000000% - Insert Metric: 188236 ms
+Load Factor 22.000000% - Search Metric: 4495 ms
+Load Factor 22.000000% - Remove Metric: 128331 ms
+
+Load Factor 24.000000% - Insert Metric: 216088 ms
+Load Factor 24.000000% - Search Metric: 4779 ms
+Load Factor 24.000000% - Remove Metric: 147084 ms
+
+Load Factor 26.000000% - Insert Metric: 231135 ms
+Load Factor 26.000000% - Search Metric: 4654 ms
+Load Factor 26.000000% - Remove Metric: 153248 ms
+
+Load Factor 28.000000% - Insert Metric: 244651 ms
+Load Factor 28.000000% - Search Metric: 4692 ms
+Load Factor 28.000000% - Remove Metric: 165150 ms
+
+Load Factor 30.000000% - Insert Metric: 260356 ms
+Load Factor 30.000000% - Search Metric: 4724 ms
+Load Factor 30.000000% - Remove Metric: 179138 ms
+
+Load Factor 32.000000% - Insert Metric: 278490 ms
+Load Factor 32.000000% - Search Metric: 4737 ms
+Load Factor 32.000000% - Remove Metric: 195775 ms
+
+Load Factor 34.000000% - Insert Metric: 306866 ms
+Load Factor 34.000000% - Search Metric: 4996 ms
+Load Factor 34.000000% - Remove Metric: 208957 ms
+
+Load Factor 36.000000% - Insert Metric: 324730 ms
+Load Factor 36.000000% - Search Metric: 4898 ms
+Load Factor 36.000000% - Remove Metric: 220251 ms
+
+Load Factor 38.000000% - Insert Metric: 338962 ms
+Load Factor 38.000000% - Search Metric: 5064 ms
+Load Factor 38.000000% - Remove Metric: 237968 ms
+
+Load Factor 40.000000% - Insert Metric: 363378 ms
+Load Factor 40.000000% - Search Metric: 5036 ms
+Load Factor 40.000000% - Remove Metric: 249111 ms
+
+Load Factor 42.000000% - Insert Metric: 382376 ms
+Load Factor 42.000000% - Search Metric: 5115 ms
+Load Factor 42.000000% - Remove Metric: 268128 ms
+
+Load Factor 44.000000% - Insert Metric: 396689 ms
+Load Factor 44.000000% - Search Metric: 5162 ms
+Load Factor 44.000000% - Remove Metric: 279105 ms
+
+Load Factor 46.000000% - Insert Metric: 414328 ms
+Load Factor 46.000000% - Search Metric: 5094 ms
+Load Factor 46.000000% - Remove Metric: 292202 ms
+
+Load Factor 48.000000% - Insert Metric: 453398 ms
+Load Factor 48.000000% - Search Metric: 5381 ms
+Load Factor 48.000000% - Remove Metric: 313069 ms
+
+Load Factor 50.000000% - Insert Metric: 461278 ms
+Load Factor 50.000000% - Search Metric: 5171 ms
+Load Factor 50.000000% - Remove Metric: 323653 ms
+
+Load Factor 52.000000% - Insert Metric: 478208 ms
+Load Factor 52.000000% - Search Metric: 5232 ms
+Load Factor 52.000000% - Remove Metric: 339414 ms
+
+Load Factor 54.000000% - Insert Metric: 498261 ms
+Load Factor 54.000000% - Search Metric: 5201 ms
+Load Factor 54.000000% - Remove Metric: 351525 ms
+
+Load Factor 56.000000% - Insert Metric: 513149 ms
+Load Factor 56.000000% - Search Metric: 5266 ms
+Load Factor 56.000000% - Remove Metric: 364159 ms
+
+Load Factor 58.000000% - Insert Metric: 535243 ms
+Load Factor 58.000000% - Search Metric: 5282 ms
+Load Factor 58.000000% - Remove Metric: 380673 ms
+
+Load Factor 60.000000% - Insert Metric: 555781 ms
+Load Factor 60.000000% - Search Metric: 5295 ms
+Load Factor 60.000000% - Remove Metric: 395138 ms
+
+Load Factor 62.000000% - Insert Metric: 575723 ms
+Load Factor 62.000000% - Search Metric: 5296 ms
+Load Factor 62.000000% - Remove Metric: 415414 ms
+
+Load Factor 64.000000% - Insert Metric: 607578 ms
+Load Factor 64.000000% - Search Metric: 5423 ms
+Load Factor 64.000000% - Remove Metric: 431078 ms
+
+Load Factor 66.000000% - Insert Metric: 631087 ms
+Load Factor 66.000000% - Search Metric: 5419 ms
+Load Factor 66.000000% - Remove Metric: 449459 ms
+
+Load Factor 68.000000% - Insert Metric: 646298 ms
+Load Factor 68.000000% - Search Metric: 5408 ms
+Load Factor 68.000000% - Remove Metric: 463302 ms
+
+Load Factor 70.000000% - Insert Metric: 929674 ms
+Load Factor 70.000000% - Search Metric: 5385 ms
+Load Factor 70.000000% - Remove Metric: 476135 ms
+
+Load Factor 72.000000% - Insert Metric: 663892 ms
+Load Factor 72.000000% - Search Metric: 5207 ms
+Load Factor 72.000000% - Remove Metric: 472647 ms
+
+Load Factor 74.000000% - Insert Metric: 679575 ms
+Load Factor 74.000000% - Search Metric: 5223 ms
+Load Factor 74.000000% - Remove Metric: 488087 ms
+
+Load Factor 76.000000% - Insert Metric: 730030 ms
+Load Factor 76.000000% - Search Metric: 5443 ms
+Load Factor 76.000000% - Remove Metric: 524263 ms
+
+Load Factor 78.000000% - Insert Metric: 755785 ms
+Load Factor 78.000000% - Search Metric: 5422 ms
+Load Factor 78.000000% - Remove Metric: 539907 ms
+
+Load Factor 80.000000% - Insert Metric: 771607 ms
+Load Factor 80.000000% - Search Metric: 5431 ms
+Load Factor 80.000000% - Remove Metric: 554230 ms
+
+Load Factor 82.000000% - Insert Metric: 798221 ms
+Load Factor 82.000000% - Search Metric: 5477 ms
+Load Factor 82.000000% - Remove Metric: 570030 ms
+
+Load Factor 84.000000% - Insert Metric: 815789 ms
+Load Factor 84.000000% - Search Metric: 5696 ms
+Load Factor 84.000000% - Remove Metric: 585104 ms
+
+Load Factor 86.000000% - Insert Metric: 847028 ms
+Load Factor 86.000000% - Search Metric: 5482 ms
+Load Factor 86.000000% - Remove Metric: 600517 ms
+
+Load Factor 88.000000% - Insert Metric: 868529 ms
+Load Factor 88.000000% - Search Metric: 5508 ms
+Load Factor 88.000000% - Remove Metric: 613731 ms
+
+Load Factor 90.000000% - Insert Metric: 886173 ms
+Load Factor 90.000000% - Search Metric: 5495 ms
+Load Factor 90.000000% - Remove Metric: 651788 ms
+
+Load Factor 92.000000% - Insert Metric: 919079 ms
+Load Factor 92.000000% - Search Metric: 5632 ms
+Load Factor 92.000000% - Remove Metric: 653417 ms
+
+Load Factor 94.000000% - Insert Metric: 934612 ms
+Load Factor 94.000000% - Search Metric: 5512 ms
+Load Factor 94.000000% - Remove Metric: 669143 ms
+
+Load Factor 96.000000% - Insert Metric: 964766 ms
+Load Factor 96.000000% - Search Metric: 5573 ms
+Load Factor 96.000000% - Remove Metric: 696639 ms
+
+Load Factor 98.000000% - Insert Metric: 1007577 ms
+Load Factor 98.000000% - Search Metric: 5508 ms
+Load Factor 98.000000% - Remove Metric: 707001 ms
+
+
+
+Level 2 data cache hits
+Total Strings: 2000000
+
+Insert All Metric: 1503416 units
+Search Metric (Table is full): 841810 units
+Remove All Metric: 795591 units
+Search Metric (Table is Empty): 1376578 units
+
+Load Factor 2.000000% - Insert Metric: 27644 units
+Load Factor 2.000000% - Search Metric: 11808 units
+Load Factor 2.000000% - Remove Metric: 22650 units
+
+Load Factor 4.000000% - Insert Metric: 55461 units
+Load Factor 4.000000% - Search Metric: 11471 units
+Load Factor 4.000000% - Remove Metric: 45050 units
+
+Load Factor 6.000000% - Insert Metric: 83300 units
+Load Factor 6.000000% - Search Metric: 11078 units
+Load Factor 6.000000% - Remove Metric: 66446 units
+
+Load Factor 8.000000% - Insert Metric: 110782 units
+Load Factor 8.000000% - Search Metric: 10700 units
+Load Factor 8.000000% - Remove Metric: 86795 units
+
+Load Factor 10.000000% - Insert Metric: 138716 units
+Load Factor 10.000000% - Search Metric: 10486 units
+Load Factor 10.000000% - Remove Metric: 106157 units
+
+Load Factor 12.000000% - Insert Metric: 166607 units
+Load Factor 12.000000% - Search Metric: 10082 units
+Load Factor 12.000000% - Remove Metric: 125761 units
+
+Load Factor 14.000000% - Insert Metric: 195076 units
+Load Factor 14.000000% - Search Metric: 9883 units
+Load Factor 14.000000% - Remove Metric: 144035 units
+
+Load Factor 16.000000% - Insert Metric: 223667 units
+Load Factor 16.000000% - Search Metric: 9705 units
+Load Factor 16.000000% - Remove Metric: 145833 units
+
+Load Factor 18.000000% - Insert Metric: 213078 units
+Load Factor 18.000000% - Search Metric: 8684 units
+Load Factor 18.000000% - Remove Metric: 157571 units
+
+Load Factor 20.000000% - Insert Metric: 246308 units
+Load Factor 20.000000% - Search Metric: 9246 units
+Load Factor 20.000000% - Remove Metric: 197153 units
+
+Load Factor 22.000000% - Insert Metric: 309379 units
+Load Factor 22.000000% - Search Metric: 9054 units
+Load Factor 22.000000% - Remove Metric: 213907 units
+
+Load Factor 24.000000% - Insert Metric: 337107 units
+Load Factor 24.000000% - Search Metric: 9028 units
+Load Factor 24.000000% - Remove Metric: 230262 units
+
+Load Factor 26.000000% - Insert Metric: 351280 units
+Load Factor 26.000000% - Search Metric: 7775 units
+Load Factor 26.000000% - Remove Metric: 216994 units
+
+Load Factor 28.000000% - Insert Metric: 371487 units
+Load Factor 28.000000% - Search Metric: 8767 units
+Load Factor 28.000000% - Remove Metric: 263374 units
+
+Load Factor 30.000000% - Insert Metric: 423760 units
+Load Factor 30.000000% - Search Metric: 8758 units
+Load Factor 30.000000% - Remove Metric: 279226 units
+
+Load Factor 32.000000% - Insert Metric: 452380 units
+Load Factor 32.000000% - Search Metric: 8570 units
+Load Factor 32.000000% - Remove Metric: 295006 units
+
+Load Factor 34.000000% - Insert Metric: 481551 units
+Load Factor 34.000000% - Search Metric: 8498 units
+Load Factor 34.000000% - Remove Metric: 309860 units
+
+Load Factor 36.000000% - Insert Metric: 511400 units
+Load Factor 36.000000% - Search Metric: 8563 units
+Load Factor 36.000000% - Remove Metric: 326762 units
+
+Load Factor 38.000000% - Insert Metric: 541793 units
+Load Factor 38.000000% - Search Metric: 8417 units
+Load Factor 38.000000% - Remove Metric: 342272 units
+
+Load Factor 40.000000% - Insert Metric: 568993 units
+Load Factor 40.000000% - Search Metric: 8457 units
+Load Factor 40.000000% - Remove Metric: 357573 units
+
+Load Factor 42.000000% - Insert Metric: 598632 units
+Load Factor 42.000000% - Search Metric: 8466 units
+Load Factor 42.000000% - Remove Metric: 372774 units
+
+Load Factor 44.000000% - Insert Metric: 629262 units
+Load Factor 44.000000% - Search Metric: 8293 units
+Load Factor 44.000000% - Remove Metric: 387523 units
+
+Load Factor 46.000000% - Insert Metric: 660385 units
+Load Factor 46.000000% - Search Metric: 8350 units
+Load Factor 46.000000% - Remove Metric: 402389 units
+
+Load Factor 48.000000% - Insert Metric: 688894 units
+Load Factor 48.000000% - Search Metric: 8296 units
+Load Factor 48.000000% - Remove Metric: 418930 units
+
+Load Factor 50.000000% - Insert Metric: 719088 units
+Load Factor 50.000000% - Search Metric: 8238 units
+Load Factor 50.000000% - Remove Metric: 433858 units
+
+Load Factor 52.000000% - Insert Metric: 750854 units
+Load Factor 52.000000% - Search Metric: 8200 units
+Load Factor 52.000000% - Remove Metric: 448067 units
+
+Load Factor 54.000000% - Insert Metric: 779085 units
+Load Factor 54.000000% - Search Metric: 8291 units
+Load Factor 54.000000% - Remove Metric: 463660 units
+
+Load Factor 56.000000% - Insert Metric: 807916 units
+Load Factor 56.000000% - Search Metric: 8206 units
+Load Factor 56.000000% - Remove Metric: 478183 units
+
+Load Factor 58.000000% - Insert Metric: 839004 units
+Load Factor 58.000000% - Search Metric: 8184 units
+Load Factor 58.000000% - Remove Metric: 492756 units
+
+Load Factor 60.000000% - Insert Metric: 869232 units
+Load Factor 60.000000% - Search Metric: 8079 units
+Load Factor 60.000000% - Remove Metric: 507692 units
+
+Load Factor 62.000000% - Insert Metric: 899664 units
+Load Factor 62.000000% - Search Metric: 8160 units
+Load Factor 62.000000% - Remove Metric: 521750 units
+
+Load Factor 64.000000% - Insert Metric: 930770 units
+Load Factor 64.000000% - Search Metric: 8097 units
+Load Factor 64.000000% - Remove Metric: 537069 units
+
+Load Factor 66.000000% - Insert Metric: 962451 units
+Load Factor 66.000000% - Search Metric: 7981 units
+Load Factor 66.000000% - Remove Metric: 551530 units
+
+Load Factor 68.000000% - Insert Metric: 991564 units
+Load Factor 68.000000% - Search Metric: 8029 units
+Load Factor 68.000000% - Remove Metric: 565587 units
+
+Load Factor 70.000000% - Insert Metric: 1022897 units
+Load Factor 70.000000% - Search Metric: 8161 units
+Load Factor 70.000000% - Remove Metric: 579716 units
+
+Load Factor 72.000000% - Insert Metric: 1055466 units
+Load Factor 72.000000% - Search Metric: 8044 units
+Load Factor 72.000000% - Remove Metric: 594599 units
+
+Load Factor 74.000000% - Insert Metric: 1085991 units
+Load Factor 74.000000% - Search Metric: 8186 units
+Load Factor 74.000000% - Remove Metric: 608876 units
+
+Load Factor 76.000000% - Insert Metric: 1115280 units
+Load Factor 76.000000% - Search Metric: 8008 units
+Load Factor 76.000000% - Remove Metric: 622710 units
+
+Load Factor 78.000000% - Insert Metric: 1147344 units
+Load Factor 78.000000% - Search Metric: 8048 units
+Load Factor 78.000000% - Remove Metric: 637482 units
+
+Load Factor 80.000000% - Insert Metric: 1179067 units
+Load Factor 80.000000% - Search Metric: 8125 units
+Load Factor 80.000000% - Remove Metric: 652518 units
+
+Load Factor 82.000000% - Insert Metric: 1211102 units
+Load Factor 82.000000% - Search Metric: 8060 units
+Load Factor 82.000000% - Remove Metric: 666202 units
+
+Load Factor 84.000000% - Insert Metric: 1241512 units
+Load Factor 84.000000% - Search Metric: 8039 units
+Load Factor 84.000000% - Remove Metric: 680948 units
+
+Load Factor 86.000000% - Insert Metric: 1275704 units
+Load Factor 86.000000% - Search Metric: 8123 units
+Load Factor 86.000000% - Remove Metric: 696647 units
+
+Load Factor 88.000000% - Insert Metric: 1309518 units
+Load Factor 88.000000% - Search Metric: 8082 units
+Load Factor 88.000000% - Remove Metric: 705528 units
+
+Load Factor 90.000000% - Insert Metric: 1351023 units
+Load Factor 90.000000% - Search Metric: 8139 units
+Load Factor 90.000000% - Remove Metric: 725680 units
+
+Load Factor 92.000000% - Insert Metric: 1384568 units
+Load Factor 92.000000% - Search Metric: 8069 units
+Load Factor 92.000000% - Remove Metric: 739023 units
+
+Load Factor 94.000000% - Insert Metric: 1416122 units
+Load Factor 94.000000% - Search Metric: 8030 units
+Load Factor 94.000000% - Remove Metric: 755037 units
+
+Load Factor 96.000000% - Insert Metric: 1456448 units
+Load Factor 96.000000% - Search Metric: 8049 units
+Load Factor 96.000000% - Remove Metric: 767738 units
+
+Load Factor 98.000000% - Insert Metric: 1492762 units
+Load Factor 98.000000% - Search Metric: 8209 units
+Load Factor 98.000000% - Remove Metric: 783757 units
+
+Total Strings: 2000000
+
+Insert All Metric: 964294 ms
+Search Metric (Table is full): 455237 ms
+Remove All Metric: 657705 ms
+Search Metric (Table is Empty): 618424 ms
+
+Load Factor 2.000000% - Insert Metric: 16360 ms
+Load Factor 2.000000% - Search Metric: 2596 ms
+Load Factor 2.000000% - Remove Metric: 7670 ms
+
+Load Factor 4.000000% - Insert Metric: 27404 ms
+Load Factor 4.000000% - Search Metric: 2953 ms
+Load Factor 4.000000% - Remove Metric: 16575 ms
+
+Load Factor 6.000000% - Insert Metric: 42310 ms
+Load Factor 6.000000% - Search Metric: 3439 ms
+Load Factor 6.000000% - Remove Metric: 28663 ms
+
+Load Factor 8.000000% - Insert Metric: 63110 ms
+Load Factor 8.000000% - Search Metric: 3834 ms
+Load Factor 8.000000% - Remove Metric: 41265 ms
+
+Load Factor 10.000000% - Insert Metric: 82105 ms
+Load Factor 10.000000% - Search Metric: 4036 ms
+Load Factor 10.000000% - Remove Metric: 53115 ms
+
+Load Factor 12.000000% - Insert Metric: 99793 ms
+Load Factor 12.000000% - Search Metric: 4252 ms
+Load Factor 12.000000% - Remove Metric: 64866 ms
+
+Load Factor 14.000000% - Insert Metric: 116977 ms
+Load Factor 14.000000% - Search Metric: 4241 ms
+Load Factor 14.000000% - Remove Metric: 76802 ms
+
+Load Factor 16.000000% - Insert Metric: 137228 ms
+Load Factor 16.000000% - Search Metric: 4388 ms
+Load Factor 16.000000% - Remove Metric: 90916 ms
+
+Load Factor 18.000000% - Insert Metric: 155283 ms
+Load Factor 18.000000% - Search Metric: 4453 ms
+Load Factor 18.000000% - Remove Metric: 102856 ms
+
+Load Factor 20.000000% - Insert Metric: 173301 ms
+Load Factor 20.000000% - Search Metric: 4514 ms
+Load Factor 20.000000% - Remove Metric: 115687 ms
+
+Load Factor 22.000000% - Insert Metric: 190255 ms
+Load Factor 22.000000% - Search Metric: 4534 ms
+Load Factor 22.000000% - Remove Metric: 129450 ms
+
+Load Factor 24.000000% - Insert Metric: 209222 ms
+Load Factor 24.000000% - Search Metric: 4581 ms
+Load Factor 24.000000% - Remove Metric: 140094 ms
+
+Load Factor 26.000000% - Insert Metric: 226207 ms
+Load Factor 26.000000% - Search Metric: 4643 ms
+Load Factor 26.000000% - Remove Metric: 153296 ms
+
+Load Factor 28.000000% - Insert Metric: 244416 ms
+Load Factor 28.000000% - Search Metric: 4677 ms
+Load Factor 28.000000% - Remove Metric: 168476 ms
+
+Load Factor 30.000000% - Insert Metric: 265449 ms
+Load Factor 30.000000% - Search Metric: 4789 ms
+Load Factor 30.000000% - Remove Metric: 181825 ms
+
+Load Factor 32.000000% - Insert Metric: 284076 ms
+Load Factor 32.000000% - Search Metric: 4839 ms
+Load Factor 32.000000% - Remove Metric: 196159 ms
+
+Load Factor 34.000000% - Insert Metric: 303147 ms
+Load Factor 34.000000% - Search Metric: 4903 ms
+Load Factor 34.000000% - Remove Metric: 209327 ms
+
+Load Factor 36.000000% - Insert Metric: 320955 ms
+Load Factor 36.000000% - Search Metric: 4897 ms
+Load Factor 36.000000% - Remove Metric: 221518 ms
+
+Load Factor 38.000000% - Insert Metric: 337766 ms
+Load Factor 38.000000% - Search Metric: 5144 ms
+Load Factor 38.000000% - Remove Metric: 234580 ms
+
+Load Factor 40.000000% - Insert Metric: 359189 ms
+Load Factor 40.000000% - Search Metric: 4991 ms
+Load Factor 40.000000% - Remove Metric: 247279 ms
+
+Load Factor 42.000000% - Insert Metric: 374052 ms
+Load Factor 42.000000% - Search Metric: 4978 ms
+Load Factor 42.000000% - Remove Metric: 262275 ms
+
+Load Factor 44.000000% - Insert Metric: 393987 ms
+Load Factor 44.000000% - Search Metric: 5044 ms
+Load Factor 44.000000% - Remove Metric: 276371 ms
+
+Load Factor 46.000000% - Insert Metric: 411426 ms
+Load Factor 46.000000% - Search Metric: 5124 ms
+Load Factor 46.000000% - Remove Metric: 291128 ms
+
+Load Factor 48.000000% - Insert Metric: 434101 ms
+Load Factor 48.000000% - Search Metric: 5094 ms
+Load Factor 48.000000% - Remove Metric: 306930 ms
+
+Load Factor 50.000000% - Insert Metric: 452922 ms
+Load Factor 50.000000% - Search Metric: 5109 ms
+Load Factor 50.000000% - Remove Metric: 321188 ms
+
+Load Factor 52.000000% - Insert Metric: 479163 ms
+Load Factor 52.000000% - Search Metric: 5219 ms
+Load Factor 52.000000% - Remove Metric: 336543 ms
+
+Load Factor 54.000000% - Insert Metric: 496192 ms
+Load Factor 54.000000% - Search Metric: 5297 ms
+Load Factor 54.000000% - Remove Metric: 355515 ms
+
+Load Factor 56.000000% - Insert Metric: 522776 ms
+Load Factor 56.000000% - Search Metric: 5328 ms
+Load Factor 56.000000% - Remove Metric: 372239 ms
+
+Load Factor 58.000000% - Insert Metric: 543364 ms
+Load Factor 58.000000% - Search Metric: 5313 ms
+Load Factor 58.000000% - Remove Metric: 386818 ms
+
+Load Factor 60.000000% - Insert Metric: 564141 ms
+Load Factor 60.000000% - Search Metric: 5342 ms
+Load Factor 60.000000% - Remove Metric: 396844 ms
+
+Load Factor 62.000000% - Insert Metric: 582355 ms
+Load Factor 62.000000% - Search Metric: 5423 ms
+Load Factor 62.000000% - Remove Metric: 414119 ms
+
+Load Factor 64.000000% - Insert Metric: 595872 ms
+Load Factor 64.000000% - Search Metric: 6430 ms
+Load Factor 64.000000% - Remove Metric: 432469 ms
+
+Load Factor 66.000000% - Insert Metric: 617183 ms
+Load Factor 66.000000% - Search Metric: 5355 ms
+Load Factor 66.000000% - Remove Metric: 442458 ms
+
+Load Factor 68.000000% - Insert Metric: 637700 ms
+Load Factor 68.000000% - Search Metric: 5420 ms
+Load Factor 68.000000% - Remove Metric: 457324 ms
+
+Load Factor 70.000000% - Insert Metric: 663103 ms
+Load Factor 70.000000% - Search Metric: 5423 ms
+Load Factor 70.000000% - Remove Metric: 474258 ms
+
+Load Factor 72.000000% - Insert Metric: 684994 ms
+Load Factor 72.000000% - Search Metric: 5405 ms
+Load Factor 72.000000% - Remove Metric: 489954 ms
+
+Load Factor 74.000000% - Insert Metric: 711732 ms
+Load Factor 74.000000% - Search Metric: 5511 ms
+Load Factor 74.000000% - Remove Metric: 513212 ms
+
+Load Factor 76.000000% - Insert Metric: 730421 ms
+Load Factor 76.000000% - Search Metric: 5444 ms
+Load Factor 76.000000% - Remove Metric: 527282 ms
+
+Load Factor 78.000000% - Insert Metric: 760320 ms
+Load Factor 78.000000% - Search Metric: 5545 ms
+Load Factor 78.000000% - Remove Metric: 545470 ms
+
+Load Factor 80.000000% - Insert Metric: 783523 ms
+Load Factor 80.000000% - Search Metric: 5537 ms
+Load Factor 80.000000% - Remove Metric: 565818 ms
+
+Load Factor 82.000000% - Insert Metric: 803000 ms
+Load Factor 82.000000% - Search Metric: 5470 ms
+Load Factor 82.000000% - Remove Metric: 572092 ms
+
+Load Factor 84.000000% - Insert Metric: 819680 ms
+Load Factor 84.000000% - Search Metric: 5488 ms
+Load Factor 84.000000% - Remove Metric: 586469 ms
+
+Load Factor 86.000000% - Insert Metric: 884423 ms
+Load Factor 86.000000% - Search Metric: 5529 ms
+Load Factor 86.000000% - Remove Metric: 613299 ms
+
+Load Factor 88.000000% - Insert Metric: 876439 ms
+Load Factor 88.000000% - Search Metric: 5525 ms
+Load Factor 88.000000% - Remove Metric: 622176 ms
+
+Load Factor 90.000000% - Insert Metric: 890317 ms
+Load Factor 90.000000% - Search Metric: 5527 ms
+Load Factor 90.000000% - Remove Metric: 632741 ms
+
+Load Factor 92.000000% - Insert Metric: 918645 ms
+Load Factor 92.000000% - Search Metric: 5562 ms
+Load Factor 92.000000% - Remove Metric: 655532 ms
+
+Load Factor 94.000000% - Insert Metric: 945726 ms
+Load Factor 94.000000% - Search Metric: 5650 ms
+Load Factor 94.000000% - Remove Metric: 679683 ms
+
+Load Factor 96.000000% - Insert Metric: 987072 ms
+Load Factor 96.000000% - Search Metric: 5582 ms
+Load Factor 96.000000% - Remove Metric: 696894 ms
+
+Load Factor 98.000000% - Insert Metric: 1001126 ms
+Load Factor 98.000000% - Search Metric: 5547 ms
+Load Factor 98.000000% - Remove Metric: 700298 ms
+
+
+

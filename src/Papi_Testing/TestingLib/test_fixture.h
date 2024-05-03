@@ -1,44 +1,34 @@
 #ifndef HASHINGPERFORMANCEMONITORTESTFIXTURE_H
 #define HASHINGPERFORMANCEMONITORTESTFIXTURE_H
 
-#include "./papi_metrics.h"
+#include "../../Algorithms/HashingAlgorithm.h"
+#include "./HeaderFiles/func_tester.h"
 #include <vector>
-#include <utility> // For std::pair
 #include <string>
-#include <cstdio> // For std::remove
+#include <cstdio>
 
-// Define a pair of PAPI event code and its string name
 using MetricInfo = std::pair<int, std::string>;
 
 class HashingPerformanceMonitorTestFixture {
 public:
     HashingPerformanceMonitor* monitor = nullptr;
-    std::string testOutputFile;
-    HashingAlgorithmType algorithmType; // Variable to specify the hashing algorithm
-    int tableSize; // Variable to specify the size of the table
-    std::vector<MetricInfo> metricInfos; // Variable to store metric information
+    HashingConfig config;
+    MetricInfo metricInfo;
 
-    // Constructor to specify the hashing algorithm, test output file location, table size, and metric information
-    HashingPerformanceMonitorTestFixture(HashingAlgorithmType type, const std::string& outputFile, int size, const std::vector<MetricInfo>& metrics)
-    : algorithmType(type), testOutputFile(outputFile), tableSize(size), metricInfos(metrics) {}
+    HashingPerformanceMonitorTestFixture(const HashingConfig& config, const MetricInfo& metricInfo)
+    : config(config), metricInfo(metricInfo) {}
 
-    // Setup before each test
     void SetUp() {
-        // Initialize the monitor with the specified algorithm type, table size, and metric information
-        monitor = new HashingPerformanceMonitor(algorithmType, tableSize, metricInfos);
+        monitor = new HashingPerformanceMonitor(config, metricInfo);
     }
 
-    // Cleanup after each test
     void TearDown() {
         delete monitor;
         monitor = nullptr;
-        // Optionally, remove the test output file
-        std::remove(testOutputFile.c_str());
     }
 
-    // Function to trigger writing total metrics to text file
-    void writeTotalMetricsToTxt(const std::string& dest) {
-        monitor->writeTotalMetricsToTxt(dest);
+    std::string getPerformanceData(std::vector<std::string> lines) {
+        return monitor->getPerformanceData(lines);
     }
 };
 
